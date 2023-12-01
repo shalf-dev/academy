@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /スタイルシート -->
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header_inner">
+    <div class="header_logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>
+    <!-- /.header_logo -->   
+    <div class="header_company"><h1>SHALF ACADEMY</h1></div>        
+    <div class="header_place">
+     <nav class="header_global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header_modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->
+    </div> 
+    <!-- /.header_place -->
+   </div>
+   <!-- /.header_inner --> 
+  <!-- ぱんくずリスト -->
+  <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>
+    <!-- /.itemListElement -->   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_2_chingin.html">
+      <span itemprop="name">賃金台帳</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="#">
+      <span itemprop="name">データを作成する</span>
+     </a>
+     <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /ぱんくずリスト -->          
+  </header>     
+  <div class="interval"></div>
+  <div class="interval-bit"></div>             
+  <div class="wrapper clearfix">			
+   <main class="page-main">
+    <div class="main-title title-color-document table-of-contents">
+     <h2>目　　　次</h2>
+    </div>
+    <!-- /.main-title title-color-document table-of-contents -->     
+    <div class="article-container">
+     <div class="articles contents-list contents-list-document">
+      <span>１.</span><a href="#content1">データを作成する</a>      
+      <p>賃金台帳として必要なデータを作成する手順等について解説します。</p>
+      <ul class="contents-list_ul">
+       <span>１-１</span><a href="#content1">給与計算により作成する</a>
+       <li><span>①</span><a href="#content1">給与計算を行った後に賃金台帳（賃金管理）を作成する</a></li>                        
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-２</span><a href="#content2">賞与計算により作成する</a> 
+       <li><span>①</span><a href="#content2">賞与計算を行った後に賃金台帳（賃金管理）を作成する</a></li>                        
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-３</span><a href="#content3">手入力する</a> 
+       <li><span>①</span><a href="#content3">作成種類について</a></li>                      
+       <li><span>②</span><a href="#content3-2">賃金台帳作成型にて入力する</a></li>
+       <li><span>③</span><a href="#content3-3">年調・社保・労保型にて入力する</a></li>
+      </ul> 
+      <ul class="contents-list_ul">
+       <span>１-４</span><a href="#content4">データを取り込む</a> 
+       <li><span>①</span><a href="#content4">台帳作成型にて取り込みを行う</a></li>                      
+       <li><span>②</span><a href="#content4-2">年調・社保・労保型にて取り込みを行う</a></li>
+       <li><span>③</span><a href="#content4-3">賞与データの取り込みを行う</a></li>
+       <li><span>④</span><a href="#content4-4">他システムデータにて取り込みを行う</a></li>
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-５</span><a href="#content5">その他</a> 
+       <li><span>①</span><a href="#content5">給与支給日を変更する場合</a></li>                      
+       <li><span>②</span><a href="#content5-2">賃金変動や健康保険などの加入状況を変更する場合</a></li>
+       <li><span>③</span><a href="#content5-3">健康保険と厚生年金保険の標準報酬月額を変更する場合</a></li>
+       <li><span>④</span><a href="#content5-4">賞与の賃金データを変更する場合</a></li>
+       <li><span>⑤</span><a href="#content5-5">締日や支給日の変更により月度を移動する場合</a></li>
+       <li><span>⑥</span><a href="#content5-6">支給項目の位置を変更する場合</a></li>
+       <li><span>⑦</span><a href="#content5-7">特定の月度のデータを合算する場合</a></li>                    
+      </ul>                 
+      <ul class="contents-list_ul">
+       <span>１-６</span><a href="#content6">理解度テスト</a>
+      </ul>           
+     </div> 
+     <!-- /.articles contents-list contents-list-document -->  
+    </div> 
+    <!-- /.article-container --> 
+    <!--モーダル本体-->
+    <div class="modal-container">
+     <div class="modal-body">
+      <!-- 閉じるボタン -->
+      <div class="modal-close">&#10006</div>
+      <!-- /閉じるボタン -->
+      <!-- モーダル内のコンテンツ -->
+      <div class="modal-content">
+       <div><h2>目　次</h2></div>    
+       <div class="article-container">
+        <div class="articles contents-list contents-list-document">
+         <ul class="contents-list_ul">
+          <span>&#9650;</span><a href="#">ページトップ</a> 
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-１</span><a href="#content1">給与計算により作成する</a>
+          <li><span>①</span><a href="#content1">給与計算を行った後に賃金台帳（賃金管理）を作成する</a></li>                           
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-２</span><a href="#content2">賞与計算により作成する</a> 
+          <li><span>①</span><a href="#content2">賞与計算を行った後に賃金台帳（賃金管理）を作成する</a></li>   
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-３</span><a href="#content3">手入力する</a> 
+          <li><span>①</span><a href="#content3">作成種類について</a></li>                      
+          <li><span>②</span><a href="#content3-2">賃金台帳作成型にて入力する</a></li>
+          <li><span>③</span><a href="#content3-3">年調・社保・労保型にて入力する</a></li>
+         </ul> 
+         <ul class="contents-list_ul">
+          <span>１-４</span><a href="#content4">データを取り込む</a> 
+          <li><span>①</span><a href="#content4">台帳作成型にて取り込みを行う</a></li>                      
+          <li><span>②</span><a href="#content4-2">年調・社保・労保型にて取り込みを行う</a></li>
+          <li><span>③</span><a href="#content4-3">賞与データの取り込みを行う</a></li>
+          <li><span>④</span><a href="#content4-4">他システムデータにて取り込みを行う</a></li>
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-５</span><a href="#content5">その他</a> 
+          <li><span>①</span><a href="#content5">給与支給日を変更する場合</a></li>                      
+          <li><span>②</span><a href="#content5-2">賃金変動や健康保険などの加入状況を変更する場合</a></li>
+          <li><span>③</span><a href="#content5-3">健康保険と厚生年金保険の標準報酬月額を変更する場合</a></li>
+          <li><span>④</span><a href="#content5-4">賞与の賃金データを変更する場合</a></li>
+          <li><span>⑤</span><a href="#content5-5">締日や支給日の変更により月度を移動する場合</a></li>
+          <li><span>⑥</span><a href="#content5-6">支給項目の位置を変更する場合</a></li>
+          <li><span>⑦</span><a href="#content5-7">特定の月度のデータを合算する場合</a></li>                    
+         </ul>                 
+         <ul class="contents-list_ul">
+          <span>１-６</span><a href="#content6">理解度テスト</a>
+         </ul>                
+        </div>
+        <!-- /.articles contents-list contents-list-document -->           
+       </div>0
+       <!-- /.article-container -->
+      </div>
+      <!-- /.modal-content -->
+      <!-- /モーダル内のコンテンツ -->
+     </div>
+     <!-- /.modal-body -->  
+    </div>  
+    <!-- /.modal-container -->  
+    <!-- /モーダル本体 -->
+    <a id="content1" class="anchor anchor-document"></a>
+    <div class="main-title title-color-document table-of-contents">
+     <h2>１-１ 給与計算により作成する</h2>
+    </div> 
+    <!-- /.main-title title-color-document table-of-contents --> 
+    <p class="title-description">給与計算を行うことで簡単に賃金台帳（賃金管理）を作成できます。</p>  
+    <img class="img-magnification" src="images/1_2-1_1.bmp" alt="賃金管理データ作成（給与計算事業所用）画面">
+    <a class="img-scaling img-scaling-document" href="images/1_2-1_1.bmp" data-lightbox="lightbox1" data-title="賃金管理データ作成（給与計算事業所用）画面"></a>    
+    <div class="content-container">
+     <h4>① 給与計算を行った後に賃金台帳（賃金管理）を作成する</h4>    
+     <div class="content-container_commentary">      
+      <div class="subheading subheading-link-document"><a href="1_2_1-1.html" target="_blank">毎月の作成方法</a></div>       
+     </div>
+     <!-- /.content-container_commentary -->
+     <div class="content-container_commentary">      
+      <div class="subheading subheading-link-document"><a href="1_2_1-2.html" target="_blank">初めて行う場合</a></div>
+     </div>
+     <!-- /.content-container_commentary -->
+     <div class="content-container_commentary">      
+      <div class="subheading subheading-link-document"><a href="1_2_1-3.html" target="_blank">給与項目が変わった場合</a></div>       
+     </div>      
+     <!-- /.content-container_commentary --> 
+    </div>
+    <!-- /.content-container -->      
+    <a id="content2" class="anchor anchor-document"></a>
+    <div class="main-title title-color-document table-of-contents">
+     <h2>１-２ 賞与計算により作成する</h2>
+    </div>
+    <!-- /.main-title title-color-document table-of-contents --> 
+    <p class="title-description">賞与計算を行うことで簡単に賃金台帳（賃金管理）を作成できます。</p>  
+    <img class="img-magnification" src="images/1_2-1_2.bmp" alt="賞与賃金管理データ作成画面">         
+    <a class="img-scaling img-scaling-document" href="images/1_2-1_2.bmp" data-lightbox="lightbox2" data-title="賞与賃金管理データ作成画面"></a>               
+    <div class="content-container">
+     <h4>① 賞与計算を行った後に賃金台帳（賃金管理）を作成する</h4> 
+     <div class="content-container_commentary">        
+      <div class="subheading subheading-link-document"><a href="1_2_1-4.html" target="_blank">作成方法</a></div>
+     </div>
+     <!-- /.content-container_commentary -->
+    </div>
+    <!-- /.content-container -->        
+    <a id="content3" class="anchor anchor-document"></a>
+    <div class="main-title title-color-document table-of-contents">
+     <h2>１-３ 手入力する</h2>
+    </div>
+    <!-- /.main-title title-color-document table-of-contents -->
+    <p class="title-description">賃金台帳（賃金管理）は使用用途に応じて４種類の形式があります。<br>種類毎の入力方法について解説します。</p>  
+    <div class="content-container">
+     <h4>① 作成種類について</h4>
+     <div class="content-container_commentary">
+      <div class="subheading">事業所情報より設定を行う</div>
+      <div class="content_commentary_paragraph1">
+       <p>事業所情報より作成種類を設定ができます。</p>
+       <img class="img-magnification" src="images/1_2-1_3.bmp" alt="事業所基本情報登録画面　基本設定タブ">         
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_3.bmp" data-lightbox="lightbox3" data-title="事業所基本情報登録画面　基本設定タブ"></a>    
+       <p>給与計算をするを選択した場合は、賃金台帳作成型となります。<br>給与計算をしないを選択した場合は、下記の４種類から選択します。</p>      
+       <p class="paragraph">・個人単位　賃金台帳作成型</p>
+       <p class="paragraph">・個人単位　年調実施型</p>
+       <p class="paragraph">・個人単位　社保雇用型</p>
+       <p class="paragraph">・個人単位　労保専用型</p>
+       <p class="content_commentary_paragraph2-title">各種類の説明</p>
+       <div class="content_commentary_paragraph2">
+        <p>・賃金台帳作成型</p>
+        <p class="paragraph">→ 給与計算をすると同じ形式で支給項目と控除項目を設定できます。</p>
+        <p>・年調実施型</p>
+        <p class="paragraph">→ 年末調整に必要な情報のみを設定できます。</p>
+        <p>・社保雇用型</p>
+        <p class="paragraph">→ 社会保険と雇用保険の手続きに必要な情報のみを設定できます。</p>
+        <p>・労保専用型</p>
+        <p class="paragraph">→ 労働保険の手続きに必要な情報のみを設定できます。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+       <p class="content_commentary_paragraph2-title">注意事項</p>
+       <div class="content_commentary_paragraph2">
+        <p>１、事業所単位　労保専用型：現在使用することはできません。</p>
+        <p>２、賃金台帳を印刷したい場合は賃金台帳作成型を選択してください。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content3-2" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>② 賃金台帳作成型にて入力する</h4>        
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-5.html" target="_blank">詳細説明</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>賃金台帳作成型での入力方法について解説します。</p>
+                <img class="img-magnification" src="images/1_2-1_4.bmp" alt="賃金台帳手入力（賃金台帳作成型専用）画面">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_4.bmp" data-lightbox="lightbox4" data-title="賃金台帳手入力（賃金台帳作成型専用）画面"></a>
+                <p>賃金台帳作成型では、支給項目と控除項目を任意に設定することができます。</p>
+                <p>但し、支給項目は最大で１８項目、控除項目は最大で２項目までの設定となりますので<br>複数の支給項目や控除項目がある場合は、事前に管理する項目を決めておく必要があります。</p>
+                <p>詳しい操作方法などは詳細説明『<img src="images/矢印ボタン_orange_16px.png" alt="" style="vertical-align:middle;">』を参照してください。</p>
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->             
+    </div>        
+    <!-- /.content-container -->
+    <a id="content3-3" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>③ 年調・社保・労保型にて入力する</h4>                   
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-6.html" target="_blank">詳細説明</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>年調・社保・労保型での入力方法について解説します。<br>年調実施型、社保雇用型、労保専用型にて入力できる項目が異なります。</p>
+                <img class="img-magnification" src="images/1_2-1_5.bmp" alt="賃金台帳手入力（年調・社保・労保専用型）画面">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_5.bmp" data-lightbox="lightbox5" data-title="賃金台帳手入力（年調・社保・労保専用型）画面"></a>
+                <p>年調・社保・労保型では、支給項目や控除項目などの詳細については設定することができません。</p>
+                <p>用途に応じた必要最低限の項目のみの管理となります。</p>
+                <p>それぞれの形式についての詳しい操作方法などは詳細説明『<img src="images/矢印ボタン_orange_16px.png" alt="" style="vertical-align:middle;">』を参照してください。</p>
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->  
+    </div>
+    <!-- /.content-container -->  
+    <a id="content4" class="anchor anchor-document"></a>
+    <div class="main-title title-color-document table-of-contents">
+     <h2>１-４ データを取り込む</h2>
+    </div>
+    <!-- /.main-title title-color-document table-of-contents -->     
+    <p class="title-description">各形式の賃金台帳（賃金管理）をExcelやCSVファイルより取り込む手順について解説します。</p>
+    <div class="content-container">
+     <h4>① 台帳作成型にて取り込みを行う</h4>                                  
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-7.html" target="_blank">取り込み方法</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>賃金台帳作成型での取り込み方法やポイントについて解説します。</p>
+                <p>給与計算を行っている事業所や、事業所の賃金入力方法が「賃金台帳作成型」に設定されていて、賃金管理データの入力を『賃金台帳作成型賃金入力』画面で行っている事業所の給与データを取り込むことができます。<br>取込の際に、支給項目毎に金額の取込ができます。</p>
+                <img class="img-magnification" src="images/1_2-1_6.bmp" alt="台帳作成型にて取り込みを行う">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_6.bmp" data-lightbox="lightbox6" data-title="台帳作成型にて取り込みを行う"></a>
+                <p>用途に応じた必要最低限の項目のみの管理となります。</p>               
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4-2" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>② 年調・社保・労保型にて取り込みを行う</h4>            
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-8.html" target="_blank">取り込み方法</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>年調・社保・労保型での取り込み方法やポイントについて解説します。</p>
+                <p>事業所の賃金入力方法が「年調実施型」「社保雇用型」「労保専用型」に設定されていて、賃金管理データの入力を『年調・社保・労保型賃金入力』画面で行っている事業所の給与データを取り込むことができます。</p>
+                <img class="img-magnification" src="images/1_2-1_7.bmp" alt="取り込み方法">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_7.bmp" data-lightbox="lightbox7" data-title="取り込み方法"></a>
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->
+    </div> 
+    <!-- /.content-container --> 
+    <a id="content4-3" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>③ 賞与データの取り込みを行う</h4>            
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-9.html" target="_blank">取り込み方法</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>賞与データについても賃金台帳（賃金管理）にて管理されますので取り込み方法やポイントについて解説します。</p>
+                <p>賞与の賃金管理データの取込ができます。</p>
+                <img class="img-magnification" src="images/1_2-1_8.bmp" alt="取り込み方法">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_8.bmp" data-lightbox="lightbox8" data-title="取り込み方法"></a>
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->    
+    </div> 
+    <!-- /.content-container -->        
+    <a id="content4-4" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>④ 他システムデータにて取り込みを行う</h4>
+        <div class="content-container_commentary">
+            <div class="subheading subheading-link-document"><a href="1_2_1-10.html" target="_blank">取り込み方法</a></div>
+            <div class="content_commentary_paragraph1">
+                <p>賃金台帳作成型を別形式での取り込み方法やポイントについて解説します。</p>
+                <img class="img-magnification" src="images/1_2-1_9.bmp" alt="取り込み方法">
+                <a class="img-scaling img-scaling-document" href="images/1_2-1_9.bmp" data-lightbox="lightbox9" data-title="取り込み方法"></a>
+            </div>
+            <!-- /.content_commentary_paragraph1 -->
+        </div>
+        <!-- /.content-container_commentary -->   
+    </div>
+    <!-- /.content-container -->
+    <a id="content5" class="anchor anchor-document"></a>
+    <div class="main-title title-color-document table-of-contents">
+     <h2>１-５ その他</h2>
+    </div>   
+    <p class="title-description">賃金台帳（賃金管理）についての便利機能や特別な処理について解説します。</p>     
+    <div class="content-container">
+     <h4>① 給与支給日を変更する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-11.html" target="_blank">変更方法の手順</a></div>
+      <div class="content_commentary_paragraph1">
+       <p>各月度の給与支給日を、一覧形式で確認したり変更することができる機能について解説します。<br>この機能を使うことで、全員の給与支給日を、簡単に確認することや変更することができます。</p>
+       <img class="img-magnification" src="images/1_2-1_10.bmp" alt="変更方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_10.bmp" data-lightbox="lightbox10" data-title="変更方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->    
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-2" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>② 賃金変動や健康保険などの加入状況を変更する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-12.html" target="_blank">確認と変更方法の手順</a></div>    
+      <div class="content_commentary_paragraph1">
+       <p>各月度の固定的賃金変動や昇降給差額や加入状況などを、一覧形式で確認したり変更することができる機能について解説します。<br>この機能を使うことで全員の状況を、簡単に確認することや変更することができます。</p>
+       <img class="img-magnification" src="images/1_2-1_11.bmp" alt="確認と変更方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_11.bmp" data-lightbox="lightbox11" data-title="確認と変更方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->    
+    </div> 
+    <!-- /.content-container -->         
+    <a id="content5-3" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>③ 健康保険と厚生年金保険の標準報酬月額を変更する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-13.html" target="_blank">確認と変更方法の手順</a></div>     
+      <div class="content_commentary_paragraph1">
+       <p>賃金台帳（賃金管理）の標準報酬月額を確認できる唯一の機能について解説します。</p>
+       <img class="img-magnification" src="images/1_2-1_12.bmp" alt="確認と変更方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_12.bmp" data-lightbox="lightbox12" data-title="確認と変更方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->             
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-4" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>④ 賞与の賃金データを変更する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-14.html" target="_blank">確認と変更方法の手順</a></div>                   
+      <div class="content_commentary_paragraph1">
+       <p>賃金台帳（賃金管理）の賞与データを確認や変更する機能について解説します。</p>
+       <img class="img-magnification" src="images/1_2-1_13.bmp" alt="確認と変更方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_13.bmp" data-lightbox="lightbox13" data-title="確認と変更方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div> 
+     <!-- /.content-container_commentary -->              
+    </div>
+    <!-- /.content-container --> 
+    <a id="content5-5" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>⑤ 締日や支給日の変更により月度を移動する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-15.html" target="_blank">移動する手順</a></div> 
+      <div class="content_commentary_paragraph1">
+       <p>年度の途中などで締日や支給日などが変更となった場合で月度が重複してしまう場合の対応方法について解説します。</p>
+       <img class="img-magnification" src="images/1_2-1_14.bmp" alt="移動する手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_14.bmp" data-lightbox="lightbox14" data-title="移動する手順"></a>
+       <p>年度の途中などに、締日や支給日が変更となり月度を移動する必要になった場合に利用します。</p>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->               
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-6" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>⑥ 支給項目の位置を変更する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-16.html" target="_blank">支給項目位置を変更する方法の手順</a></div> 
+      <div class="content_commentary_paragraph1">
+       <p>支給項目の並び順を変更する方法について解説します。</p>
+       <img class="img-magnification" src="images/1_2-1_15.bmp" alt="支給項目位置を変更する方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_15.bmp" data-lightbox="lightbox15" data-title="支給項目位置を変更する方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div> 
+     <!-- /.content-container_commentary -->              
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-7" class="anchor anchor-document"></a>    
+    <div class="content-container">
+     <h4>⑦ 特定の月度のデータを合算する場合</h4>
+     <div class="content-container_commentary">
+      <div class="subheading subheading-link-document"><a href="1_2_1-17.html" target="_blank">合算方法の手順</a></div> 
+      <div class="content_commentary_paragraph1">
+       <p>特定の月度のデータを、他の月度データに合算する方法について解説します。</p>
+       <img class="img-magnification" src="images/1_2-1_16.bmp" alt="合算方法の手順">
+       <a class="img-scaling img-scaling-document" href="images/1_2-1_16.bmp" data-lightbox="lightbox16" data-title="合算方法の手順"></a>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->           
+    </div> 
+    <!-- /.content-container -->                    
+   </main>
+   <!-- /.page-main -->     
+  </div>
+  <!-- /.wrapper clearfix --> 
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　 <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer_p">以上で、 ” データを作成する ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+ <!-- /.footer -->
+</html>

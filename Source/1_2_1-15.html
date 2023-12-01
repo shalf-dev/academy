@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!--フォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <link rel="stylesheet" href="css/lity.css"> 
+   <!-- /動画表示の為のlity -->
+  <!-- /スタイルシート -->   
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header_inner">
+    <div class="header_logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>
+    </div>
+    <!-- /.header_logo --> 
+    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header_place">
+     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+    </div> 
+    <!-- /.header_place --> 
+   </div>
+   <!-- /.header_inner -->
+   <!-- ぱんくずリスト -->
+   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>  
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_2_chingin.html">
+      <span itemprop="name">賃金台帳</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="1_2_1.html">
+         <span itemprop="name">データを作成する</span>
+        </a>
+        <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#">
+         <span itemprop="name">移動する手順</span>
+        </a>
+        <meta itemprop="position" content="4" />
+    </li>  
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /.header_breadcrumb -->
+   <!-- /ぱんくずリスト -->       
+  </header>
+  <!-- /.header -->         
+  <div class="wrapper clearfix">
+   <main class="page-main">
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>締日や支給日の変更により月度を移動する場合</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <div class="content-container">    
+     <p>年度の途中などに、締日や支給日が変更となり、月度を移動する必要になった場合の対応方法について解説します。</p>       
+     <div class="content-container_commentary"> 
+      <p class="content_commentary_paragraph1-title">例）当月末締で翌月表示を当月２０日締で当月表示に変更となった場合</p>
+      <div class="content_commentary_paragraph1">
+       <p>８月度の給与は以下の条件で作成されています。</p>
+       <p>・給与期間は７月１日～７月３１日</p>
+       <p>・当月末締</p>
+       <p>・翌月表示</p>
+       <p>これを以下の条件に変更したいとします。</p>
+       <p>・当月２０日締</p>
+       <p>・当月表示</p>
+       <p>すると、８月１日～８月２０日の給与も、８月度として作成されてしまいます。</p>
+       <p>よって、８月度の７月１日～７月３１日の給与が消えてしまいます。</p>
+       <p>そこで、現状の８月度までの給与や賃金を移動して、８月度を空ける必要があります。</p>
+       <div class="interval-bit"></div>
+       <p>ここでは、移動する手順について解説します。</p>
+       <p class="content_commentary_paragraph2-title">｜注意｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>処理を行う前に安全のためにバックアップを行うことを推奨しています。</p>
+        <p>バックアップは、「システム保守メニュー」の画面左の【バックアップ処理】から行います。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->        
+    </div>
+    <!-- /.content-container -->  
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>処理を行う</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents -->        
+    <div class="content-container"> 
+     <img class="img-magnification" src="images/1_2_1-15_1.bmp" alt="処理を行う">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_1.bmp" data-lightbox="lightbox1" data-title="処理を行う"></a>
+     <p class="title-description">賃金管理メニューの賃金管理データ月度移動処理画面より開始します。</p>     
+    </div>
+    <!-- /.content-container --> 
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>移動処理の手順について</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents -->        
+    <div class="content-container"> 
+     <img class="img-magnification" src="images/1_2_1-15_2.bmp" alt="移動処理の手順について">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_2.bmp" data-lightbox="lightbox2" data-title="移動処理の手順について"></a>
+     <p class="title-description">移動処理を行う際の設定方法について説明します。</p>
+     <div class="content-container_commentary">                 
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>               
+      <div class="content_commentary_paragraph1"> 
+       <img class="img-magnification" src="images/1_2_1-15_3.bmp" alt="移動処理の手順について">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_3.bmp" data-lightbox="lightbox3" data-title="移動処理の手順について"></a>               
+       <div class="content_commentary_paragraph2">
+        <p>開始月と終了月を指定します。</p>
+        <p>※ 給与明細データと賃金管理データが存在する期間を指定することを推奨しています。</p>
+        <p>今回の例では１月～８月を指定します。</p>
+        <p class="content_commentary_paragraph3-title">｜注意｜</p>
+        <div class="content_commentary_paragraph3">
+         <p>・２月～８月を指定すると、１月が消えてしまいますのでご注意ください。</p> 
+        </div>
+        <!-- /.content_commentary_paragraph3 -->                                
+       </div>
+       <!-- /.content_commentary_paragraph2 -->                     
+       <img class="img-magnification" src="images/1_2_1-15_4.bmp" alt="移動処理の手順について">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_4.bmp" data-lightbox="lightbox4" data-title="移動処理の手順について"></a>
+       <div class="content_commentary_paragraph2"> 
+        <p>どちらかを選択します。</p>  
+        <p>今回の例では８月度を７月度に移動して８月度を空けたいので、「前月へ移動」を選択します。</p>   
+       </div>
+       <!-- /.content_commentary_paragraph2 -->       
+       <img class="img-magnification" src="images/1_2_1-15_5.bmp" alt="移動処理の手順について">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_5.bmp" data-lightbox="lightbox5" data-title="移動処理の手順について"></a>
+       <div class="content_commentary_paragraph2"> 
+        <p>基本は全てを選択しますが、給与計算していない場合は給与明細は選択不要です。</p>  
+        <p>給与明細と賃金管理が共に存在する場合は、両方を選択します。</p>   
+        <p>給与計算を行っている場合に給与明細を選択しないと、給与計算にてトラブルが発生する可能性があります。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->  
+       <div class="content_commentary_paragraph2">                           
+        <p>完了ボタンをクリックして移動処理を行います。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->        
+      </div>  
+      <!-- /.content_commentary_paragraph1 -->
+      <p class="content_commentary_paragraph1-title">｜移動対象月度で指定した月度以外にデータが存在する場合｜</p>               
+      <div class="content_commentary_paragraph1">   
+       <p>移動指定月度をデータの先頭から指定しなければいけませんので、ご注意ください。</p>
+       <p>上記の場合は、令和５年１月を令和４年１２月に移動を行いますが、令和４年１２月にデータが存在する場合は令和４年１２月に存在したデータが消えてしまいます。</p>
+       <p>よって、令和４年以前も一覧に表示されている場合は、移動対象月度の開始月は一覧に表示されている最初の月度を指定しなければならないということになります。</p>
+       <img class="img-magnification" src="images/1_2_1-15_6.bmp" alt="移動処理の手順について">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-15_6.bmp" data-lightbox="lightbox6" data-title="移動処理の手順について"></a>            
+      </div>     
+      <!-- /.content_commentary_paragraph1 -->             
+     </div>  
+     <!-- /.content-container_commentary -->     
+    </div>
+    <!-- /.content-container -->        
+   </main>
+   <!-- /.page-main -->
+  </div>
+  <!-- /.wrapper clearfix -->
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://codejquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>  
+   <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <script src="js/lity.js"></script> 
+   <!-- /動画表示の為のlity --> 
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer_p">” 移動する手順 ” についての説明は以上です。</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer> 
+ <!-- /.footer -->  
+</html>

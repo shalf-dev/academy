@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+/* --------------------------------
+
+ * base
+
+ * -------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #3f3f3f;
+  font-size: 1.2rem; 
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+
+/* --------------------------------
+
+ * parts
+
+ * -------------------------------- */
+
+.clearfix::after {
+  content: '';
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.anchor {
+  border: 1em solid #fff;
+  padding-top: 1rem;
+}
+
+
+/* --------------------------------
+
+ * header
+
+ * -------------------------------- */
+
+ .header {
+  position: relative;
+  padding: 0.5em 0;
+  left: 0;
+  top: 0;
+  width: 100%;  
+  background-color: #fff;
+  box-shadow: 0 0.3em 0.3em rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  width: 5.5em;
+}
+
+.logo a { 
+  padding: 0.3em 50%;
+  background: url("../images/2018_新ロゴ.png") top 0.1em left 0.2em no-repeat;
+  background-size: 5.2em 1.8em;
+}
+
+.company {
+  display: inline-block;
+  padding: 0 0 0 0.2em;
+  width: 50%;
+  text-align: left;
+}
+
+.company h1 {
+  color: #4f6ba8;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.header_place {
+ display: inline-block;
+}
+
+.global-nav {
+  display: inline-block; 
+  width: 1.8em;
+  text-align: center;
+}
+
+.global-nav a {
+  padding: 0.3em 50%;   
+  background: url("../images/home_navy_32px.png") top 0.4em left 0.1em no-repeat;  
+  background-size: 1.25em 1.25em;
+}
+
+.global-nav a:hover {
+  background: url("../images/home_black_32px.png") top 0.4em left 0.1em no-repeat;  
+  background-size: 1.25em 1.25em;
+}
+
+ /*目次ボタン*/
+.modal-open{  
+	display: inline-block; 
+  padding: 0.3em;
+  border: 0.1em solid #4f6ba8;  
+  width: 3.5em;
+  font-size: 100%; 
+  font-weight: bold;
+  text-align: center;
+  color: #4f6ba8;
+	background: rgba(255,255,255,80%);
+	cursor: pointer;
+}
+
+.modal-open:hover{  
+ border: 0.1em solid #3f3f3f;
+ color: #fff;
+ background: rgba(100,100,100,0.5);  
+ transition: 0.1s;
+}
+
+/*動作*/
+#header-motion.scroll  {
+  position: fixed; 
+  background-color: #f9f9fa; 
+  animation-name: anime; 
+  animation-duration: 0.3s; 
+  opacity: 0.9; 
+ }
+ 
+@keyframes anime { 
+ 0% { 
+  opacity: 0; 
+ } 
+ 100% { 
+  opacity: 0.5; 
+ }
+} 
+
+
+/* --------------------------------
+
+ * wrapper
+
+ * -------------------------------- */
+
+.wrapper {
+  display: block;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+
+/* --------------------------------
+
+ * modal window
+
+ * -------------------------------- */
+
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container {
+  position: fixed;
+  padding: 3em 2em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  font-size: 90%;
+  box-sizing: border-box;
+}
+
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*モーダル枠のタイトル*/
+.modal-content h2 {
+  padding: 0 0 0.5em 0;
+  border-bottom: 0.1em solid #3f3f3f;
+  margin-bottom: 0.8em;
+  width: 25%;
+  text-align: center;
+}
+
+/*モーダル枠の指定*/
+.modal-body {
+ position: relative;
+ display: inline-block;
+ vertical-align: middle;
+ max-width: 25em;
+ width: 94%;
+}
+
+/*モーダルを閉じるボタンの指定*/
+.modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -2em;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #cecccc;
+  transition: 0.1s;
+}  
+
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+  padding: 1.5em 1em;  
+  background: #fff;
+  text-align: left; 
+}
+
+/*目次のデザイン*/
+.modal-content {
+ display: table;  
+}
+
+.modal_ul1 {  
+ display: table-cell;
+ padding: 0 1em;
+ text-align: left;
+}
+
+.modal_ul2 {
+  display: table-cell;
+  padding: 0 1em;  
+  text-align: right;
+}
+
+.modal_ul_li {
+ padding: 0 0.5em;
+ list-style:none;
+} 
+
+.modal_ul_li:hover {
+ background-color: #cdd1f5;
+}
+
+.modal_ul_li p {
+ font-size: 1.4em;
+ line-height: 1.7em;  
+ color: #3f3f3f;
+}
+
+
+/* --------------------------------
+
+ * main
+
+ * -------------------------------- */
+
+main {
+  margin: auto;
+  width: 100%;
+}
+
+.main-title {
+ padding: 1em;
+ width: 100%;
+ font-size: 1.5em;
+ line-height: 1.2em;
+}
+
+.main-title p {
+ font-size: 0.8em;
+}
+
+form {
+ display: block;
+}
+
+fieldset {
+ padding: 1em;
+ border: 1px solid #99a0b0;
+ border-radius: 1em;
+ margin: 2em 1.4em;
+}
+
+legend {
+ display: table;
+}
+
+legend p {
+ font-size: 1.4em;
+}
+
+legend > p + p {
+ display: table-cell;
+ vertical-align: middle;
+}
+
+input[type="text"] {
+  font-size: 1.1em;
+}
+
+.form__fieldset__text {
+ width: 95%; 
+}
+
+.form__fieldset__text:hover {
+ outline: solid 0.2em #666c7c;
+}
+
+.legend__number {
+ display: table-cell;
+ padding: 0 0.2em; 
+ font-size: 1.8em;
+ vertical-align: middle;
+}
+
+input {
+ margin: 1em 0.4em;
+ font-size: 1.5em;
+}
+ 
+.form__fieldset__div label {
+ font-size: 1.2em;
+ vertical-align: middle; 
+}
+
+input[type="checkbox"], input[type="radio"] {
+ accent-color: #666c7c;
+}
+
+.form__fieldset__div:hover {
+ background-color: #cdd1f5;
+}
+
+.form__fieldset__div input:hover {
+ outline: solid 0.1em #666c7c;
+}
+
+
+/* -------------------------------
+
+ * footer
+
+/* -------------------------------*/
+
+.footer {
+  margin: 7em 0 0 0em;
+ }
+ 
+ .footer__p {
+  padding: 1em 0.7em 1em 0.8em;
+  width: 100%;
+  font-size: 1.2em; 
+  line-height: 1.2em;
+  color: #4f6ba8;
+ }
+ 
+ .footer__div {
+  display: flex;
+  align-items: center;
+ }
+ 
+ .footer__div::before {
+  content: '';
+  height: 0.05em;
+  background-color: #4f6ba8;
+  flex-grow: 4;
+ }
+ 
+ .footer__div::after {
+  content: '';
+  height: 0.05em;
+  background-color: #4f6ba8;
+  flex-grow: 1;
+ }
+ 
+ .copyright {
+  padding: 1.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+ }

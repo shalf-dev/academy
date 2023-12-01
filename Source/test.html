@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>シャルフアカデミー</title>
+  <!--フォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!--スタイルシート-->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/2_test.css">
+　<!--画像拡大の為のLightbox2-->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+ </head>
+ <body>
+  <header id="header-motion" class="header">
+   <div class="header-inner">
+    <div class="logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>    
+    <div class="company"><h1>SHALF ACADEMY</h1></div>         
+    <div class="header_place">
+     <nav class="global-nav"><a href="0_main.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="modal-open">目次</div>  
+    </div>
+   </div>    
+  </header>    
+  <div class="wrapper clearfix">			
+   <main class="page-main">   
+    <!--モーダル本体-->
+    <div class="modal-container">
+     <div class="modal-body">
+      <!-- 閉じるボタン -->
+      <div class="modal-close">&#10006</div>
+       <!-- モーダル内のコンテンツ -->
+       <div class="modal-content">
+        <div><h2>目　次</h2></div>  
+        <div>
+        <ul class="modal_ul1">
+         <li class="modal_ul_li"><a href="#"><p>ページTOP</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_1"><p>問題　①</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_2"><p>問題　②</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_3"><p>問題　③</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_4"><p>問題　④</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_5"><p>問題　⑤</p></a></li>                                                                                                                                                                                                                     
+        </ul>  
+        <ul class="modal_ul2">
+         <li class="modal_ul_li"><a href="#fieldset_6"><p>問題　⑥</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_7"><p>問題　⑦</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_8"><p>問題　⑧</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_9"><p>問題　⑨</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_10"><p>問題　⑩</p></a></li>
+         <li class="modal_ul_li"><a href="#fieldset_11"><p>問題　⑪</p></a></li>
+        </ul>               
+       </div>
+      </div>  
+     </div>
+    </div>   
+    <div class="main-title">
+     <h1>理解度テスト（社員を雇い入れる）</h1>
+　　 <p>新たに社員を雇い入れる場合に行う必要な書類や手続きについての理解度テストを行います。必要事項を入力してしてください。また、テスト内容は選択方式です。</p>
+    </div>
+    <form action="">
+     <fieldset>
+      <legend><p>お客様を記入してください</p></legend>
+      <input type="text" placeholder="お客様を入力" name="answer-user" class="form_fieldset_text">
+     </fieldset>
+     <fieldset>
+      <legend><p>事務所名を記入してください</p></legend>
+      <input type="text" placeholder="事務所名を入力" name="answer-office" class="form_fieldset_text">
+     </fieldset>
+     <fieldset>
+      <legend><p>氏名を記入してください</p></legend>
+      <input type="text" placeholder="氏名を入力" name="answer-name" class="form_fieldset_text">
+     </fieldset>
+     <a id="fieldset_1" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">①</p><p>入社前に必要となる社員情報を集める方法として正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check1-1" name="check1-1">
+       <label for="check1-1">社員に記入用紙を渡して記入してもらう</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check1-2" name="check1-2">
+       <label for="check1-2">社員情報は集めなくてもよい</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check1-3" name="check1-3">
+       <label for="check1-3">Esia-Zeroより記入してもらう</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check1-4" name="check1-4">
+       <label for="check1-4">社員が直接、社労法務システムに入力してもらう</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check1-5" name="check1-5">
+       <label for="check1-5">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_2" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">②</p><p>集めた社員情報を登録する方法として正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check2-1" name="check2-1">
+       <label for="check2-1">社員が記入した用紙を回収して担当者が登録する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check2-2" name="check2-2">
+       <label for="check2-2">社員に確認しながら担当者が登録する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check2-3" name="check2-3">
+       <label for="check2-3">Esia-Zeroより自動的に登録する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check2-4" name="check2-4">
+       <label for="check2-4">社員が直接、社労法務システムに入力してもらう</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check2-5" name="check2-5">
+       <label for="check2-5">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_3" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">③</p><p>会社が用意して社員に渡す書類として正しくないものをを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-1" name="check3-1">
+       <label for="check3-1">雇用契約書</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-2" name="check3-2">
+       <label for="check3-2">労働者名簿</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-3" name="check3-3">
+       <label for="check3-3">扶養控除（異動）申告書</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-4" name="check3-4">
+       <label for="check3-4">被扶養者異動届</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-5" name="check3-5">
+       <label for="check3-4">資格取得届</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check3-6" name="check3-6">
+       <label for="check3-6">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_4" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">④</p><p>大卒者の社員が用意する書類として無条件に必要な書類を全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-1" name="check4-1">
+       <label for="check4-1">雇用保険被保険者証</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-2" name="check4-2">
+       <label for="check4-2">基礎年金番号通知書又は年金手帳</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-3" name="check4-3">
+       <label for="check4-3">マイナンバーカード</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-4" name="check4-4">
+       <label for="check4-4">銀行振込情報</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-5" name="check4-5">
+       <label for="check4-5">源泉徴収票</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-6" name="check4-6">
+       <label for="check4-6">住民票記載事項証明書</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check4-7" name="check4-7">
+       <label for="check4-7">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_5" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑤</p><p>社会保険の加入手続きとして正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-1" name="check5-1">
+       <label for="check5-1">社員は無条件に加入となるので速やかに資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-2" name="check5-2">
+       <label for="check5-2">社員の加入条件を確認して条件を満たしているのでは速やかに資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-3" name="check5-3">
+       <label for="check5-3">加入条件を満たしているか分からないので、とりあえず資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-4" name="check5-4">
+       <label for="check5-4">単身者なので被扶養者異動届の提出はしなくてもよい</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-5" name="check5-5">
+       <label for="check5-5">後から扶養家族がいることがわかったが期限を過ぎているので被扶養者異動届の提出はしない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check5-6" name="check5-6">
+       <label for="check5-6">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_6" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑥</p><p>労働保険の加入手続きとして正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check6-1" name="check6-1">
+       <label for="check6-1">社員は無条件に加入となるので速やかに資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check6-2" name="check6-2">
+       <label for="check6-2">社員の加入条件を確認して条件を満たしているので速やかに資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check6-3" name="check6-3">
+       <label for="check6-3">加入条件を満たしているか分からないので、とりあえず資格取得届を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check6-4" name="check6-4">
+       <label for="check6-4">雇用保険は全額会社が支払うので特別に行うことはない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check6-5" name="check6-5">
+       <label for="check6-5">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_7" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑦</p><p>住民税手続きとして正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check7-1" name="check7-1">
+       <label for="check7-1">普通徴収として住民税を納付していたので特別徴収切替届出書を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check7-2" name="check7-2">
+       <label for="check7-2">会社として特別徴収は行わないので何もしなくてもよい</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check7-3" name="check7-3">
+       <label for="check7-3">中途入社の社員で特別徴収を継続する場合は給与所得者異動届出書を提出する</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check7-4" name="check7-4">
+       <label for="check7-4">住民税は支払わなくてもよいので特別に行うことはない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check7-5" name="check7-5">
+       <label for="check7-5">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_8" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑧</p><p>手続きが終わった時に社員に渡すものとして正しくないものを１つだけ選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio8-1" name="radio8">
+       <label for="radio8-1">健康保険証</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio8-2" name="radio8">
+       <label for="radio8-2">雇用保険被保険者証</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio8-3" name="radio8">
+       <label for="radio8-3">被保険者資格取得確認及び標準報酬決定通知書</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio8-4" name="radio8">
+       <label for="radio8-4">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_9" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑨</p><p>７０歳以上７５歳未満の社員が入社した場合に行う手続きとして正しいものを１つだけ選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio9-1" name="radio9">
+       <label for="radio9-1">健康保険・厚生年金保険資格取得届の手続きを行う</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio9-2" name="radio9">
+       <label for="radio9-2">厚生年金保険７０歳以上被用者該当届の手続きを行う</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio9-3" name="radio9">
+       <label for="radio9-3">健康保険・厚生年金保険資格取得届と厚生年金保険７０歳以上被用者該当届の手続きを行う</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio9-4" name="radio9">
+       <label for="radio9-4">手続きは必要ない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio9-5" name="radio9">
+       <label for="radio9-5">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_10" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑩</p><p>７５歳以上の社員が入社した場合に行う手続きとして正しいものを全て選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check10-1" name="check10-1">
+       <label for="check10-1">資格取得届</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check10-2" name="check10-2">
+       <label for="check10-2">７０歳以上被用者該当届</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check10-3" name="check10-3">
+       <label for="check10-3">７５歳以上健康保険と厚生年金保険の加入義務はないので特別に行うことはない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="checkbox" id="check10-4" name="check10-4">
+       <label for="check10-4">わからない</label>
+      </div>
+     </fieldset>
+     <a id="fieldset_11" class="anchor"></a>
+     <fieldset>
+      <legend><p class="legend_number">⑪</p><p>外国籍の社員が入社した場合に申請するローマ字氏名届について、正しいものを１つだけ選んでください。</p></legend>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio11-1" name="radio11">
+       <label for="radio11-1">外国籍者にはマイナンバーは付番されないので必ず申請が必要</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio11-2" name="radio11">
+       <label for="radio11-2">外国籍者は希望すればマイナンバーが付番されるので、マイナンバーカードと基礎年金番号が結び付いていれば申請する必要はない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio11-3" name="radio11">
+       <label for="radio11-3">外国籍者でも日本国内で住民票があればマイナンバーは付番されるので、基礎年金番号が結び付いていれば申請する必要はない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio11-4" name="radio11">
+       <label for="radio11-4">外国籍者でも日本国内で住民票があればマイナンバーは付番されるので、基礎年金番号が結び付いていなくても申請する必要はない</label>
+      </div>
+      <div class="form_fieldset_div">
+       <input type="radio" id="radio11-5" name="radio11">
+       <label for="radio11-5">わからない</label>
+      </div>
+     </fieldset>
+   </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　<!--画像拡大の為のLightbox2-->
+  <script src="JS/1_lightbox.js"></script>
+ </body>
+ <footer class="footer">
+  <p class="footer_p">以上で、 ” 社員を雇い入れる時 ” についてのTestは終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>   
+</html>

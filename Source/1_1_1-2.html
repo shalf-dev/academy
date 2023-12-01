@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!--フォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!--スタイルシート-->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+　<!--画像拡大の為のLightbox2-->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+  <!--動画表示の為のlity-->
+  <link rel="stylesheet" href="css/lity.css">  
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header_inner">
+    <div class="header_logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>
+    </div>
+    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header_place">
+     <nav class="header_global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header_modal-open">目次</div>  
+    </div>  
+   </div>
+   <!--ぱんくずリスト-->
+   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>  
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_1_shahoRoho.html">
+      <span itemprop="name">社会保険と雇用保険業務</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="1_1_1.html">
+         <span itemprop="name">社員を雇い入れる</span>
+        </a>
+        <meta itemprop="position" content="3" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#">
+         <span itemprop="name">社員情報を登録する</span>
+        </a>
+        <meta itemprop="position" content="4" />
+    </li>          
+   </ol> 
+   <!--ぱんくずリスト-->       
+  </header>
+  <div class="interval"></div> 
+  <div class="interval-bit"></div>
+  <div class="interval-bit"></div>         
+  <div class="wrapper clearfix">
+   <main class="page-main">
+    <div class="main-title title-color-detail table-of-contents">
+    　<h2>目　　　次</h2>
+    </div>    
+    <div class="article-container">
+     <div class="articles contents-list contents-list-detail">
+      <span>１.</span><a href="#content1">社員情報を登録する</a>
+      <p>入社する社員の個人情報を登録して各種手続きができるようにします。<br>また、HR-Zeroを使用している場合は不足項目の登録を行います。<br>個人情報を登録することで入社に必要な書類の印刷ができるようになります。</p>
+      <ul class="contents-list_ul">
+       <span>１-１</span><a href="#content1">社労法務システムにて個人情報を登録する</a>
+       <li><span>①</span><a href="#content1">新たに社員を登録する</a></li>
+       <li><span>②</span><a href="#content1-2">基本情報を登録する</a></li>
+       <li><span>③</span><a href="#content1-3">給与情報を登録する</a></li>
+       <li><span>④</span><a href="#content1-4">所得税・住民税情報を登録する</a></li>
+       <li><span>⑤</span><a href="#content1-5">社会保険情報を登録する</a></li>
+       <li><span>⑥</span><a href="#content1-6">労働保険情報を登録する</a></li>
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-２</span><a href="#content2">HR-Zeroより社労法務システムの個人情報を受信する</a>                
+       <li><span>①</span><a href="#content2">HR-Zeroより受信する</a></li>
+       <li><span>②</span><a href="#content2-2">社労法務システムにて不足している個人情報を登録する</a></li>
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-３</span><a href="#content3">その他項目を登録する</a>
+       <li><span>①</span><a href="#content3">外国人情報を登録する</a></li>
+       <li><span>②</span><a href="#content3-2">家族情報を登録する</a></li>
+       <li><span>③</span><a href="#content3-3">７０歳以上被用者情報を登録する</a></li>
+       <li><span>④</span><a href="#content3-4">雇用保険のその他情報を登録する</a></li>
+       <li><span>⑤</span><a href="#content3-5">月単位で住民税を登録する方法</a></li>       
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-４</span><a href="#content4">項目の入力方法</a>
+       <li><span>①</span><a href="#content4">生年月日等の日付</a></li>
+       <li><span>②</span><a href="#content4-2">住所</a></li>
+      </ul>  
+      <ul class="contents-list_ul">
+       <span>１-５</span><a href="#content5">個人情報を取り込んで登録する</a>
+      </ul>         
+     </div>   
+    </div>
+    <!--モーダル本体-->
+    <div class="modal-container">
+     <div class="modal-body">
+      <!-- 閉じるボタン -->
+      <div class="modal-close">&#10006</div>
+      <!-- モーダル内のコンテンツ -->
+      <div class="modal-content">
+       <div>
+        <h2>目　次</h2>
+       </div>    
+       <div class="article-container">
+        <div class="articles contents-list contents-list-detail">
+         <ul class="contents-list_ul">
+          <span>&#9650;</span><a href="#">ページトップ</a>
+         </ul>            
+         <ul class="contents-list_ul">
+          <span>１-１</span><a href="#content1">社労法務システムにて個人情報を登録する</a>
+          <li><span>①</span><a href="#content1">新たに社員を登録する</a></li>
+          <li><span>②</span><a href="#content1-2">基本情報を登録する</a></li>
+          <li><span>③</span><a href="#content1-3">給与情報を登録する</a></li>
+          <li><span>④</span><a href="#content1-4">所得税・住民税情報を登録する</a></li>
+          <li><span>⑤</span><a href="#content1-5">社会保険情報を登録する</a></li>
+          <li><span>⑥</span><a href="#content1-6">労働保険情報を登録する</a></li>
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-２</span><a href="#content2">HR-Zeroより社労法務システムの個人情報を受信する</a>                
+          <li><span>①</span><a href="#content2">HR-Zeroより受信する</a></li>
+          <li><span>②</span><a href="#content2-2">社労法務システムにて不足している個人情報を登録する</a></li>
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-３</span><a href="#content3">その他項目を登録する</a>
+          <li><span>①</span><a href="#content3">外国人情報を登録する</a></li>
+          <li><span>②</span><a href="#content3-2">家族情報を登録する</a></li>
+          <li><span>③</span><a href="#content3-3">７０歳以上被用者情報を登録する</a></li>
+          <li><span>④</span><a href="#content3-4">雇用保険のその他情報を登録する</a></li>
+          <li><span>⑤</span><a href="#content3-5">月単位で住民税を登録する方法</a></li>       
+         </ul>
+         <ul class="contents-list_ul">
+          <span>１-４</span><a href="#content4">項目の入力方法</a>
+          <li><span>①</span><a href="#content4">生年月日等の日付</a></li>
+          <li><span>②</span><a href="#content4-2">住所</a></li>
+         </ul>  
+         <ul class="contents-list_ul">
+          <span>１-５</span><a href="#content5">個人情報を取り込んで登録する</a>
+         </ul>       
+        </div>   
+       </div>
+      </div>
+     </div>
+    </div>
+    <a id="content1" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>社労法務システムで個人情報を登録する</h2>
+     <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
+    </div>
+    <p class="title-description">社労法務システムにて入社した社員の個人情報を登録する流れとポイント</p>
+　　<div class="content-container">
+     <h4>① 新たに社員を登録する</h4>
+     <p>新たに社員を登録するために、個人基本情報新規登録にて登録を行います。</p>      
+     <img class="img-magnification" src="images/1_1_1-2_1.bmp" alt="新規登録を行う手順">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_1.bmp" data-lightbox="lightbox1" data-title="新規登録を行う手順"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>新規登録を行う手順</p>
+       <p class="paragraph">① 処理コードに「１」を入力するか、新規社員追加登録を選択して実行ボタンをクリックする</p>       
+       <p class="paragraph">② ツールバーの新規社員追加登録（<span></span>）をクリックする</p>
+      </div>      
+     </div>
+    </div>    
+    <a id="content1-2" class="anchor anchor-detail"></a>
+　　<div class="content-container">
+     <h4>② 基本情報を登録する</h4>
+     <p>氏名や性別、生年月日などの基本情報を登録します。</p>
+     <img class="img-magnification" src="images/1_1_1-2_2.bmp" alt="個人基本情報_基本情報タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_2.bmp" data-lightbox="lightbox2" data-title="個人基本情報_基本情報タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 氏名、フリガナ、性別、生年月日、入社日付、住所、電話番号などの基本情報は必ず入力する</p>
+       <p>② 市町村コードは郵便番号等で検索を行うと自動的にセットされますが、直接入力した場合は選択します。</p>
+       <p class="paragraph">市町村コードは給与計算での住民税納付や年末調整に使用されます<br>但し、共通情報管理の市区町村マスタ登録に登録されていない場合は市区町村名が表示されませんので市区町村マスタ登録にて登録を行います（後からでも登録できます）。</p>       
+       <p>③ 住民税納付先は引っ越し等で１月１日時点で納付する市区町村と現在の市区町村が異なる場合に納付する市区町村などを入力する</p>
+       <p>④ 部門コードは事業所にて部門を管理している場合は入力する</p>
+       <p class="paragraph">部門内処理順番号は並び替えに使用されるので部門管理をする場合は重複しないように入力する</p>
+       <p>⑤ 住居コード、職位コード、資格コードは給与計算等に使用されますので必要に応じて入力する</p>
+       <p class="paragraph">職位コードは労使協定の代表者と労災申請の確認者の職名にも使用されます。</p>
+       <p>⑥ 外国籍者は外国籍の場合にチェックを付けることで入力できます。</p>
+       <p class="paragraph">入力については、<a class="content_commentary_a" href="#content6">外国人情報を登録する</a>を参照</p>
+       <p>⑦ 住民票住所は現住所が住民票と異なる場合に入力する</p>
+       <p class="paragraph">健康保険・厚生年金保険の資格取得届と被扶養者異動届等で個人番号が記入できない場合に使用します。</p>
+      </div>                
+     </div>
+    </div>
+    <a id="content1-3" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>③ 給与情報を登録する</h4>
+     <p>給与計算等で使用される給与区分や基本給、通勤手当などの情報を登録します。</p>
+     <img class="img-magnification" src="images/1_1_1-2_3.bmp" alt="個人基本情報_給与情報タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_3.bmp" data-lightbox="lightbox3" data-title="個人基本情報_給与情報タブ"></a>
+     <div class="content-container_commentary"> 
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 給与区分は賃金を扱う処理にも使用されるので必ず入力する</p>
+       <p>② 給与計算を行う場合は基本給や通勤手当など他の項目も必要に応じて入力する</p>       
+       <p>③ 所定労働時間設定は給与計算を行う際の所定労働日数と時間数の設定に使用されます。</p>
+       <p class="paragraph">・事業所年平均設定 → １年間の平均で設定されます。</p>
+       <p class="paragraph">・事業所当月実所定 → 支給月の実際の日数と時間数で設定されます。</p>
+       <p class="paragraph">・本人所定　　　　 → パートやアルバイトなどで本人の勤務状況に合わせた日数と時間数を入力する</p>
+       <p>④ 通勤手当は給与計算で通勤手当を支給する場合に入力する</p>       
+       <p>⑤ 給与体系コードは給与計算において正社員とパートなどで支給される項目等が違う場合に様々な給与項目設定ができますので給与計算の状況により入力します。</p>
+      </div>           
+     </div>        
+    </div>
+    <a id="content1-4" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>④ 所得税・住民税情報を登録する</h4>
+     <p>給与計算や年末調整等で使用される所得税と住民税の情報を登録します。</p>
+     <img class="img-magnification" src="images/1_1_1-2_4.bmp" alt="個人基本情報_所得税・住民税タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_4.bmp" data-lightbox="lightbox4" data-title="個人基本情報_所得税・住民税タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 所得税課税区分は一般的には甲欄を選択します。</p>
+       <p class="paragraph">二か所以上で勤務している場合は乙欄になる場合がありますので本人に確認します。</p>
+       <p>② 所得税課税区分は年度により登録されるので、本人と配偶者、家族の情報を入力します。</p>       
+       <p>③ 扶養親族（除配偶者）は人数を入力します。</p>
+       <p class="paragraph">・家族情報を登録することで自動的に設定することができます。</p>
+       <p class="paragraph">・家族情報の登録は、<a class="#content_commentary_a" href="#content6">家族情報を登録する</a>を参照</p>
+       <p class="paragraph">・但し、登録時に家族を登録しなかった場合に結婚や出産等により家族が増えたりした場合に家族を登録すると扶養親族の人数が変わってしまうので注意すること</p>
+       <p>④ 住民税を通常月と端数月で入力します。</p>
+       <p class="paragraph">・途中入社などで通常月と端数月で入力が困難な場合等は月単位に登録することも可能です。</p>
+       <p class="paragraph">・月単位の登録は、<a class="content_commentary_a" href="#content6">月単位で住民税を登録する方法</a>を参照</p>       
+      </div>              
+     </div>        
+    </div>
+    <a id="content1-5" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>⑤ 社会保険情報を登録する</h4>
+     <p>健康保険と厚生年金保険の加入状況と標準報酬月額情報を登録します。</p>
+     <img class="img-magnification" src="images/1_1_1-2_5.bmp" alt="個人基本情報_社会保険情報タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_5.bmp" data-lightbox="lightbox5" data-title="個人基本情報_社会保険情報タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 健康保険の加入状況や健保番号（被保険者整理番号）、資格取得年月日などを入力します。</p>       
+       <p class="paragraph">給与計算を行う場合は保険料区分と介護保険区分は必ず入力します。</p>
+       <p>② 厚生年金保険の加入状況や基礎年金番号、資格取得年月日、資格取得区分などを入力します。</p>
+       <p class="paragraph">給与計算を行う場合は保険料区分は必ず入力します。</p>
+       <p>③ 短時間労働者は事業所が特定適用事業所の場合で短時間労働者に該当する場合は入力します。</p>
+       <p class="paragraph">事業所が特定適用事業所でない場合は入力できません。</p>       
+       <p>④ 資格取得時賃金は資格取得届を申請する際に必要となりますので入力します。</p>
+       <p class="paragraph">通貨と現物を入力します。</p>
+       <p>⑤ 賞与を年４回以上支給する場合</p>
+       <p class="paragraph">・この場合の賞与は報酬として扱われるために標準報酬月額の基礎となります。</p>
+       <p class="paragraph">・年間に支払われる額を１２で割った金額を算定・月変などで各月に加算します。</p>
+       <p class="paragraph">・よって、賞与年４回以上の見込額に上記金額を入力します。</p>
+       <p class="paragraph">・また、資格取得届の通貨によるものの額にも含める必要があるので、通貨にも加算して入力します。</p>
+       <p>⑥ 標準報酬月額は資格取得時賃金を入力して「標準報酬月額（最新）に入力」をクリックする</p>
+       <p class="paragraph">標準報酬月額は履歴管理（最新・前回・前々回）にて管理されています。</p>       
+       <p>⑦ ７０歳以上の方が入社されて７０歳以上被用者に該当する場合は入力します。</p>
+       <p class="paragraph">７０歳以上被用者の登録は、<a class="content_commentary_a" href="#content6">７０歳以上被用者情報を登録する</a>を参照</p>
+      </div>        
+     </div>        
+    </div>
+    <a id="content1-6" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>⑥ 労働保険情報を登録する</h4>
+     <p>健康保険と厚生年金保険の加入状況と標準報酬月額情報を登録します。</p>     
+     <img class="img-magnification" src="images/1_1_1-2_6.bmp" alt="個人基本情報_労働保険タブ">     
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_6.bmp" data-lightbox="lightbox6" data-title="個人基本情報_労働保険タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 雇用保険関係は加入状況を含めて必ず入力します。</p>       
+       <p class="paragraph">・被保険者区分にて加入状況を入力します。</p>
+       <p class="paragraph">・雇用保険の資格取得区分と被保険者番号は下記を参照のこと</p>       
+       <p class="paragraph">　→ 初めて加入される場合または、被保険者でなくなってから７年以上が経過する場合</p>
+       <p class="paragraph">　　 ・・・資格取得区分は「新規」、被保険者番号は「0000-000000-0」を入力</p>
+       <p class="paragraph">　→ 再就職等で再加入される場合</p>       
+       <p class="paragraph">　　 ・・・資格取得区分は「再取得」、被保険者番号は被保険者証より入力</p>
+       <p class="paragraph">・保険料区分は給与計算を行う場合は必ず入力します。</p>
+       <p class="paragraph">・所定時間・契約期間・その他情報は、<a class="content_commentary_a" href="#content6">雇用保険のその他情報を登録する</a>を参照</p>
+       <p>② 労働保険関係加入状況を含めて必ず入力します。</p>
+       <p class="paragraph">・被保険者区分にて加入状況を入力します。</p>       
+       <p class="paragraph">・労災業種は事業所情報の「主となる労災業種」が最初に表示されます。</p>
+       <p class="paragraph">　→ 複数の業種が存在する会社の場合は該当する業種を選択します。</p>
+      </div>        
+     </div>        
+    </div>            
+    <a id="content2" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>HR-Zeroより社労法務システムの個人情報を受信する</h2>
+    </div>
+　  <div class="content-container">
+     <h4>① HR-Zeroより受信する</h4>
+     <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>
+     <div class="interval-bit"></div>
+     <p>HR-Zero（My-Zero）より個人情報を受信する流れとポイント</p>     
+     <img class="img-magnification" src="images/1_1_1-2_7.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_7.bmp" data-lightbox="lightbox7" data-title="HR-Zero_データ受信"></a>
+     <p>データ受信（イージアZeroから社労法務システムへ）をクリック</p>      
+     <img class="img-magnification" src="images/1_1_1-2_8.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_8.bmp" data-lightbox="lightbox8" data-title="HR-Zero_データ受信"></a>
+     <p>事業所・個人データをクリック</p>           
+     <img class="img-magnification" src="images/1_1_1-2_9.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_9.bmp" data-lightbox="lightbox9" data-title="HR-Zero_データ受信"></a>
+     <p>お客様番号とユーザーIDを確認して、パスワードを入力</p>
+     <img class="img-magnification" src="images/1_1_1-2_10.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_10.bmp" data-lightbox="lightbox10" data-title="HR-Zero_データ受信"></a>
+     <p>社労法務システムに受信する事業所を選択して検索をクリックします。</p>   
+     <img class="img-magnification" src="images/1_1_1-2_11.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_11.bmp" data-lightbox="lightbox11" data-title="HR-Zero_データ受信"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 受信する社員を選択します。</p> 
+       <p>② 家族情報も受信する</p>      
+       <p class="paragraph">配偶者や家族などの情報も受信する場合はチェックを付けます。</p>
+       <p>③ 「Esia-Zeroから受信」をクリック</p>      
+      </div>     
+     </div>
+     <img class="img-magnification" src="images/1_1_1-2_12.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_12.bmp" data-lightbox="lightbox12" data-title="HR-Zero_データ受信"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 退職者の離職データについての注意喚起です。</p>      
+       <p class="paragraph">「今後このメッセージを表示しない」にチェックを付けると今後は表示されません。</p>      
+      </div>     
+     </div> 
+     <img class="img-magnification" src="images/1_1_1-2_13.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_13.bmp" data-lightbox="lightbox13" data-title="HR-Zero_データ受信"></a>
+     <div class="content-container_commentary">        
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 選択された個人を確認します。</p>      
+       <p>② 内容について不備がないか確認します。</p>
+       <p>③ 本人情報は個人情報から確認します。</p>
+       <p>④ 配偶者や家族情報は家族情報から確認します。</p>
+       <p>⑤ 問題なければ「取込」をクリック</p>
+      </div>     
+     </div> 
+     <img class="img-magnification" src="images/1_1_1-2_14.bmp" alt="HR-Zero_データ受信">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_14.bmp" data-lightbox="lightbox14" data-title="HR-Zero_データ受信"></a>
+     <div class="content-container_commentary">     
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 受信結果を確認します。</p>      
+      </div>     
+     </div>                 
+    </div>    
+    <a id="content2-2" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>② 社労法務システムにて不足している個人情報を登録する</h4>
+     <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>     
+     <div class="content-container_commentary"> 
+      <p>　HR-Zero（My-Zero）より受信した個人情報より不足している情報を登録するポイント</p>                
+      <p class="content_commentary_paragraph1-title">① 基本情報を登録する</p>
+      <div class="content_commentary_paragraph1">       
+       <p>氏名や性別、生年月日などの基本情報を登録します。</p>     
+       <img class="img-magnification" src="images/1_1_1-2_15.bmp" alt="個人基本情報_基本情報タブ"> 
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_15.bmp" data-lightbox="lightbox15" data-title="個人基本情報_基本情報タブ"></a>     
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 氏名、フリガナ、性別、生年月日、入社日付、住所、電話番号などの基本情報は必ず入力する</p>
+        <p>② 市町村コードは郵便番号等で検索を行うと自動的にセットされますが、直接入力した場合は選択します。</p>
+        <p class="paragraph">市町村コードは給与計算での住民税納付や年末調整に使用されます<br>但し、共通情報管理の市区町村マスタ登録に登録されていない場合は市区町村名が表示されませんので市区町村マスタ登録にて登録を行います（後からでも登録できます）。</p>
+        <p>③ 住民税納付先は引っ越し等で１月１日時点で納付する市区町村と現在の市区町村が異なる場合に納付する市区町村などを入力する</p>
+        <p>④ 部門コードは事業所にて部門を管理している場合は入力する</p>
+        <p class="paragraph">部門内処理順番号は並び替えに使用されるので部門管理をする場合は重複しないように入力する</p>
+        <p>⑤ 住居コード、職位コード、資格コードは給与計算等に使用されますので必要に応じて入力する</p>
+        <p class="paragraph">職位コードは労使協定の代表者と労災申請の確認者の職名にも使用されます。</p>
+        <p>⑥ 外国籍者は外国籍の場合にチェックを付けることで入力できます。</p>
+        <p class="paragraph">入力については、<a class="content_commentary_a" href="#content6">外国人情報を登録する</a>を参照</p>
+        <p>⑦ 住民票住所は現住所が住民票と異なる場合に入力する</p>
+        <p class="paragraph">健康保険・厚生年金保険の資格取得届と被扶養者異動届等で個人番号が記入できない場合に使用します。</p>
+       </div>                
+      </div>
+     </div>           
+    </div> 
+    <a id="content2-3" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>③ 給与情報を登録する</h4>
+     <p>給与計算等で使用される給与区分や基本給、通勤手当などの情報を登録します。</p>          
+     <img class="img-magnification" src="images/1_1_1-2_16.bmp" alt="個人基本情報_給与情報タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_16.bmp" data-lightbox="lightbox16" data-title="個人基本情報_給与情報タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 給与区分は賃金を扱う処理にも使用されるので必ず入力する</p>
+       <p>② 給与計算を行う場合は基本給や通勤手当など他の項目も必要に応じて入力する</p>       
+       <p>③ 所定労働時間設定は給与計算を行う際の所定労働日数と時間数の設定に使用されます。</p>
+       <p class="paragraph">・事業所年平均設定 → １年間の平均で設定されます。</p>
+       <p class="paragraph">・事業所当月実所定 → 支給月の実際の日数と時間数で設定されます。</p>
+       <p class="paragraph">・本人所定　　　　 → パートやアルバイトなどで本人の勤務状況に合わせた日数と時間数を入力する</p>
+       <p>④ 通勤手当は給与計算で通勤手当を支給する場合に入力する</p>       
+       <p>⑤ 給与体系コードは給与計算において正社員とパートなどで支給される項目等が違う場合に様々な給与項目設定ができますので給与計算の状況により入力します。</p>
+      </div>           
+     </div>        
+    </div>
+    <a id="content2-4" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>④ 所得税・住民税情報を登録する</h4>
+     <p>給与計算や年末調整等で使用される所得税と住民税の情報を登録します。</p>               
+     <img class="img-magnification" src="images/1_1_1-2_4.bmp" alt="個人基本情報_所得税・住民税タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_4.bmp" data-lightbox="lightbox17" data-title="個人基本情報_所得税・住民税タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 所得税課税区分は一般的には甲欄を選択します。</p>
+       <p class="paragraph">二か所以上で勤務している場合は乙欄になる場合がありますので本人に確認します。</p>
+       <p>② 所得税課税区分は年度により登録されるので、本人と配偶者、家族の情報を入力します。</p>       
+       <p>③ 扶養親族（除配偶者）は人数を入力します。</p>
+       <p class="paragraph">・家族情報を登録することで自動的に設定することができます。</p>
+       <p class="paragraph">・家族情報の登録は、<a class="content_commentary_a" href="#content6">家族情報を登録する</a>を参照</p>
+       <p class="paragraph">・但し、登録時に家族を登録しなかった場合に結婚や出産等により家族が増えたりした場合に家族を登録すると扶養親族の人数が変わってしまうので注意すること</p>
+       <p>④ 住民税を通常月と端数月で入力します。</p>
+       <p class="paragraph">・途中入社などで通常月と端数月で入力が困難な場合等は月単位に登録することも可能です。</p>
+       <p class="paragraph">・月単位の登録は、<a class="content_commentary_a" href="#content6">月単位で住民税を登録する方法</a>を参照</p>       
+      </div>              
+     </div>
+    </div>    
+    <a id="content2-5" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>⑤ 社会保険情報を登録する</h4>
+     <p>健康保険と厚生年金保険の加入状況と標準報酬月額情報を登録します。</p>               
+     <img class="img-magnification" src="images/1_1_1-2_5.bmp" alt="個人基本情報_社会保険情報タブ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_5.bmp" data-lightbox="lightbox18" data-title="個人基本情報_社会保険情報タブ"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 健康保険の加入状況や健保番号（被保険者整理番号）、資格取得年月日などを入力します。</p>       
+       <p class="paragraph">給与計算を行う場合は保険料区分と介護保険区分は必ず入力します。</p>
+       <p>② 厚生年金保険の加入状況や基礎年金番号、資格取得年月日、資格取得区分などを入力します。</p>
+       <p class="paragraph">給与計算を行う場合は保険料区分は必ず入力します。</p>
+       <p>③ 短時間労働者は事業所が特定適用事業所の場合で短時間労働者に該当する場合は入力します。</p>
+       <p class="paragraph">事業所が特定適用事業所でない場合は入力できません。</p>       
+       <p>④ 資格取得時賃金は資格取得届を申請する際に必要となりますので入力します。</p>
+       <p class="paragraph">通貨と現物を入力します。</p>
+       <p>⑤ 賞与を年４回以上支給する場合</p>
+       <p class="paragraph">・この場合の賞与は報酬として扱われるために標準報酬月額の基礎となります。</p>
+       <p class="paragraph">・年間に支払われる額を１２で割った金額を算定・月変などで各月に加算します。</p>
+       <p class="paragraph">・よって、賞与年４回以上の見込額に上記金額を入力します。</p>
+       <p class="paragraph">・また、資格取得届の通貨によるものの額にも含める必要があるので、通貨にも加算して入力します。</p>
+       <p>⑥ 標準報酬月額は資格取得時賃金を入力して「標準報酬月額（最新）に入力」をクリックする</p>
+       <p class="paragraph">標準報酬月額は履歴管理（最新・前回・前々回）にて管理されています。</p>       
+       <p>⑦ ７０歳以上の方が入社されて７０歳以上被用者に該当する場合は入力します。</p>
+       <p class="paragraph">７０歳以上被用者の登録は、<a class="content_commentary_a" href="#content6">７０歳以上被用者情報を登録する</a>を参照</p>
+      </div>        
+     </div>       
+    </div> 
+    <a id="content2-6" class="anchor anchor-detail"></a>
+　  <div class="content-container">
+     <h4>⑥ 労働保険情報を登録する</h4>
+     <p>健康保険と厚生年金保険の加入状況と標準報酬月額情報を登録します。</p>                    
+     <img class="img-magnification" src="images/1_1_1-2_6.bmp" alt="個人基本情報_労働保険タブ"> 
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_6.bmp" data-lightbox="lightbox19" data-title="個人基本情報_労働保険タブ"></a>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 雇用保険関係は加入状況を含めて必ず入力します。</p>       
+       <p class="paragraph">・被保険者区分にて加入状況を入力します。</p>
+       <p class="paragraph">・雇用保険の資格取得区分と被保険者番号は下記を参照のこと</p>       
+       <p class="paragraph">　→ 初めて加入される場合または、被保険者でなくなってから７年以上が経過する場合</p>
+       <p class="paragraph">　　 ・・・資格取得区分は「新規」、被保険者番号は「0000-000000-0」を入力</p>
+       <p class="paragraph">　→ 再就職等で再加入される場合</p>       
+       <p class="paragraph">　　・・・資格取得区分は「再取得」、被保険者番号は被保険者証より入力</p>
+       <p class="paragraph">・保険料区分は給与計算を行う場合は必ず入力します。</p>
+       <p class="paragraph">・所定時間・契約期間・その他情報は、<a class="content_commentary_a" href="#content6">雇用保険のその他情報を登録する</a>を参照</p>
+       <p>② 労働保険関係加入状況を含めて必ず入力します。</p>
+       <p class="paragraph">・被保険者区分にて加入状況を入力します。</p>       
+       <p class="paragraph">・労災業種は事業所情報の「主となる労災業種」が最初に表示されます。</p>
+       <p class="paragraph">　→ 複数の業種が存在する会社の場合は該当する業種を選択します。</p>
+      </div>        
+     </div>        
+    </div>                           
+    <a id="content3" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>配偶者又は家族の所在地に関する情報</h2>
+     <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
+    </div>   
+　  <div class="content-container">
+     <img class="img-magnification" src="images/1_1_1-2_17.bmp" alt="配偶者の所在地に関する情報">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_17.bmp" data-lightbox="lightbox20" data-title="配偶者の所在地に関する情報"></a>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① 別居先の情報を入力します。</p>              
+       <p>② 被扶養者異動届や年末調整などに必要となりますので入力が必要です。</p>
+      </div>            
+     </div>
+    </div>   
+    <a id="content4" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>配偶者又は家族の扶養に関する情報</h2> 
+     <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>    
+    </div>   
+　  <div class="content-container">
+    <img class="img-magnification" src="images/1_1_1-2_18.bmp" alt="配偶者の扶養に関する情報">
+    <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_18.bmp" data-lightbox="lightbox21" data-title="配偶者の扶養に関する情報"></a>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>下記項目は被扶養者異動届の申請に必要なので必ず入力します。</p>       
+       <p class="paragraph">・職業</p>       
+       <p class="paragraph">・収入　　　　 → 無職の場合は０を入力</p>
+       <p class="paragraph">・基礎年金番号 → 持っていない場合は不要</p>       
+       <p>何を入力すればいいのか不明な項目は入力しなくてもOK</p>
+       <p class="paragraph">・被扶養者になった日</p>     
+       <p class="paragraph">・被扶養者になった理由</p>
+      </div>            
+     </div>
+    </div>    
+    <a id="content5" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>配偶者又は家族の外国籍に関する情報</h2>
+     <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
+    </div>  
+　  <div class="content-container">
+     <img class="img-magnification" src="images/1_1_1-2_19.bmp" alt="配偶者の外国籍者に関する情報">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_19.bmp" data-lightbox="lightbox22" data-title="配偶者の外国籍者に関する情報"></a>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>① ローマ字氏名など必要情報を入力します。</p>              
+       <p>② 配偶者の場合は国民年金第３号被保険者</p>
+       <p class="paragraph">ローマ字氏名届の申請に必要です。</p>
+      </div>         
+     </div>        
+    </div>
+    <a id="content6" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>社員より社員情報が送られてきたら会社側で行うこと</h2>
+     <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
+    </div>    
+　  <div class="content-container">
+     <h4>① HR-Zeroの「お知らせ」に情報が表示されます</h4> 
+     <p>ｘｘｘｘさんより入社手続きに関する情報が届きました。</p>
+     <img class="img-magnification" src="images/1_1_1-2_20.bmp" alt="HR-Zero_お知らせ">
+     <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_20.bmp" data-lightbox="lightbox23" data-title="HR-Zero_お知らせ"></a>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>お知らせ欄より届いた社員情報を確認します。</p>        
+      </div>        
+     </div>
+    </div>
+    <a id="content6-2" class="anchor anchor-detail"></a> 
+　  <div class="content-container">
+     <h4>② 社員情報を確認して、必要情報の入力を行い登録します</h4>           
+     <div class="content-container_commentary">
+      <div class="subheading">基本情報</div>
+      <div class="content_commentary_paragraph1"> 
+       <img class="img-magnification" src="images/1_1_1-2_21.bmp" alt="基本情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_21.bmp data-lightbox="lightbox24" data-title="基本情報"></a>    
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p> 
+        <p>② 問題なければ、必要事項を入力する</p> 
+        <p class="paragraph">必須項目は必ず入力すること</p>
+        <p class="paragraph">・社員番号（個人コード）</p>
+        <p class="paragraph">｜ポイント｜</p>
+        <p class="paragraph">　→ 社労法務システムに登録するので、前ゼロは付けない</p>
+        <p class="paragraph">・入社年月日</p>
+        <p class="paragraph">・入社区分</p>
+        <p class="paragraph">・雇用形態</p>
+        <p class="paragraph">｜ポイント｜</p>
+        <p class="paragraph">　→ 最初は「正社員」が選択されているので、パートなどの場合は正しく選択する</p>
+        <p class="paragraph">・賃金支払態様</p>
+        <p class="paragraph">｜ポイント｜</p>
+        <p class="paragraph">　→ 月給者は「月給（遅早・欠勤控除なし）」を選択</p>
+        <p class="paragraph">　→ 日給月給者は「月給（遅早・欠勤控除あり）」を選択</p>
+        <p>③ 外国籍者の場合は</p>
+        <p class="paragraph">『外国籍者に関する情報』を参照</p>
+       </div>
+      </div>
+      <div class="subheading">社会保険に関する情報</div>
+      <div class="content_commentary_paragraph1"> 
+       <img class="img-magnification" src="images/1_1_1-2_22.bmp" alt="社会保険に関する情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_22.bmp" data-lightbox="lightbox25" data-title="社会保険に関する情報"></a>
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p> 
+        <p>② 問題なければ、必要事項を入力する</p> 
+        <p>③ 健康保険と厚生年金保険の加入は必ず選択すること</p>
+        <p class="paragraph">「加入しない」を選択した場合、以下は入力不要</p>
+        <p>④ 必須項目は必ず入力すること</p>
+        <p class="paragraph">通貨によるものの額、現物によるものの額</p> 
+        <p>⑤ 注意点</p>
+        <p class="paragraph">・社会保険の資格取得日は入社日と同じですか。</p>
+        <p class="paragraph">　→ 一般的には資格取得日と入社日は同日ですので「はい」を選択します。</p>       
+        <p class="paragraph">・備考と住所未記入理由</p>
+        <p class="paragraph">　→ 資格取得届の申請にて必要ですが、社労法務システムでは使用していないので入力は任意です。</p>
+       </div>
+      </div>     
+      <div class="subheading">雇用保険に関する情報</div>
+      <div class="content_commentary_paragraph1">       
+       <img class="img-magnification" src="images/1_1_1-2_23.bmp" alt="雇用保険に関する情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_23.bmp" data-lightbox="lightbox26" data-title="雇用保険に関する情報"></a>
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p> 
+        <p>② 問題なければ、必要事項を入力する</p> 
+        <p>③ 雇用保険の加入は必ず選択すること</p>
+        <p class="paragraph">「加入しない」を選択した場合、以下は入力不要</p>
+        <p>④ 全ての項目は必ず入力すること（備考は任意）</p>
+        <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
+        <div class="content_commentary_paragraph3">       
+         <p>① 雇用保険被保険者番号は初めて加入する場合</p>
+         <p class="paragraph">「0000-000000-0」を入力</p>
+         <p>② 適用事業所は事業所にて複数の事業場がある</p> 
+         <p class="paragraph">場合に選択が必要</p>      
+         <p>③ 下記項目は最初の項目が選択されているので、必要に応じて変更する</p> 
+         <p class="paragraph">取得区分、被保険者種類、被保険者となったことの原因、職種、就職経路</p>
+         <p>④ 賃金月額は千円単位で入力すること</p> 
+         <p>⑤ 契約期間の定めは有期契約などで定めがある場合に選択する</p> 
+    　  </div> 
+       </div>
+      </div>
+      <div class="subheading">配偶者に関する情報</div>
+      <div class="content_commentary_paragraph1">       
+       <img class="img-magnification" src="images/1_1_1-2_24.bmp" alt="配偶者に関する情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_24.bmp" data-lightbox="lightbox27" data-title="配偶者に関する情報"></a>
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
+        <p>② 問題なければ、必要事項を入力する</p>
+        <p>③ 配偶者の所在地に関する情報</p>
+        <p class="paragraph">同居していない場合は内容を確認する</p>
+        <p>④ 配偶者の扶養に関する情報</p>
+        <p class="paragraph">扶養に入っている場合は内容を確認する</p>
+        <p class="paragraph">但し、被扶養者になった日と被扶養者になった理由は本人では入力できないので担当者が入力する</p>
+        <p class="paragraph">一般的には</p>
+        <p class="paragraph">　・被扶養者になった日は本人の社会保険の資格取得日</p>
+        <p class="paragraph">　・被扶養者になった理由は配偶者の就職</p>
+        <p>⑤ 配偶者の外国籍者に関する情報</p>
+        <p class="paragraph">外国籍者の場合は内容を確認する</p>              
+       </div>
+      </div>               
+      <div class="subheading">家族に関する情報（配偶者以外）</div>
+      <div class="content_commentary_paragraph1">     
+       <img class="img-magnification" src="images/1_1_1-2_25.bmp" alt="家族に関する情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_25.bmp" data-lightbox="lightbox28" data-title="家族に関する情報"></a>
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
+        <p>② 問題なければ、必要事項を入力する</p>
+        <p>③ 家族の所在地に関する情報</p>
+        <p class="paragraph">同居していない場合は内容を確認する</p>
+        <p>④ 家族の扶養に関する情報</p>
+        <p class="paragraph">扶養に入っている場合は内容を確認する</p>
+        <p class="paragraph">但し、被扶養者になった日と被扶養者になった理由は本人では入力できないので担当者が入力する</p>
+        <p class="paragraph">一般的には</p>
+        <p class="paragraph">　・被扶養者になった日は本人の社会保険の資格取得日</p>
+        <p class="paragraph">　・被扶養者になった理由はその他を選択して理由を入力する</p>
+        <p>⑤ 家族の外国籍者に関する情報</p>
+        <p class="paragraph">外国籍者の場合は内容を確認する</p>              
+       </div>
+      </div>      
+      <div class="subheading">マイナンバー情報</div>
+      <div class="content_commentary_paragraph1">     
+       <img class="img-magnification" src="images/1_1_1-2_26.bmp" alt="マイナンバー情報">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_26.bmp" data-lightbox="lightbox29" data-title="マイナンバー情報"></a>
+       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>本人や配偶者、家族の氏名をクリックしてマイナンバーを確認します。</p>
+        <p>不備などがあれば、差戻しをしてください。</p>
+       </div>
+      </div> 
+      <div class="subheading">最終確認</div>
+      <div class="content_commentary_paragraph1">      
+       <img class="img-magnification" src="images/1_1_1-2_27.bmp" alt="最終確認">
+       <a class="img-scaling img-scaling-detail" href="images/1_1_1-2_27.bmp" data-lightbox="lightbox30" data-title="最終確認"></a>
+       <div class="content_commentary_paragraph2">     
+       　<p>最終確認を再度行い、手続きを依頼する。</p>
+       </div> 
+      </div> 
+     </div>
+    </div>            
+   </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　<!--画像拡大の為のLightbox2-->
+  <script src="JS/1_lightbox.js"></script>
+  <!--動画表示の為のlity-->
+  <script src="js/lity.js"></script>  
+ </body>
+ <footer class="footer">
+  <p class="footer_p">” 社員情報を登録する ” についての説明は以上です。</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+</html>

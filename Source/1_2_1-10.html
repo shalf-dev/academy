@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!--フォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <link rel="stylesheet" href="css/lity.css"> 
+   <!-- /動画表示の為のlity -->
+  <!-- /スタイルシート -->   
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header_inner">
+    <div class="header_logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>
+    </div>
+    <!-- /.header_logo --> 
+    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header_place">
+     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+     <!-- モーダルを開くボタン -->
+     <div class="header_modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->     
+    </div> 
+    <!-- /.header_place --> 
+   </div>
+   <!-- /.header_inner -->
+   <!-- ぱんくずリスト -->
+   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>  
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_2_chingin.html">
+      <span itemprop="name">賃金台帳</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="1_2_1.html">
+         <span itemprop="name">データを作成する</span>
+        </a>
+        <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#">
+         <span itemprop="name">取り込み方法</span>
+        </a>
+        <meta itemprop="position" content="4" />
+    </li>  
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /.header_breadcrumb -->
+   <!-- /ぱんくずリスト -->       
+  </header>
+  <!-- /.header -->   
+  <div class="interval"></div> 
+  <div class="interval-bit"></div>
+  <div class="interval-bit"></div>         
+  <div class="wrapper clearfix">
+   <main class="page-main">
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>目　　　次</h2>
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents -->   
+    <div class="article-container">
+     <div class="articles contents-list contents-list-detail">
+      <span>１.</span><a href="#content1">取り込み方法</a>
+      <p>他システムデータ取込の賃金データにて賃金台帳（賃金管理）を取り込む手順について解説します。</p>      
+      <ul class="contents-list_ul">
+       <span>１-１</span><a href="#content1">給与月度・給与支給日と支給項目・控除項目の設定の手順</a>
+       <li><span>①</span><a href="#content1">取込データの給与月度・給与支給日の設定の手順</a></li>          
+       <li><span>②</span><a href="#content1-2">指定月度の賃金管理データ支給・控除名称の登録</a></li>
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-２</span><a href="#content2">ファイルより取り込む</a>
+       <li><span>①</span><a href="#content2">取り込みを始める</a></li>          
+       <li><span>②</span><a href="#content2-2">取り込みするファイルを選択する</a></li>          
+       <li><span>③</span><a href="#content2-3">項目の結び付けを行う</a></li>          
+       <li><span>④</span><a href="#content2-4">賃金台帳（賃金管理）にデータを登録する</a></li>                        
+      </ul>
+      <ul class="contents-list_ul">
+       <span>１-３</span><a href="#content3">直接入力する</a>  
+       <li><span>①</span><a href="#content3">入力を始める</a></li>          
+       <li><span>②</span><a href="#content3-2">入力を行う</a></li>          
+       <li><span>③</span><a href="#content3-3">賃金台帳（賃金管理）に保存する</a></li>          
+      </ul>                   
+     </div>  
+     <!-- /.articles contents-list contents-list-detail -->  
+    </div>
+    <!-- /.article-container --> 
+    <!-- 目次　モーダルウィンドウ本体 -->
+    <div class="modal-container">
+     <div class="modal-body">
+      <!-- 閉じるボタン -->
+      <div class="modal-close">&#10006</div>
+       <!-- モーダル内のコンテンツ -->
+       <div class="modal-content">
+        <div>
+         <h2>目　次</h2>
+        </div>    
+        <div class="article-container">
+         <div class="articles contents-list contents-list-detail">
+          <ul class="contents-list_ul">
+           <span>&#9650;</span><a href="#">ページトップ</a>
+          </ul>            
+          <ul class="contents-list_ul">
+           <span>１-１</span><a href="#content1">給与月度・給与支給日と支給項目・控除項目の設定の手順</a>
+           <li><span>①</span><a href="#content1">取込データの給与月度・給与支給日の設定の手順</a></li>          
+           <li><span>②</span><a href="#content1-2">指定月度の賃金管理データ支給・控除名称の登録</a></li>
+          </ul>
+          <ul class="contents-list_ul">
+           <span>１-２</span><a href="#content2">ファイルより取り込む</a>
+           <li><span>①</span><a href="#content2">取り込みを始める</a></li>          
+           <li><span>②</span><a href="#content2-2">取り込みするファイルを選択する</a></li>          
+           <li><span>③</span><a href="#content2-3">項目の結び付けを行う</a></li>          
+           <li><span>④</span><a href="#content2-4">賃金台帳（賃金管理）にデータを登録する</a></li>                        
+          </ul>
+          <ul class="contents-list_ul">
+           <span>１-３</span><a href="#content3">直接入力する</a>  
+           <li><span>①</span><a href="#content3">入力を始める</a></li>          
+           <li><span>②</span><a href="#content3-2">入力を行う</a></li>          
+           <li><span>③</span><a href="#content3-3">賃金台帳（賃金管理）に保存する</a></li>          
+          </ul>            
+         </div> 
+         <!-- /.articles contents-list contents-list-detail -->  
+        </div>
+        <!-- /.article-container -->
+       </div>
+       <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-body -->
+     </div>
+     <!-- /.modal-container -->
+     <!-- /目次　モーダルウィンドウ本体 -->
+     <a id="content1" class="anchor anchor-detail"></a>
+     <div class="main-title title-color-detail table-of-contents">
+      <h2>１-１ 給与月度・給与支給日と支給項目・控除項目の設定の手順</h2>         
+     </div> 
+     <!-- /.main-title title-color-detail table-of-contents -->   
+     <p class="title-description">取り込みや手入力を行う時に共通して行うことがあります。</p>       
+     <div class="content-container">      
+      <h4>① 取込データの給与月度・給与支給日の設定の手順</h4> 
+      <img class="img-magnification" src="images/1_2_1-10_1.bmp" alt="設定画面">
+      <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_1.bmp" data-lightbox="lightbox1" data-title="設定画面"></a>
+      <div class="content-container_commentary"> 
+       <p class="content_commentary_paragraph1-title">画面が表示されるタイミングについて</p>           
+       <div class="content_commentary_paragraph1">
+        <p>ファイルより取り込む場合は、「入力ファイル選択」ボタンをクリックしますと最初に表示されます。</p>
+        <p>直接入力する場合は、「下表に個人入力行を設定」ボタンをクリックしますと最初に表示されます。</p>
+       </div>
+       <!-- /.content_commentary_paragraph1 -->
+       <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph1">
+        <p>① 取込みを行う給与月度は、１か月か複数月のどちらでもできる</p>
+        <p class="paragraph">１ヶ月を選択した場合と複数ヶ月を選択した場合で、以下のように画面が変わります。</p>       
+        <img class="img-magnification" src="images/1_2_1-10_2.bmp" alt="設定画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_2.bmp" data-lightbox="lightbox2" data-title="設定画面"></a>       
+        <img class="img-magnification" src="images/1_2_1-10_3.bmp" alt="設定画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_3.bmp" data-lightbox="lightbox2" data-title="設定画面"></a>                     
+        <p>② 給与支給日は事業所情報管理メニューの事業所基本情報新規登録にて登録したデータが自動で設定される</p>
+        <p>③ 指定した給与月度の対象期間が表示される（締日翌日～締日）</p>         
+        <p>④ 指定した給与月度に対応する社会保険の適用月が表示される</p>   
+        <p>⑤ 複数の給与体系がある場合は、給与体系の選択欄が表示されますので取込を行う体系を選択してください。</p>
+        <p class="paragraph"> ※ 給与体系ごとに給与項目設定が異なるため選択が必要な項目です。</p>       
+        <img class="img-magnification" src="images/1_2_1-10_4.bmp" alt="設定画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_4.bmp" data-lightbox="lightbox3" data-title="設定画面"></a>       
+        <p class="paragraph"> また、取込データは給与体系別に別ファイルでご用意ください。</p>              
+        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+        <div class="content_commentary_paragraph2">
+         <p>・給与体系が１種類の場合は、選択する必要がないため以下のように給与体系コードの選択ができません。</p>
+         <img class="img-magnification" src="images/1_2_1-10_5.bmp" alt="設定画面">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_5.bmp" data-lightbox="lightbox4" data-title="設定画面"></a>       
+         <p>・入力ファイルは、ＣＳＶ形式又はエクセル形式で作成してください。</p>
+         <p>・データは、１つのシートに１事業所の１ヶ月分が入っている、又は、複数月で一度に取り込む場合は、１つのシートに１事業所ごと複数月のデータを用意してください。シートが分かれている場合は、一度に複数月の取り込みはできません。</p>
+        </div>
+       <!-- /.content_commentary_paragraph2 -->        
+       </div>
+       <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->     
+    </div>
+    <!-- /.content-container -->  
+    <a id="content1-2" class="anchor anchor-detail"></a>    
+    <div class="content-container">      
+     <h4>② 指定月度の賃金管理データ支給・控除名称の登録</h4>
+     <img class="img-magnification" src="images/1_2_1-10_6.bmp" alt="指定月度の賃金管理データ支給・控除名称画面">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_6.bmp" data-lightbox="lightbox5" data-title="指定月度の賃金管理データ支給・控除名称画面"></a>
+     <div class="content-container_commentary">   
+      <p class="content_commentary_paragraph1-title">画面が表示されるタイミングについて</p>           
+      <div class="content_commentary_paragraph1">
+       <p>ファイルより取り込む場合は、「入力ファイル選択」ボタンをクリックし、「取込データの 給与月度・給与支払日の設定」画面にて「OK」ボタンをクリックし、ファイルを開いた後、設定画面にて「データ読込開始」ボタンをクリックし、場合によって表示されます「『昇降給区分』の設定」画面にて「完了」ボタンをクリックしますと表示されます。</p>
+       <p>直接入力する場合は、「下表に個人入力行を設定」ボタンをクリックし、「取込データの 給与月度・給与支払日の設定」画面にて「OK」ボタンをクリックますと表示されます。</p>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->            
+      <p class="content_commentary_paragraph1-title">画面の表示のされ方には全部で３パターンあります。</p>                 
+      <div class="content_commentary_paragraph1">
+       <p class="content_commentary_paragraph2-title">ケース１：賃金管理データが過去・当月ともに１件も登録されていない場合</p>     
+       <div class="content_commentary_paragraph2">
+        <img class="img-magnification" src="images/1_2_1-10_7.bmp" alt="指定月度の賃金管理データ支給・控除名称画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_7.bmp" data-lightbox="lightbox6" data-title="指定月度の賃金管理データ支給・控除名称画面"></a>              
+        <div class="content_commentary_paragraph3">
+         <p>・上図の様に、【指定月の手当・控除名称】が空白で表示される</p>
+         <p>・手当名称・控除名称欄に該当事業所の各項目名称を入力し、「ＯＫ」をクリックして登録します。</p>
+        </div>
+        <!-- /.content_commentary_paragraph3 -->  
+       </div>
+       <!-- /.content_commentary_paragraph2 -->      
+       <p class="content_commentary_paragraph2-title">ケース２：賃金管理データが過去月には存在するが、当月には登録されていない場合</p>     
+       <div class="content_commentary_paragraph2">
+        <img class="img-magnification" src="images/1_2_1-10_8.bmp" alt="指定月度の賃金管理データ支給・控除名称画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_8.bmp" data-lightbox="lightbox7" data-title="指定月度の賃金管理データ支給・控除名称画面"></a>
+        <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
+        <div class="content_commentary_paragraph3">       
+         <p>・指定月の項目名称を変更・追加したい場合は、その欄に直接入力してください。</p>
+         <p class="paragraph"> ※ 通常、この項目名称は前月と変えない方が良いでしょう。</p>
+         <p>・直前の月の給与月度②を変更し、別の月の項目名称を表示し、その名称を参考にしながら指定月の名称を入力したり、名称をコピーすることができます。</p>       
+         <p class="paragraph"> ※ 直前の月の給与月度②は賃金管理データが存在する月ならば、指定月以降の月を指定しても問題ありません。</p>
+         <img class="img-magnification" src="images/1_2_1-10_9.bmp" alt="指定月度の賃金管理データ支給・控除名称画面">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_9.bmp" data-lightbox="lightbox8" data-title="指定月度の賃金管理データ支給・控除名称画面"></a>         
+        </div>
+        <!-- /.content_commentary_paragraph3 -->
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+       <p class="content_commentary_paragraph2-title">ケース３：指定月に賃金管理データが存在する場合</p>     
+       <div class="content_commentary_paragraph2">
+        <img class="img-magnification" src="images/1_2_1-10_10.bmp" alt="指定月度の賃金管理データ支給・控除名称画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_10.bmp" data-lightbox="lightbox9" data-title="指定月度の賃金管理データ支給・控除名称画面"></a>            
+       </div>
+       <!-- /.content_commentary_paragraph2 --> 
+      </div>
+      <!-- /.content_commentary_paragraph1 -->            
+     </div>    
+     <!-- /.content-container_commentary --> 
+     <div class="interval-bit"></div>
+     <p>一覧表のタイトルの手当01～手当18と控除01～控除18に登録した名称が表示されていることが確認できます。</p>
+     <img class="img-magnification" src="images/1_2_1-10_11.bmp" alt="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_11.bmp" data-lightbox="lightbox10" data-title="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面"></a>
+     <img class="img-magnification" src="images/1_2_1-10_12.bmp" alt="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_12.bmp" data-lightbox="lightbox10" data-title="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面"></a>          
+    </div>
+    <!-- /.content-container -->    
+    <a id="content2" class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>１-２ ファイルより取り込む</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <p class="title-description">ファイルより取り込む方法について解説します。</p>     
+    <div class="content-container">
+     <h4>① 取り込みを始める</h4>           
+     <img class="img-magnification" src="images/1_2_1-10_13.bmp" alt="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_13.bmp" data-lightbox="lightbox11" data-title="『賃金管理データ』への給与金額取込（賃金台帳型形式）画面"></a>      
+     <p class="title-description">入力ファイル選択ボタンをクリックして取込を開始します。</p>    
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+      <div class="content_commentary_paragraph1">
+       <p>最初に、「取込データの 給与月度・給与支給日の設定」画面と設定画面が表示されます。<br>詳しくは「１-１給与月度・給与支給日と支給項目・控除項目の設定の手順」を参照してください。</p>
+       <img class="img-magnification" src="images/1_2_1-10_14.bmp" alt="取り込みを始める">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_14.bmp" data-lightbox="lightbox12" data-title="取り込みを始める"></a>
+       <img class="img-magnification" src="images/1_2_1-10_15.bmp" alt="取り込みを始める">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_15.bmp" data-lightbox="lightbox12" data-title="取り込みを始める"></a>       
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>    
+     <!-- /.content-container_commentary -->      
+    </div>
+    <!-- /.content-container -->         
+    <a id="content2-2" class="anchor anchor-detail"></a>             
+    <div class="content-container">      
+     <h4>② 取り込みするファイルを選択する</h4> 
+     <p class="title-description">ASPとオンプレミスでは画面が異なりますが、今回はASP画面にて説明をします。</p>            
+     <img class="img-magnification" src="images/1_2_1-10_16.bmp" alt="取り込みするファイルを選択する">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_16.bmp" data-lightbox="lightbox13" data-title="取り込みするファイルを選択する"></a>
+     <div class="content-container_commentary">
+      <p class="content_commentary_paragraph1-title">読込先の指定</p>     
+      <div class="content_commentary_paragraph1">
+       <p>標準フォルダは、ローカル環境のCドライブ内の、「Shalf_AspData」フォルダ内の「Input」フォルダです。</p>
+       <img class="img-magnification" src="images/1_2_1-10_17.bmp" alt="標準フォルダの位置">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_17.bmp" data-lightbox="lightbox14" data-title="標準フォルダの位置"></a>
+       <p>また、サーバー内のフォルダも選択できます。</p>
+       <p>例えば、サーバーのデスクトップにフォルダが存在する場合、「サーバー側フォルダ」のデスクトップボタンをクリックすることで指定することができます。</p>
+       <img class="img-magnification" src="images/1_2_1-10_18.bmp" alt="サーバーのデスクトップ">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_18.bmp" data-lightbox="lightbox15" data-title="サーバーのデスクトップ"></a>       
+       <p>Excelファイルを指定した場合は、取込開始位置設定画面が表示されます。</p>
+       <img class="img-magnification" src="images/1_2_1-10_19.bmp" alt="取込開始位置設定画面">
+       <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_19.bmp" data-lightbox="lightbox16" data-title="取込開始位置設定画面"></a>       
+       <div class="content_commentary_paragraph2">
+        <p>各項目名が何行目にあるかを入力します。この項目名を社労法務システムと照らし合わせてデータを取り込むことになります。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>
+     <!-- /.content-container_commentary -->     
+    </div>
+    <!-- /.content-container -->    
+    <a id="content2-3" class="anchor anchor-detail"></a>             
+    <div class="content-container"> 
+     <h4>③ 項目の結び付けを行う</h4>      
+     <P class="title-description">データの先頭行を一致させます。左側の社労法務システムの個人マスターの項目に、右側の取り込みファイルのデータの項目を結び付けます。</P>     
+     <img class="img-magnification" src="images/1_2_1-10_20.bmp" alt="項目の結び付けを行う">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_20.bmp" data-lightbox="lightbox17" data-title="項目の結び付けを行う"></a>     
+     <div class="content-container_commentary">
+      <div class="content_commentary_paragraph1">
+        <p class="content_commentary_paragraph2-title">【データ先頭行の扱い】</p>
+        <div class="content_commentary_paragraph2">
+         <p>・給与項目名称として使用</p>        
+         <div class="content_commentary_paragraph3">
+          <p>取り込んだデータ（右の表）の先頭行を、給与項目名称として扱います。</p>
+         </div>
+         <!-- /.content_commentary_paragraph3 -->          
+         <p>・１件目のデータとして取り込む</p>        
+         <div class="content_commentary_paragraph3">
+          <p>取り込んだデータ（右の表）の先頭行を、１件目のデータとして取り込みます。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
+         </div>
+         <!-- /.content_commentary_paragraph3 -->          
+         <p>・無視する</p>        
+         <div class="content_commentary_paragraph3">
+          <p>取り込んだデータ（右の表）の先頭行のみ、無視して取り込みません。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
+         </div>                  
+         <!-- /.content_commentary_paragraph3 -->         
+         <img class="img-magnification" src="images/1_2_1-10_21.bmp" alt="データ先頭行の扱い">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_21.bmp" data-lightbox="lightbox18" data-title="データ先頭行の扱い"></a>
+        </div>
+        <!-- /.content_commentary_paragraph2 -->
+        <p class="content_commentary_paragraph2-title">【半日有給休暇（0.5日）の使用状況】</p>
+        <div class="content_commentary_paragraph2">
+         <p>有給休暇のデータの形式を、<br>半日有給休暇を使用しない　例.１．６２５日の場合　１.０日と６時間で入力します<br>もしくは<br>半日有給休暇を使用する　例.１．６２５日の場合　１．５日と１時間で入力します<br>のどちらかを選択してください。</p>
+         <img class="img-magnification" src="images/1_2_1-10_22.bmp" alt="半日有給休暇（0.5日）の使用状況">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_22.bmp" data-lightbox="lightbox19" data-title="半日有給休暇（0.5日）の使用状況"></a>
+         <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
+         <div class="content_commentary_paragraph3">
+          <p>「半日有給休暇を使用しない　例.１．６２５日の場合　１.０日と６時間で入力します」が初期表示されます。</p>
+         </div>
+         <!-- /.content_commentary_paragraph3 -->
+        </div>
+        <!-- /.content_commentary_paragraph2 -->        
+        <p>各機能について</p>
+        <img class="img-magnification" src="images/1_2_1-10_23.bmp" alt="各機能について">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_23.bmp" data-lightbox="lightbox20" data-title="各機能について"></a>       
+        <div class="content_commentary_paragraph2">
+         <p>① 結び付けを全て解除して最初から結び付けを行う場合に使用します。</p>
+         <p>② 保存してある結び付けを使用する場合のボタンです。</p>
+         <p>③ 次回以降も同じファイルにて取り込みを行う場合は保存すると便利です。</p>
+         <p>④ 結び付けを行った項目を読み込み、メイン画面に表示します。</p>
+         <p>⑤ 「１-２ 指定月度の賃金管理データ支給・控除名称の登録」で登録した賃金管理データ項目が表示されています。</p>
+         <p class="paragraph">背景色が白色は結び付けられた項目です、背景色が白色以外は結び付けられていない項目です。</p>                  
+         <p>⑥ 読み込んだデータ・ファイルの内容を、先頭から５件表示しています。</p>
+         <p class="paragraph">背景色が白色は結び付けられていない項目です、背景色が白色以外は結び付けられた項目です。</p>
+         <p class="content_commentary_paragraph3-title">項目の結び付け方法</p>
+         <div class="content_commentary_paragraph3">
+          <p>項目を結び付けるには、⑥から⑤へ結び付けたい項目をドラッグ&ドロップします。</p>
+          <img class="img-magnification" src="images/1_2_1-10_24.bmp" alt="項目の結び付け方法">
+          <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_24.bmp" data-lightbox="lightbox21" data-title="項目の結び付け方法"></a>
+          <p>項目の結び付けを解除するには、⑤から⑥へ解除したい項目をドラッグ&ドロップします。</p>
+          <img class="img-magnification" src="images/1_2_1-10_25.bmp" alt="項目の結び付け解除方法">
+          <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_25.bmp" data-lightbox="lightbox22" data-title="項目の結び付け解除方法"></a>
+         </div>
+         <!-- /.content_commentary_paragraph3 -->          
+        </div>
+        <!-- /.content_commentary_paragraph2 --> 
+        <p>昇降給区分を結び付けた場合は、設定画面が表示されます。データベースに登録する区分を赤枠内の選択肢から選び登録してください。</p>
+        <img class="img-magnification" src="images/1_2_1-10_26.bmp" alt="各機能の説明">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_26.bmp" data-lightbox="lightbox23" data-title="各機能について"></a>        
+        <p>メイン画面に取り込んだデータが表示されていることが確認できます。</p>
+        <img class="img-magnification" src="images/1_2_1-10_27.bmp" alt="メイン画面">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_27.bmp" data-lightbox="lightbox24" data-title="メイン画面"></a>
+       </div>
+       <!-- /.content_commentary_paragraph1 -->
+      </div>
+      <!-- /.content-container_commentary -->   
+     </div>         
+     <!-- /.content-container --> 
+     <a id="content2-4" class="anchor anchor-detail"></a>             
+     <div class="content-container"> 
+      <h4>④ 賃金台帳（賃金管理）にデータを登録する</h4> 
+      <p class="title-description">メイン画面に取り込んだデータが表示されていることを確認してください。</p>                            
+      <img class="img-magnification" src="images/1_2_1-10_27.bmp" alt="メイン画面">
+      <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_27.bmp" data-lightbox="lightbox25" data-title="メイン画面"></a>      
+      <div class="content-container_commentary">
+       <div class="content_commentary_paragraph1">          
+        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+        <div class="content_commentary_paragraph2">    
+         <p>・全ての項目が表示されています。</p>       
+         <p>・データは結び付けた項目だけに表示されています。</p>                     
+         <p>・書込列は、社労法務システムに書き込みたいデータにチェックをつけることで選択することができます。</p>
+         <img class="img-magnification" src="images/1_2_1-10_28.bmp" alt="書込列">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_28.bmp" data-lightbox="lightbox26" data-title="書込列"></a>
+         <p>・現在のページの「１-１ 給与月度・給与支給日と支給項目・控除項目の設定の手順」でも触れていますが、体系列は事業所に給与体系が１種類の場合は表示されません。</p>
+         <img class="img-magnification" src="images/1_2_1-10_29.bmp" alt="体系列">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_29.bmp" data-lightbox="lightbox27" data-title="体系列"></a>
+         <p>・「指定体系のみ選択」ボタンも体系列と同様で、事業所に給与体系が１種類の場合には表示されません。</p>
+         <img class="img-magnification" src="images/1_2_1-10_30.bmp" alt="「指定体系のみ選択」ボタン">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_30.bmp" data-lightbox="lightbox28" data-title="「指定体系のみ選択」ボタン"></a>
+         <p>・設定画面（③ 項目の結び付けを行う 参照）にて給与月度と給与支給日を紐づけない場合、設定画面（１-１ 給与月度・給与支給日と支給項目・控除項目の設定の手順 参照）にて設定した月が自動で設定されます。</p>
+         <img class="img-magnification" src="images/1_2_1-10_31.bmp" alt="給与月度と給与支給日">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_31.bmp" data-lightbox="lightbox29" data-title="給与月度と給与支給日"></a>
+        </div>
+        <!-- /.content_commentary_paragraph2 -->         
+        <p>「指定体系のみ選択」ボタンは複数体系がある場合は支給項目と控除項目が変わっていることもあるので、クリックすると「１-１ 給与月度・給与支給日と支給項目・控除項目の設定の手順」にて選択した体系だけが選択できます。</p>  
+        <p>また、複数体系がある場合でも支給項目と控除項目が同じ場合はそのまま取り込んでも問題ありません。</p>                        
+        <img class="img-magnification" src="images/1_2_1-10_32.bmp" alt="「指定体系のみ選択」ボタン">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_32.bmp" data-lightbox="lightbox30" data-title="「指定体系のみ選択」ボタン"></a>
+        <p>最後に、処理コードを確認してから実行ボタンをクリックします。</p>
+        <img class="img-magnification" src="images/1_2_1-10_33.bmp" alt="給与データ書込">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_33.bmp" data-lightbox="lightbox31" data-title="給与データ書込"></a>
+        <p>該当給与月度にデータが存在する場合としない場合で確認画面が変わります。</p>       
+        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
+        <div class="content_commentary_paragraph2">
+         <p>存在しない場合（初めて該当月度にデータを登録する場合）</p>
+         <p>確認メッセージが出ますので、「OK」ボタンをクリックします。エラーがなければ取り込まれます。</p>
+         <img class="img-magnification" src="images/1_2_1-10_34.bmp" alt="存在しない場合（初めて該当月度にデータを登録する場合）">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_34.bmp" data-lightbox="lightbox32" data-title="存在しない場合（初めて該当月度にデータを登録する場合）"></a>        
+         <p>存在する場合（該当月度のデータを変更する場合）</p>
+         <p>空欄の項目は保存されません。また、０は空欄でないので保存されます。</p>        
+         <img class="img-magnification" src="images/1_2_1-10_35.bmp" alt="存在する場合（該当月度のデータを変更する場合）">
+         <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_35.bmp" data-lightbox="lightbox33" data-title="存在する場合（該当月度のデータを変更する場合）"></a>        
+         <div class="content_commentary_paragraph3">
+          <p>① 取込データに存在する項目のみを上書きする</p>
+          <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、既存のデータがそのまま残ります。</p>
+          <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、上書きされます。</p>
+          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は2,000円になります。</p>
+          <p>② 取込データ以外の項目は『０』でクリアする</p>
+          <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、『０』でクリアされます。</p>         
+          <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、①と同様に上書きされます。</p> 
+          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が0円もしくは空白の場合、食事代は0円になります。</p>
+          <p>③ 取込データの金額を加算する</p>   
+          <p class="paragraph">既存のデータに取込データの金額を加算します。</p>
+          <p class="paragraph">金額関係以外は加算されません。</p> 
+          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は3,000円になります。</p>
+         </div>
+         <!-- /.content_commentary_paragraph3 -->
+        </div>
+        <!-- /.content_commentary_paragraph2 --> 
+        <div class="interval-bit"></div>        
+        <p>これで賃金台帳（賃金管理）が登録されました。</p>                     
+       </div>             
+       <!-- /.content_commentary_paragraph1 -->   
+      </div>
+      <!-- /.content-container_commentary -->        
+     </div>             
+     <!-- /.content-container --> 
+     <a id="content3" class="anchor anchor-detail"></a>
+     <div class="main-title title-color-detail table-of-contents">
+      <h2>１-３ 直接入力する</h2>         
+     </div> 
+     <!-- /.main-title title-color-detail table-of-contents -->  
+     <p class="title-description">画面に直接入力して取り込む方法を解説します。</p>    
+     <p class="title-description">入力忘れで特定の項目を修正したい場合、一覧形式で一気に取込みたい場合、Excelを持っていない場合など、他にも多くの場合に有効活用されます。</p>                   
+     <div class="content-container">    
+      <h4>① 入力を始める</h4>     
+      <img class="img-magnification" src="images/1_2_1-10_36.bmp" alt="入力を始める">
+      <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_36.bmp" data-lightbox="lightbox34" data-title="入力を始める"></a>     
+      <div class="content-container_commentary">        
+       <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
+       <div class="content_commentary_paragraph1">
+        <p>最初に、「取込データの 給与月度・給与支給日の設定」画面と設定画面が表示されます。<br>詳しくは「１-１給与月度・給与支給日と支給項目・控除項目の設定の手順」を参照してください。</p>
+        <img class="img-magnification" src="images/1_2_1-10_14.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_14.bmp" data-lightbox="lightbox35" data-title="入力を始める"></a>
+        <img class="img-magnification" src="images/1_2_1-10_15.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_15.bmp" data-lightbox="lightbox35" data-title="入力を始める"></a>
+       </div>
+       <!-- /.content_commentary_paragraph1 --> 
+       <div class="interval-bit"></div>
+       <div class="interval-bit"></div>
+       <div class="content_commentary_paragraph1">
+        <p>「下表に直接手入力」を選択してから、「下表に個人入力行を設定」ボタンをクリックします。</p>
+        <p>下段の一覧表のデータが消え、全社員の入力欄が表に表示されます。</p>
+        <img class="img-magnification" src="images/1_2_1-10_37.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_37.bmp" data-lightbox="lightbox36" data-title="入力を始める"></a>        
+        <p>給与月度と給与支給日は「取込データの給与月度と給与支給日の設定」画面で設定された日付が表示されます。</p>
+        <img class="img-magnification" src="images/1_2_1-10_38.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_38.bmp" data-lightbox="lightbox37" data-title="入力を始める"></a>       
+        <p>また、複数月を指定した場合は月数分の行が表示されます。</p>
+        <img class="img-magnification" src="images/1_2_1-10_39.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_39.bmp" data-lightbox="lightbox38" data-title="入力を始める"></a>       
+        <img class="img-magnification" src="images/1_2_1-10_40.bmp" alt="入力を始める">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_40.bmp" data-lightbox="lightbox38" data-title="入力を始める"></a>         
+       </div>
+       <!-- /.content_commentary_paragraph1 -->        
+      </div>             
+      <!-- /.content-container_commentary -->
+     </div>
+     <!-- /.content-container --> 
+     <a id="content3-2" class="anchor anchor-detail"></a>             
+     <div class="content-container">          
+      <h4>② 入力を行う</h4>  
+      <img class="img-magnification" src="images/1_2_1-10_41.bmp" alt="入力を行う">
+      <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_41.bmp" data-lightbox="lightbox39" data-title="入力を行う"></a>
+      <div class="content-container_commentary">       
+       <p class="content_commentary_paragraph1-title">所定労働日数以降の項目を入力できます。</p>
+       <div class="content_commentary_paragraph1">
+        <P>入力欄をダブルクリックして入力していきます。「▽」マークのプルダウンメニューの欄は、クリックすると選択肢が表示されますので、選択してください。</P>
+        <img class="img-magnification" src="images/1_2_1-10_42.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_42.bmp" data-lightbox="lightbox40" data-title="入力を行う"></a>
+        <img class="img-magnification" src="images/1_2_1-10_43.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_43.bmp" data-lightbox="lightbox40" data-title="入力を行う"></a>      
+       </div>
+       <!-- /.content_commentary_paragraph1 --> 
+       <p class="content_commentary_paragraph1-title">時間数の入力方法について</p>
+       <div class="content_commentary_paragraph1">
+        <P>入力欄をクリックすると時間単位が表示されますので、各時間単位の左横に一の位が来るように入力してください。</P>
+        <img class="img-magnification" src="images/1_2_1-10_44.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_44.bmp" data-lightbox="lightbox41" data-title="入力を行う"></a>        
+        <img class="img-magnification" src="images/1_2_1-10_45.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_45.bmp" data-lightbox="lightbox41" data-title="入力を行う"></a>         
+        <p>「〇時間〇分」という形式の場合は、分が一桁であれば「01分」「02分」のように二桁で入力してください。</p>
+        <img class="img-magnification" src="images/1_2_1-10_46.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_46.bmp" data-lightbox="lightbox42" data-title="入力を行う"></a>        
+        <img class="img-magnification" src="images/1_2_1-10_47.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_47.bmp" data-lightbox="lightbox42" data-title="入力を行う"></a>        
+       </div>
+       <!-- /.content_commentary_paragraph1 --> 
+       <p class="content_commentary_paragraph1-title">給与支給日の入力方法について</p>
+       <div class="content_commentary_paragraph1">
+        <P>給与支給日はそのまま入力していただいても構いませんが、入力欄にカーソルが表示されている状態でダブルクリックすると、カレンダーが表示されますので、そちらから日付を選択していただくこともできます。</P>
+        <img class="img-magnification" src="images/1_2_1-10_48.bmp" alt="入力を行う">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_48.bmp" data-lightbox="lightbox43" data-title="入力を行う"></a>         
+       </div>
+       <!-- /.content_commentary_paragraph1 -->       
+      </div>
+      <!-- /.content-container_commentary -->                      
+     </div>             
+     <!-- /.content-container -->  
+     <a id="content3-3" class="anchor anchor-detail"></a>             
+     <div class="content-container">          
+      <h4>③ 賃金台帳（賃金管理）に保存する</h4>  
+      <div class="content-container_commentary">       
+       <p class="content_commentary_paragraph1-title">賃金台帳（賃金管理）に書き込む方法について</p>
+       <div class="content_commentary_paragraph1">
+        <p>最後に、処理コードを確認してから実行ボタンをクリックします。</p>
+        <img class="img-magnification" src="images/1_2_1-10_49.bmp" alt="賃金台帳（賃金管理）に保存する">
+        <a class="img-scaling img-scaling-detail" href="images/1_2_1-10_49.bmp" data-lightbox="lightbox44" data-title="賃金台帳（賃金管理）に保存する"></a>
+        <p>これで賃金台帳（賃金管理）が登録されました。</p>      
+        <p>該当給与月度にデータが存在する場合としない場合で確認画面が変わります。<br>詳しくは「１-３ ファイルより取り込む」の「④ 賃金台帳（賃金管理）にデータを登録する」を参照してください。</p>
+       </div>
+       <!-- /.content_commentary_paragraph1 --> 
+      </div>
+      <!-- /.content-container_commentary -->                      
+     </div>             
+     <!-- /.content-container -->                                                     
+   </main>
+   <!-- /.page-main -->
+  </div>
+  <!-- /.wrapper clearfix -->
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://codejquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>  
+   <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <script src="js/lity.js"></script> 
+   <!-- /動画表示の為のlity --> 
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer_p">” 取り込み方法 ” についての説明は以上です。</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer> 
+ <!-- /.footer -->  
+</html>

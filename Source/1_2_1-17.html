@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!--フォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link rel="stylesheet" href="css/0_reset.css">
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <link rel="stylesheet" href="css/lity.css"> 
+   <!-- /動画表示の為のlity -->
+  <!-- /スタイルシート -->   
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header_inner">
+    <div class="header_logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>
+    </div>
+    <!-- /.header_logo --> 
+    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header_place">
+     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+    </div> 
+    <!-- /.header_place --> 
+   </div>
+   <!-- /.header_inner -->
+   <!-- ぱんくずリスト -->
+   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>  
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_2_chingin.html">
+      <span itemprop="name">賃金台帳</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="1_2_1.html">
+         <span itemprop="name">データを作成する</span>
+        </a>
+        <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#">
+         <span itemprop="name">特定の月度のデータを合算する場合</span>
+        </a>
+        <meta itemprop="position" content="4" />
+    </li>  
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /.header_breadcrumb -->
+   <!-- /ぱんくずリスト -->       
+  </header>
+  <!-- /.header -->         
+  <div class="wrapper clearfix">
+   <main class="page-main">
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>締日や支給日の変更により月度を移動する場合</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <div class="content-container">    
+     <p>賃金台帳（賃金管理）の特定の月度を、前月に合算する場合の対応方法について解説します。</p>
+     <div class="content-container_commentary">  
+      <p class="content_commentary_paragraph1-title">例）パートやアルバイトの締日が、２０日締から末締に変更となった場合</p>     
+      <div class="content_commentary_paragraph1">        
+       <p>７月度の給与は６月２１日～７月２０日の給与として作成されています。</p>
+       <p>末締に変更となり、８月度の給与は８月１日～３１日までとなりますが、７月２１日～３１日までの給与も支給されてしまいます。</p>
+       <p>このページでは、７月２１日～３１日と８月１日～３１日の給与を、どのように賃金台帳（賃金管理）に登録することができるかについて解説します。</p>
+       <p>よって、変更する場合は８月度の７月１日～７月３１日の給与が消えてしまいます。</p>
+       <p class="content_commentary_paragraph2-title">｜注意｜</p>
+       <div class="content_commentary_paragraph2">
+        <p>処理を行う前に、安全のためにバックアップを行うことを推奨しています。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>処理を行う</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <div class="content-container">    
+     <img class="img-magnification" src="images/1_2_1-17_1.bmp" alt="処理を行う">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-17_1.bmp" data-lightbox="lightbox1" data-title="処理を行う"></a>
+     <p class="title-description">賃金管理メニューの賃金管理データ合算処理画面より開始します。</p>                 
+    </div>
+    <!-- /.content-container -->
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>合算処理を行う前に行うことについて</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <div class="content-container">    
+     <img class="img-magnification" src="images/1_2_1-17_2.bmp" alt="合算処理を行う前に行うことについて">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-17_2.bmp" data-lightbox="lightbox2" data-title="合算処理を行う前に行うことについて"></a>     
+     <img class="img-magnification" src="images/1_2_1-17_3.bmp" alt="合算処理を行う前に行うことについて">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-17_3.bmp" data-lightbox="lightbox2" data-title="合算処理を行う前に行うことについて"></a>          
+     <div class="content-container_commentary"> 
+      <div class="content_commentary_paragraph1">
+       <p>月１には、合算先の月度を指定します。</p>
+       <p>月２には、合算元の月度を指定します。</p>
+       <p>指定月度表示を行います。</p>       
+       <p>今回の例では月１は７月、月２は８月を指定します。</p>              
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->        
+    </div>
+    <!-- /.content-container -->  
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>合算条件を指定する</h2>         
+    </div> 
+    <!-- /.main-title title-color-detail table-of-contents --> 
+    <div class="content-container">    
+     <img class="img-magnification" src="images/1_2_1-17_4.bmp" alt="合算条件を指定する">
+     <a class="img-scaling img-scaling-detail" href="images/1_2_1-17_4.bmp" data-lightbox="lightbox3" data-title="合算条件を指定する"></a>               
+     <p class="title-description">条件を設定します。</p>
+     <div class="content-container_commentary">       
+      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>   
+      <div class="content_commentary_paragraph1">
+       <p class="content_commentary_paragraph2-title">合算先月度</p>  
+       <div class="content_commentary_paragraph2">        
+        <p>月２を月１に合算するのか、月２を月１に合算するのかを指定します。</p>
+        <p>今回の例では７月３１日を選択します。</p>
+       </div>
+       <!-- /.content_commentary_paragraph2 -->   
+       <p class="content_commentary_paragraph2-title">合算対象</p>    
+       <div class="content_commentary_paragraph2">
+        <p>合算対象の指定方法</p>              
+        <p class="content_commentary_paragraph3-title">給与支払日の上書き</p>
+        <div class="content_commentary_paragraph3">
+         <p>合算元の日付を上書きしたい場合はチェックを付けます。</p>
+         <p>今回の例では７月３１日を選択します。</p>
+        </div>
+        <!-- /.content_commentary_paragraph3 -->
+        <p class="content_commentary_paragraph3-title">勤怠データ</p>
+        <div class="content_commentary_paragraph3">
+         <p>労働日数や労働時間数などの勤怠データを合算するかを指定します。</p>
+         <p class="content_commentary_paragraph4-title">所定労働日数と所定労働時間数の取扱いについて</p>        
+         <div class="content_commentary_paragraph4">
+          <p>所定労働日数と所定労働時間数は合算されません。</p>
+         </div>
+         <!-- /.content_commentary_paragraph4 --> 
+        </div>
+        <!-- /.content_commentary_paragraph3 --> 
+        <p class="content_commentary_paragraph3-title">給与支給・控除額</p>
+        <div class="content_commentary_paragraph3">
+         <p>給与の支給項目と控除項目を合算するかを指定します。</p>
+         <p>賞与のみ合算したい場合はチェックを付けないようにしてください。</p>
+        </div>
+        <!-- /.content_commentary_paragraph3 --> 
+        <p class="content_commentary_paragraph3-title">賞与データ</p>
+        <div class="content_commentary_paragraph3">
+         <p>賞与分のデータを合算するかを指定します。</p>
+         <p>給与のみ合算したい場合はチェックを付けないようにしてください。</p>
+        </div>
+        <!-- /.content_commentary_paragraph3 -->                              
+       </div>
+       <!-- /.content_commentary_paragraph2 -->  
+       <p class="content_commentary_paragraph2-title">合算処理後のデータ</p>    
+       <div class="content_commentary_paragraph2">
+        <p>上記のデータを合算した後、月２（８月）のデータは削除されます。</p>  
+       </div>
+       <!-- /.content_commentary_paragraph2 -->                                
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->        
+    </div>
+    <!-- /.content-container -->  
+    <a class="anchor anchor-detail"></a>
+    <div class="main-title title-color-detail table-of-contents">
+     <h2>賃金データ合算を行う</h2>         
+    </div>     
+    <!-- /.main-title title-color-detail table-of-contents -->     
+    <div class="content-container">
+     <p class="title-description">合算条件の指定が完了したら、賃金データ合算を行います。</p>                  
+     <div class="content-container_commentary">          
+      <div class="content_commentary_paragraph1">        
+       <p>処理コードを「２：賃金データ合算」に設定し、「実行」ボタンをクリックします。又は、<img src="images/編集ボタン.bmp" alt="編集ボタン" style="vertical-align:middle;">をクリックします。</p>
+      </div>
+      <!-- /.content_commentary_paragraph1 -->
+     </div>  
+     <!-- /.content-container_commentary -->     
+    </div>
+    <!-- /.content-container -->                    
+   </main>
+   <!-- /.page-main -->
+  </div>
+  <!-- /.wrapper clearfix -->
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://codejquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>  
+   <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+   <!-- 動画表示の為のlity -->
+  <script src="js/lity.js"></script> 
+   <!-- /動画表示の為のlity --> 
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer_p">” 特定の月度のデータを合算する場合 ” についての説明は以上です。</p>
+  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer> 
+ <!-- /.footer -->  
+</html>
