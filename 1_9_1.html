@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /スタイルシート -->
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header__inner">
+    <div class="header__logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>
+    <!-- /.header__logo -->   
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>        
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header__modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->
+    </div> 
+    <!-- /.header__place -->
+   </div>
+   <!-- /.header__inner --> 
+  <!-- ぱんくずリスト -->
+  <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>
+    <!-- /.itemListElement -->   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_9_nencho.html">
+      <span itemprop="name">年末調整</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="#">
+      <span itemprop="name">事前に確認すること</span>
+     </a>
+     <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /ぱんくずリスト -->          
+  </header>     
+  <div class="interval"></div>
+  <div class="interval-bit"></div>             
+  <div class="wrapper clearfix">			
+   <main class="main">
+    <div class="main--title title-color-document table-of-contents">
+     <h2>目　　　次</h2>
+    </div>
+    <!-- /.main--title title-color-document table-of-contents -->     
+    <div class="article-container">
+        <div class="contents-list contents-list-document">
+            <span>１.</span><a href="#content1">事前に確認すること</a>
+            <p>年末調整を行う前に、事前に確認する扶養家族や賃金などの情報について解説します。</p>                  
+            <ul class="contents-list__ul">
+                <span>１-１</span><a href="#content1">個人情報の確認</a>
+                <li><span>①</span><a href="#content1">本人の基本情報や障害者、寡婦などの情報を確認します。</a></li>                 
+            </ul>
+            <ul class="contents-list__ul">
+                <span>１-２</span><a href="#content2">扶養家族の確認</a>
+                <li><span>①</span><a href="#content2">一覧で確認する方法</a></li>                 
+                <li><span>②</span><a href="#content2-2">１人ずつ確認する方法</a></li>        
+            </ul> 
+            <ul class="contents-list__ul">
+                <span>１-３</span><a href="#content3">賃金台帳（賃金管理）の確認</a> 
+                <li><span>①</span><a href="#content3">確認する方法</a></li>                 
+                <li><span>②</span><a href="#content3-2">登録漏れや間違いがあった場合の登録方法</a></li>      
+            </ul>                        
+        </div> 
+        <!-- /.contents-list contents-list-document -->  
+    </div> 
+    <!-- /.article-container --> 
+    <!--モーダル本体-->
+    <div class="modal-container">
+        <div class="modal-container__body">
+            <!-- 閉じるボタン -->
+            <div class="modal-container__body--close">&#10006</div>
+            <!-- /閉じるボタン -->
+            <!-- モーダル内のコンテンツ -->
+            <div class="modal-container__body--content">
+                <div>
+                    <h2>目　次</h2>
+                </div>    
+                <div class="article-container">
+                    <div class="contents-list contents-list-document">
+                        <ul class="contents-list__ul">
+                            <span>１-１</span><a href="#content1">個人情報の確認</a>
+                            <li><span>①</span><a href="#content1">本人の基本情報や障害者、寡婦などの情報を確認します。</a></li>                 
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>１-２</span><a href="#content2">扶養家族の確認</a>
+                            <li><span>①</span><a href="#content2">一覧で確認する方法</a></li>                 
+                            <li><span>②</span><a href="#content2-2">１人ずつ確認する方法</a></li>        
+                        </ul> 
+                        <ul class="contents-list__ul">
+                            <span>１-３</span><a href="#content3">賃金台帳（賃金管理）の確認</a> 
+                            <li><span>①</span><a href="#content3">確認する方法</a></li>                 
+                            <li><span>②</span><a href="#content3-2">登録漏れや間違いがあった場合の登録方法</a></li>      
+                        </ul>              
+                    </div> 
+                    <!-- /.contents-list contents-list-document -->          
+                </div>
+                <!-- /.article-container -->
+            </div>
+            <!-- /.modal-container__body--content -->
+            <!-- /モーダル内のコンテンツ -->
+        </div>
+        <!-- /.modal-container__body -->  
+    </div>  
+    <!-- /.modal-container -->  
+    <!-- /モーダル本体 -->
+    <a id="content1" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>１-１ 個人情報の確認</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->    
+    <p class="title-description">年末調整では本人の基本情報や障害者、寡婦などの情報より作成されるので、事前に確認と変更を行ってください。</p> 
+    <p class="title-description">年末調整のデータを作成した後に間違い等が見つかった場合は再作成が必要となり業務が煩雑になりますので、確実に確認することが重要です。</p> 
+    <div class="content-container">
+        <div class="content-container__commentary">      
+            <p class="content-container__commentary--para1-title"></p>
+            <div class="content-container__commentary--para1">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->            
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->    
+    </main>
+    <!-- /.page-main -->     
+  </div>
+  <!-- /.wrapper clearfix --> 
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　 <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer__p">以上で、 ” 事前に確認すること ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+ <!-- /.footer -->
+</html>

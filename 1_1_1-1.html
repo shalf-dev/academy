@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
   <!-- /フォント -->
   <!--スタイルシート -->
-  <link rel="stylesheet" href="css/0_reset.css">
   <link id="stylesheet" rel="stylesheet" href="css/style.css">
    <!-- 画像拡大の為のLightbox2 -->
   <link href="css/3_lightbox.css" rel="stylesheet">
@@ -22,22 +21,22 @@
  </head>
  <body>
   <header id="header_motion" class="header">
-   <div class="header_inner">
-    <div class="header_logo">    
+   <div class="header__inner">
+    <div class="header__logo">    
      <a href="https://www.shalf.jp/" target="_blank"></a>
     </div>
-    <!-- /.header_logo --> 
-    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
-    <div class="header_place">
-     <nav class="header_global-nav"><a href="index.html"></a></nav>
+    <!-- /.header__logo --> 
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
      <!-- 目次　モーダルウィンドウで開くボタン -->
-     <div class="header_modal-open">目次</div>  
+     <div class="header__modal-open">目次</div>  
     </div>  
-    <!-- /.header_place --> 
+    <!-- /.header__place --> 
    </div>
-   <!-- /.header_inner -->
+   <!-- /.header__inner -->
    <!-- ぱんくずリスト -->
-   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+   <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a itemprop="item" href="index.html">
       <span itemprop="name">ホーム</span>
@@ -67,7 +66,7 @@
     </li> 
     <!-- /.itemListElement -->         
    </ol> 
-   <!-- /.header_breadcrumb -->
+   <!-- /.header__breadcrumb -->
    <!-- /ぱんくずリスト -->      
   </header>
   <!-- /.header --> 
@@ -75,19 +74,19 @@
   <div class="interval-bit"></div>
   <div class="interval-bit"></div>         
   <div class="wrapper clearfix">
-   <main class="page-main">
-    <div class="main-title title-color-detail table-of-contents">
+   <main class="main">
+    <div class="main--title title-color-detail table-of-contents">
     　<h2>目　　　次</h2>
     </div> 
-    <!-- /.main-title title-color-detail table-of-contents -->   
+    <!-- /.main--title title-color-detail table-of-contents -->   
     <div class="article-container">
-     <div class="articles contents-list contents-list-detail">
+     <div class="contents-list article-container--contents-list-detail">
       <span>１.</span><a href="#content1">Esia-Zeroを使って社員情報を集める</a>
       <p>HR-Zeroを使用して入社する社員に本人情報の登録を依頼することができます。<br>この機能を使用することで、社員情報のやり取りや登録ミスを軽減できます。</p>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-１</span><a href="#content1">会社側で行うこと</a>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-２</span><a href="#content2">入社する社員が行うこと</a>                
        <li><span>①</span><a href="#content2">入社する社員が行うこと</a></li>
        <li><span>②</span><a href="#content2-2">あなたの情報で外国籍の場合に行うこと</a></li>
@@ -95,40 +94,40 @@
        <li><span>④</span><a href="#content2-4">配偶者又は家族の扶養に関する情報</a></li>
        <li><span>⑤</span><a href="#content2-5">配偶者又は家族の外国籍に関する情報</a></li>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-３</span><a href="#content3">社員より社員情報が送られてきたら会社側で行うこと</a>
        <li><span>①</span><a href="#content3-2">内容を確認して登録、手続き依頼を行う</a></li>    
       </ul>      
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-４</span><a href="#content4">社会保険労務士側で行うこと</a>
        <li><span>①</span><a href="#content4-2">内容の確認を行う</a></li>    
       </ul>             
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-５</span><a href="1_1_1-2.html" target="_blank">社労法務システムへの社員（個人）情報の登録は「社員情報を登録する」を参照</a>
       </ul> 
      </div>  
-     <!-- /.articles contents-list contents-list-detail -->  
+     <!-- /.contents-list article-container--contents-list-detail -->  
     </div>
     <!-- /.article-container --> 
     <!-- 目次　モーダルウィンドウ本体 -->
     <div class="modal-container">
-     <div class="modal-body">
+     <div class="modal-container__body">
       <!-- 閉じるボタン -->
-      <div class="modal-close">&#10006</div>
+      <div class="modal-container__body--close">&#10006</div>
       <!-- モーダル内のコンテンツ -->
-      <div class="modal-content">
+      <div class="modal-container__body--content">
        <div>
         <h2>目　次</h2>
        </div>    
        <div class="article-container">
-        <div class="articles contents-list contents-list-detail">
-         <ul class="contents-list_ul">
+        <div class="contents-list article-container--contents-list-detail">
+         <ul class="contents-list__ul">
           <span>&#9650;</span><a href="#">ページトップ</a>
          </ul>            
-         <ul class="contents-list_ul">
+         <ul class="contents-list__ul">
           <span>１-１</span><a href="#content1">会社側で行うこと</a>
          </ul>
-         <ul class="contents-list_ul">
+         <ul class="contents-list__ul">
           <span>１-２</span><a href="#content2">入社する社員が行うこと</a>                
           <li><span>①</span><a href="#content2">入社する社員が行うこと</a></li>
           <li><span>②</span><a href="#content2-2">あなたの情報で外国籍の場合に行うこと</a></li>
@@ -136,130 +135,130 @@
           <li><span>④</span><a href="#content2-4">配偶者又は家族の扶養に関する情報</a></li>
           <li><span>⑤</span><a href="#content2-5">配偶者又は家族の外国籍に関する情報</a></li>
          </ul>
-         <ul class="contents-list_ul">
+         <ul class="contents-list__ul">
           <span>１-３</span><a href="#content3">社員より社員情報が送られてきたら会社側で行うこと</a>
           <li><span>①</span><a href="#content3-2">内容を確認して登録、手続き依頼を行う</a></li>    
          </ul>      
-         <ul class="contents-list_ul">
+         <ul class="contents-list__ul">
           <span>１-４</span><a href="#content4">社会保険労務士側で行うこと</a>
           <li><span>①</span><a href="#content4-2">内容の確認を行う</a></li>    
          </ul>             
-         <ul class="contents-list_ul">
+         <ul class="contents-list__ul">
           <span>１-５</span><a href="1_1_1-2.html" target="_blank">社労法務システムへの社員（個人）情報の登録は「社員情報を登録する」を参照</a>
          </ul>      
         </div> 
-        <!-- /.articles contents-list contents-list-detail -->  
+        <!-- /.contents-list article-container--contents-list-detail -->  
        </div>
        <!-- /.article-container -->
       </div>
-      <!-- /.modal-content -->
+      <!-- /.modal-container__body--content -->
      </div>
-     <!-- /.modal-body -->
+     <!-- /.modal-container__body -->
     </div>
     <!-- /.modal-container -->
     <!-- /目次　モーダルウィンドウ本体 -->
     <a id="content1" class="anchor anchor-detail"></a>
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-１ 会社側で行うこと</h2>
      <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
     </div> 
-    <!-- /.main-title title-color-detail table-of-contents -->   
+    <!-- /.main--title title-color-detail table-of-contents -->   
 　　<div class="content-container">
-     <div class="content-container_commentary">
-      <div class="subheading">事前に行うこと</div>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">事前に行うこと</div>
+      <div class="content-container__commentary--para1">
        <p>入社する社員のメールアドレスを予め聞いておきます。</p>
        <p>個人情報の登録を案内するメールが届くので登録することも伝えておきます。</p>
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
-     <div class="content-container_commentary">
-      <div class="subheading">HR-Zeroにログインします</div>  
-      <div class="content_commentary_paragraph1">
+     <!-- /.content-container__commentary -->
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">HR-Zeroにログインします</div>  
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_1_1-1_1.bmp" alt="HR-Zeroにログイン">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_1.bmp" data-lightbox="lightbox1" data-title="HR-Zeroにログイン"></a>
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
-     <div class="content-container_commentary">
-      <div class="subheading">入社手続きより「本人に入力を依頼する」をクリックします</div>
-      <div class="content_commentary_paragraph1">     
+     <!-- /.content-container__commentary -->
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">入社手続きより「本人に入力を依頼する」をクリックします</div>
+      <div class="content-container__commentary--para1">     
        <img class="img-magnification" src="images/1_1_1-1_2.bmp" alt="本人に入力を依頼する">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_2.bmp" data-lightbox="lightbox2" data-title="本人に入力を依頼する"></a>
       </div>
-      <!-- /.content_commentary_paragraph1 --> 
+      <!-- /.content-container__commentary--para1 --> 
      </div> 
-     <!-- /.content-container_commentary -->
-     <div class="content-container_commentary">
-      <div class="subheading">入社する社員のメールアドレスを入力して送信します</div> 
-      <div class="content_commentary_paragraph1">
+     <!-- /.content-container__commentary -->
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">入社する社員のメールアドレスを入力して送信します</div> 
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_1_1-1_3.bmp" alt="入社する社員のメールアドレス">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_3.bmp" data-lightbox="lightbox3" data-title="入社する社員のメールアドレス"></a>              
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 入社する前にメールアドレスを聞いておくこと</p>
         <p>② 他の人にメールが送信されないようにメールアドレスを間違えないように確認すること</p>       
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div> 
     <!-- /.content-container -->
     <a id="content2" class="anchor anchor-detail"></a>
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-２ 入社する社員が行うこと</h2>
      <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
     </div>  
-    <!-- /.main-title title-color-detail table-of-contents -->      
+    <!-- /.main--title title-color-detail table-of-contents -->      
 　　<div class="content-container">
     <h4>① 入社する社員が行うこと</h4>
-     <div class="content-container_commentary">
-      <div class="subheading">会社よりメールを受け取る</div>  
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">会社よりメールを受け取る</div>  
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_1_1-1_4.bmp" alt="会社よりメールを受け取る">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_4.bmp" data-lightbox="lightbox4" data-title="会社よりメールを受け取る"></a> 
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>メール内のURLをクリックすることを説明する</p>       
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container -->
 　　<div class="content-container">
-     <div class="content-container_commentary">
-      <div class="subheading">ユーザー登録を行う</div>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">ユーザー登録を行う</div>
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_1_1-1_5.bmp" alt="ユーザー登録を行う">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_5.bmp" data-lightbox="lightbox5" data-title="ユーザー登録を行う"></a>  
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① パスワードは忘れないようにする</p>       
         <p>② パスワードは使いまわししないようにする</p>       
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div> 
     <!-- /.content-container --> 
 　　<div class="content-container">
-     <div class="content-container_commentary">
-      <div class="subheading">Zeroにて本人情報や配偶者、扶養家族情報を登録する</div>                            
-      <div class="content_commentary_paragraph1">        
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">Zeroにて本人情報や配偶者、扶養家族情報を登録する</div>                            
+      <div class="content-container__commentary--para1">        
        <p>あなたの情報</p>       
        <img class="img-magnification" src="images/1_1_1-1_6.bmp" alt="あなたの情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_6.bmp" data-lightbox="lightbox6" data-title="あなたの情報"></a>         
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 必須項目は必ず入力すること</p>       
         <p class="paragraph">あなたの氏名とフリガナ、性別、生年月日、郵便番号、都道府県、住所、住所フリガナ、電話番号</p>
         <p>② 下記はわかれば入力する</p>       
@@ -268,20 +267,20 @@
         <p>③ 外国籍者の場合</p> 
         <p class="paragraph"><a class="content_commentary_a" href="#content2-2">『あなたの情報で外国籍を選択した場合に行うこと』</a>を参照</p>       
        </div>
-       <!-- /.content_commentary_paragraph2 -->  
+       <!-- /.content-container__commentary--para2 -->  
        <div class="interval-bit"></div>      
        <p>配偶者の情報</p>          
        <img class="img-magnification" src="images/1_1_1-1_7.bmp" alt="配偶者の情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_7.bmp" data-lightbox="lightbox7" data-title="配偶者の情報"></a>  
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 配偶者がいない場合は、このまま次へ進みます。</p> 
        </div>   
-       <!-- /.content_commentary_paragraph2 -->  
+       <!-- /.content-container__commentary--para2 -->  
        <img class="img-magnification" src="images/1_1_1-1_8.bmp" alt="配偶者の情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_8.bmp" data-lightbox="lightbox8" data-title="配偶者の情報"></a>         
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 配偶者がいる場合は「はい」を選択して入力すること</p> 
         <p>② 必須項目は必ず入力すること</p>
         <p class="paragraph">配偶者の氏名とフリガナ、性別、生年月日</p>
@@ -292,20 +291,20 @@
         <p>⑤ 外国籍者の場合</p>
         <p class="paragraph">『<a class="content_commentary_a" href="#content2-5">配偶者又は家族の外国籍に関する情報</a>』を参照</p>
        </div> 
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
        <div class="interval-bit"></div>      
        <p>家族の情報（配偶者以外）</p>    
        <img class="img-magnification" src="images/1_1_1-1_9.bmp" alt="家族の情報（配偶者以外）">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_9.bmp" data-lightbox="lightbox9" data-title="家族の情報（配偶者以外）"></a> 
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 家族がいない場合はそのまま次へ進みます。</p> 
        </div> 
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
        <img class="img-magnification" src="images/1_1_1-1_10.bmp" alt="家族の情報（配偶者以外）">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_10.bmp" data-lightbox="lightbox10" data-title="家族の情報（配偶者以外）"></a>
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>     
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>     
+       <div class="content-container__commentary--para2">
         <p>① 家族がいる場合は１人ずつ登録する</p> 
         <p class="paragraph">登録は「家族を新規で登録する」をクリック</p>
         <p>② 必須項目は必ず入力すること</p> 
@@ -317,18 +316,18 @@
         <p>⑤ 外国籍者の場合</p> 
         <p class="paragraph">『<a class="content_commentary_a" href="#content2-5">配偶者又は家族の外国籍に関する情報</a>』を参照</p>
        </div>
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
        <div class="interval-bit"></div>      
        <p>最終確認</p>   
        <img class="img-magnification" src="images/1_1_1-1_11.bmp" alt="最終確認">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_11.bmp" data-lightbox="lightbox11" data-title="最終確認"></a>
        <p class="paragraph">最後に「送信する」をクリックする</p>
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 最後に「送信する」をクリックする</p>
         <p>② これで会社側（HR-Zero）に通知が届くので、会社側で手続きを行います。</p>
        </div>       
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
        <div class="interval-bit"></div>
        <p><strong>&#x26A0;</strong> 依頼する時にマイナンバーを必須とした場合</p>
        <div class="interval-bit"></div> 
@@ -336,16 +335,16 @@
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_12.bmp" data-lightbox="lightbox12" data-title="注意"></a>
        <img class="img-magnification" src="images/1_1_1-1_13.bmp" alt="注意">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_13.bmp" data-lightbox="lightbox12" data-title="注意"></a>   
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 続柄や氏名などを確認して個人番号（マイナンバー）を入力します。</p>
         <p>② 家族が多いと間違ってしまうことがあるのでしっかりと確認します。</p>
        </div> 
-       <!-- /.content_commentary_paragraph2 -->  
+       <!-- /.content-container__commentary--para2 -->  
       </div> 
-      <!-- /.content_commentary_paragraph1 -->           
+      <!-- /.content-container__commentary--para1 -->           
      </div>  
-     <!-- /.content-container_commentary -->    
+     <!-- /.content-container__commentary -->    
     </div> 
     <!-- /.content-container -->     
     <a id="content2-2" class="anchor anchor-detail"></a>
@@ -354,9 +353,9 @@
      <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>
      <img class="img-magnification" src="images/1_1_1-1_14.bmp" alt="会社よりメールを受け取る">
      <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_14.bmp" data-lightbox="lightbox13" data-title="会社よりメールを受け取る"></a>          
-     <div class="content-container_commentary">           
-      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">           
+      <p class="content-container__commentary--para1-title">｜ポイント｜</p>
+      <div class="content-container__commentary--para1">
        <p>① 必須項目は必ず入力すること</p>       
        <p class="paragraph">・ローマ字氏名</p>
        <p class="paragraph">　→ 厚生年金保険ローマ字氏名届や雇用保険関係手続き（資格取得届など）で使用されます。</p>
@@ -369,9 +368,9 @@
        <p class="paragraph">　→ 雇用保険関係手続き（資格取得届など）で使用されます。</p>
        <p>② ローマ字氏名は大文字英字で入力します。</p>        
       </div>
-      <!-- /.content_commentary_paragraph1 --> 
+      <!-- /.content-container__commentary--para1 --> 
      </div>
-     <!-- /.content-container_commentary --> 
+     <!-- /.content-container__commentary --> 
     </div> 
     <!-- /.content-container -->      
     <a id="content2-3" class="anchor anchor-detail"></a>             
@@ -380,15 +379,15 @@
      <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>             
      <img class="img-magnification" src="images/1_1_1-1_15.bmp" alt="配偶者又は家族の所在地に関する情報">
      <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_15.bmp" data-lightbox="lightbox14" data-title="配偶者又は家族の所在地に関する情報"></a>
-     <div class="content-container_commentary"> 
-      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary"> 
+      <p class="content-container__commentary--para1-title">｜ポイント｜</p>
+      <div class="content-container__commentary--para1">
        <p>① 別居先の情報を入力します。</p>       
        <p>② 被扶養者異動届や年末調整などに必要となりますので入力が必要です。</p>      
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container -->
     <a id="content2-4" class="anchor anchor-detail"></a>
@@ -397,9 +396,9 @@
      <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>             
      <img class="img-magnification" src="images/1_1_1-1_16.bmp" alt="配偶者又は家族の扶養に関する情報">
      <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_16.bmp" data-lightbox="lightbox15" data-title="配偶者又は家族の扶養に関する情報"></a>
-     <div class="content-container_commentary">
-      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <p class="content-container__commentary--para1-title">｜ポイント｜</p>
+      <div class="content-container__commentary--para1">
        <p>① 下記項目は被扶養者異動届の申請に必要なので必ず入力します。</p>
        <p class="paragraph">・職業</p>              
        <p class="paragraph">・収入 → 無職の場合は０を入力</p>      
@@ -407,9 +406,9 @@
        <p>② 何を入力すればいいのか不明な項目は入力しなくてもOKですが、極力入力してください。</p> 
        <p class="paragraph">・被扶養者になった日、被扶養者になった理由</p>
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div> 
     <!-- /.content-container -->
     <a id="content2-5" class="anchor anchor-detail"></a>
@@ -418,83 +417,83 @@
      <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>        
      <img class="img-magnification" src="images/1_1_1-1_17.bmp" alt="配偶者又は家族の扶養に関する情報">
      <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_17.bmp" data-lightbox="lightbox16" data-title="配偶者又は家族の扶養に関する情報"></a>
-     <div class="content-container_commentary">
-      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <p class="content-container__commentary--para1-title">｜ポイント｜</p>
+      <div class="content-container__commentary--para1">
        <p>① ローマ字氏名など必要情報を入力します。</p>       
        <p>② 配偶者の場合は国民年金第３号被保険者ローマ字氏名届の申請に必要です。</p>      
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container -->
     <a id="content3" class="anchor anchor-detail"></a>
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-３ 社員より社員情報が送られてきたら会社側で行うこと</h2>
      <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
     </div>
-    <!-- /.main-title title-color-detail table-of-contents --> 
+    <!-- /.main--title title-color-detail table-of-contents --> 
     <div class="content-container">         
-     <div class="content-container_commentary">
-      <div class="subheading">HR-Zeroの「お知らせ」に情報が表示されます。</div>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">
+      <div class="content-container__commentary--subheading">HR-Zeroの「お知らせ」に情報が表示されます。</div>
+      <div class="content-container__commentary--para1">
        <p>ｘｘｘｘさんより入社手続きに関する情報が届きました。</p>                     
        <img class="img-magnification" src="images/1_1_1-1_18.bmp" alt="社員より社員情報が送られてきたら会社側で行うこと">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_18.bmp" data-lightbox="lightbox17" data-title="社員より社員情報が送られてきたら会社側で行うこと"></a>
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① お知らせ欄に社員より通知が届いたら、社員情報を確認します。</p>             
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container -->
     <a id="conten3-2" class="anchor anchor-detail"></a>    
     <div class="content-container">
      <h4>① 内容を確認して登録、手続き依頼を行う</h4>   
-     <div class="content-container_commentary">      
-      <div class="subheading">社員情報を確認して、必要情報の入力を行い登録します。</div>       
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">      
+      <div class="content-container__commentary--subheading">社員情報を確認して、必要情報の入力を行い登録します。</div>       
+      <div class="content-container__commentary--para1">
        <p>基本情報</p>             
        <img class="img-magnification" src="images/1_1_1-1_19.bmp" alt="基本情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_19.bmp" data-lightbox="lightbox18" data-title="基本情報"></a>         
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
         <p>② 問題なければ、必要事項を入力する</p>
         <p class="paragraph">必須項目は必ず入力すること</p>
         <p class="paragraph">　・社員番号（個人コード）</p>
-        <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para3">
          <p>社労法務システムに登録するので、前ゼロは付けない</p>       
          <p class="paragraph">・入社年月日、入社区分</p>
          <p class="paragraph">・雇用形態</p>
         </div>    
-        <!-- /.content_commentary_paragraph3 -->
-        <p class="content_commentary_paragraph3-title">｜ポイント｜</p> 
-        <div class="content_commentary_paragraph3">        
+        <!-- /.content-container__commentary--para3 -->
+        <p class="content-container__commentary--para3-title">｜ポイント｜</p> 
+        <div class="content-container__commentary--para3">        
          <p>最初は「正社員」が選択されているので、パートなどの場合は正しく選択する</p>  
          <p class="paragraph">・給与区分</p>
         </div>    
-        <!-- /.content_commentary_paragraph3 -->
-        <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph3">
+        <!-- /.content-container__commentary--para3 -->
+        <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para3">
          <p class="paragraph">・月給者は「月給（遅早・欠勤控除なし）」を選択</p>  
          <p class="paragraph">・日給月給者は「月給（遅早・欠勤控除あり）」を選択</p> 
         </div>    
-        <!-- /.content_commentary_paragraph3 -->        
+        <!-- /.content-container__commentary--para3 -->        
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
        <div class="interval-bit"></div>      
        <p>社会保険に関する情報</p>  
        <img class="img-magnification" src="images/1_1_1-1_20.bmp" alt="社会保険に関する情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_20.bmp" data-lightbox="lightbox19" data-title="社会保険に関する情報"></a>       
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
         <p>② 問題なければ、必要事項を入力する</p>
         <p>③ 健康保険と厚生年金保険の加入は必ず選択すること</p>
@@ -507,20 +506,20 @@
         <p class="paragraph">・備考と住所未記入理由</p>  
         <p class="paragraph">　→ 資格取得届の申請にて必要ですが、社労法務システムでは使用していないので入力は任意です。</p>      
        </div>
-       <!-- /.content_commentary_paragraph2 -->  
+       <!-- /.content-container__commentary--para2 -->  
        <div class="interval-bit"></div>      
        <p>雇用保険に関する情報</p>
        <img class="img-magnification" src="images/1_1_1-1_21.bmp" alt="雇用保険に関する情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_21.bmp" data-lightbox="lightbox20" data-title="雇用保険に関する情報"></a>    
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
         <p>② 問題なければ、必要事項を入力する</p>
         <p>③ 雇用保険の加入は必ず選択すること</p>
         <p class="paragraph">「加入しない」を選択した場合、以下は入力不要</p>       
         <p>④ 全ての項目は必ず入力すること（備考は任意）</p>
-        <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para3">
          <p>① 雇用保険被保険者番号は初めて加入する場合は、「0000-000000-0」を入力</p>
          <p>② 適用事業所は事業所にて複数の事業場がある場合に選択が必要</p>
          <p>③ 下記項目は最初の項目が選択されているので、必要に応じて変更する</p>
@@ -528,15 +527,15 @@
          <p>④ 賃金月額は千円単位で入力すること</p>
          <p>⑤ 契約期間の定めは有期契約などで定めがある場合に選択する</p>
         </div>    
-        <!-- /.content_commentary_paragraph3 -->
+        <!-- /.content-container__commentary--para3 -->
        </div>
-       <!-- /.content_commentary_paragraph2 -->      
+       <!-- /.content-container__commentary--para2 -->      
        <div class="interval-bit"></div>      
        <p>配偶者に関する情報</p>
        <img class="img-magnification" src="images/1_1_1-1_22.bmp" alt="配偶者に関する情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_22.bmp" data-lightbox="lightbox21" data-title="配偶者に関する情報"></a>      
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
         <p>② 問題なければ、必要事項を入力する</p>
         <p>③ 配偶者の所在地に関する情報</p>
@@ -548,13 +547,13 @@
         <p class="paragraph">　→ 被扶養者になった日は本人の社会保険の資格取得日</p>
         <p class="paragraph">　→ 被扶養者になった理由は配偶者の就職</p>
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
        <div class="interval-bit"></div>      
        <p>家族に関する情報（配偶者以外）</p>
        <img class="img-magnification" src="images/1_1_1-1_23.bmp" alt="家族に関する情報（配偶者以外）">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_23.bmp" data-lightbox="lightbox22" data-title="家族に関する情報（配偶者以外）"></a>     
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 社員からの情報を確認して、入力されていない項目や不備などがあれば、差戻しをしてください。</p>
         <p>② 問題なければ、必要事項を入力する</p>
         <p>③ 家族の所在地に関する情報</p>
@@ -566,68 +565,68 @@
         <p class="paragraph">　→ 被扶養者になった日は本人の社会保険の資格取得日</p>
         <p class="paragraph">　→ 被扶養者になった理由はその他を選択して理由を入力する</p>
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
        <div class="interval-bit"></div>      
        <p>マイナンバー情報</p>
        <img class="img-magnification" src="images/1_1_1-1_24.bmp" alt="マイナンバー情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_24.bmp" data-lightbox="lightbox23" data-title="マイナンバー情報"></a>   
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 本人や配偶者、家族の氏名をクリックして、マイナンバーを確認します。</p>       
         <p class="paragraph">不備などがあれば、差戻しをしてください。</p>
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
        <div class="interval-bit"></div>      
        <p>最終確認</p>   
        <img class="img-magnification" src="images/1_1_1-1_25.bmp" alt="マイナンバー情報">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_25.bmp" data-lightbox="lightbox24" data-title="マイナンバー情報"></a>             
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① 最終確認を再度行い、手続きを依頼する</p>
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>       
-     <!-- /.content-container_commentary -->   
+     <!-- /.content-container__commentary -->   
     </div>
     <!-- /.content-container -->         
     <a id="content4" class="anchor anchor-detail"></a>
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-４ 顧問先より社員情報が送られてきたら社会保険労務士側で行うこと</h2>
      <a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a>
     </div> 
-    <!-- /.main-title title-color-detail table-of-contents -->   
+    <!-- /.main--title title-color-detail table-of-contents -->   
 　　<div class="content-container">
-     <div class="content-container_commentary"> 
-      <div class="subheading">Esia-Zeroの「お知らせ」に情報が表示されます</div>     
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary"> 
+      <div class="content-container__commentary--subheading">Esia-Zeroの「お知らせ」に情報が表示されます</div>     
+      <div class="content-container__commentary--para1">
        <p>顧問先のｘｘｘｘさんより入社手続きに関する情報が届きました。</p>
        <img class="img-magnification" src="images/1_1_1-1_26.bmp" alt="Esia-Zeroの「お知らせ」">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_26.bmp" data-lightbox="lightbox25" data-title="Esia-Zeroの「お知らせ」"></a>           
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>① お知らせ欄に顧問先の社員より通知が届いたら、社員情報を確認します。</p>
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container -->    
     <a id="content4-2" class="anchor anchor-detail"></a>
 　　<div class="content-container">
      <h4>① 内容の確認を行う</h4>
-     <div class="content-container_commentary"> 
-      <div class="subheading">社員情報の確認を行う</div>
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary"> 
+      <div class="content-container__commentary--subheading">社員情報の確認を行う</div>
+      <div class="content-container__commentary--para1">
        <p>Esia-Zeroの「お知らせ」をクリックすることで社員情報を確認します。</p>
        <p>顧問先のｘｘｘｘさんより入社手続きに関する情報が届きました。</p>
        <img class="img-magnification" src="images/1_1_1-1_27.bmp" alt="社員情報の確認を行う">
        <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_27.bmp" data-lightbox="lightbox26" data-title="社員情報の確認を行う"></a>       
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-       <div class="content_commentary_paragraph2">
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+       <div class="content-container__commentary--para2">
         <p>顧問先管理にて社員情報を確認することができます。</p> 
         <p>① 顧問先管理を選択</p> 
         <img class="img-magnification" src="images/1_1_1-1_28.bmp" alt="顧問先管理">
@@ -642,11 +641,11 @@
         <img class="img-magnification" src="images/1_1_1-1_31.bmp" alt="社員管理">
         <a class="img-scaling img-scaling-detail" href="images/1_1_1-1_31.bmp" data-lightbox="lightbox30" data-title="社員管理"></a>        
        </div>
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div> 
     <!-- /.content-container -->                                       
    </main>
@@ -666,8 +665,8 @@
   <!-- /JavaScript関連ファイル -->   
  </body>
  <footer class="footer">
-  <p class="footer_p">” Esia-Zeroを使って社員情報を集める ” についての説明は以上です。</p>
-  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+  <p class="footer__p">” Esia-Zeroを使って社員情報を集める ” についての説明は以上です。</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
  </footer>  
  <!-- /.footer -->  
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head id="head">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+        <title>シャルフアカデミー</title>
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
+        <!-- /フォント -->
+        <!--スタイルシート -->
+        <link id="stylesheet" rel="stylesheet" href="css/style.css">
+            <!-- 画像拡大の為のLightbox2 -->
+        <link href="css/3_lightbox.css" rel="stylesheet">
+            <!-- /画像拡大の為のLightbox2 -->
+            <!-- 動画表示の為のlity -->
+        <link rel="stylesheet" href="css/lity.css"> 
+            <!-- /動画表示の為のlity -->
+        <!-- /スタイルシート -->   
+    </head>
+    <body>
+        <header id="header_motion" class="header">
+        <div class="header__inner">
+            <div class="header__logo">    
+            <a href="https://www.shalf.jp/" target="_blank"></a>
+            </div>
+            <!-- /.header__logo --> 
+            <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+                <div class="header__place">
+                <nav class="header__global-nav"><a href="index.html"></a></nav> 
+                <!-- 目次　モーダルウィンドウで開くボタン -->
+                <div class="header__modal-open">目次</div>     
+            </div> 
+            <!-- /.header__place --> 
+        </div>
+        <!-- /.header__inner -->
+        <!-- ぱんくずリスト -->
+        <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>  
+            <!-- /.itemListElement --> 
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="1_2_chingin.html">
+                    <span itemprop="name">賃金台帳</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <!-- /.itemListElement -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="1_2_2.html">
+                    <span itemprop="name">賃金台帳を印刷する</span>
+                </a>
+                <meta itemprop="position" content="3" />
+            </li>
+            <!-- /.itemListElement -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="#">
+                    <span itemprop="name">出力方法</span>
+                </a>
+                <meta itemprop="position" content="4" />
+            </li>  
+            <!-- /.itemListElement -->        
+        </ol> 
+        <!-- /.header__breadcrumb -->
+        <!-- /ぱんくずリスト -->       
+        </header>
+        <!-- /.header --> 
+        <div class="interval"></div> 
+        <div class="interval-bit"></div>
+        <div class="interval-bit"></div>             
+        <div class="wrapper clearfix">
+            <main class="main">
+                <div class="main--title title-color-detail table-of-contents">
+                　<h2>目　　　次</h2>
+                </div> 
+                <!-- /.main--title title-color-detail table-of-contents -->   
+                <div class="article-container">
+                    <div class="contents-list article-container--contents-list-detail">
+                        <span>１.</span><a href="#content1">出力方法</a>
+                        <p>一般的な賃金台帳より、データの出力について解説します。</p>
+                        <ul class="contents-list__ul">
+                            <span>１-１</span><a href="#content1">年間の賃金台帳を出力する</a> 
+                            <li><span>①</span><a href="#content1-2">データ出力を始める</a></li>
+                            <li><span>②</span><a href="#content1-3">出力する条件を設定する</a></li>
+                            <li><span>③</span><a href="#content1-4">出力する</a></li>
+                        </ul>                       
+                    </div>  
+                    <!-- /.contents-list article-container--contents-list-detail -->  
+                </div>
+                <!-- /.article-container --> 
+                <!-- 目次　モーダルウィンドウ本体 -->
+                <div class="modal-container">
+                    <div class="modal-container__body">
+                        <!-- 閉じるボタン -->
+                        <div class="modal-container__body--close">&#10006</div>
+                        <!-- モーダル内のコンテンツ -->
+                        <div class="modal-container__body--content">
+                            <div>
+                                <h2>目　次</h2>
+                            </div>    
+                            <div class="article-container">
+                                <div class="contents-list article-container--contents-list-detail">
+                                    <ul class="contents-list__ul">
+                                    <span>&#9650;</span><a href="#">ページトップ</a>
+                                    </ul>            
+                                    <ul class="contents-list__ul"> 
+                                        <span>１-１</span><a href="#content1">年間の賃金台帳を出力する</a> 
+                                        <li><span>①</span><a href="#content1-2">データ出力を始める</a></li>
+                                        <li><span>②</span><a href="#content1-3">出力する条件を設定する</a></li>
+                                        <li><span>③</span><a href="#content1-4">出力する</a></li>
+                                    </ul>     
+                                </div> 
+                                <!-- /.contents-list article-container--contents-list-detail -->  
+                            </div>
+                            <!-- /.article-container -->
+                        </div>
+                        <!-- /.modal-container__body--content -->
+                    </div>
+                    <!-- /.modal-container__body -->
+                </div>
+                <!-- /.modal-container -->
+                <!-- /目次　モーダルウィンドウ本体 -->
+                <a id="content1" class="anchor anchor-detail"></a>
+                <div class="main--title title-color-detail table-of-contents">
+                    <h2>年間の賃金台帳を出力する</h2>         
+                </div> 
+                <!-- /.main--title title-color-detail table-of-contents -->  
+                <p class="title-description">一般的な賃金台帳よりデータの出力について解説します。</p>                    
+                <div class="content-container">  
+                    <img class="img-magnification" src="images/1_2_2-5_1.bmp" alt="年間の賃金台帳を出力する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-5_1.bmp" data-lightbox="lightbox1" data-title="年間の賃金台帳を出力する"></a>     
+                    <div class="content-container__commentary"> 
+                        <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>         
+                    </div>  
+                    <!-- /.content-container__commentary -->
+                </div>
+                <!-- /.content-container -->  
+                <a id="content1-2" class="anchor anchor-document"></a>
+                <div class="content-container">
+                    <h4>① データ出力を始める</h4>  
+                    <img class="img-magnification" src="images/1_2_2-5_2.bmp" alt="データ出力を始める">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-5_2.bmp" data-lightbox="lightbox2" data-title="データ出力を始める"></a>
+                    <div class="content-container__commentary">  
+                        <p class="content-container__commentary--para1-title"></p>
+                        <div class="content-container__commentary--para1">                                                        
+                            <p>「処理コード」を「E:エクセル出力」に指定し「実行」ボタンをします。又は、<img src="images/出力ボタン.bmp" alt="出力ボタン" style="vertical-align:middle;">をクリックします。</p> 
+                            <p>Excelデータ出力画面にて出力したい社員を選択し、印刷条件を設定してから「Excel出力」ボタンをクリックします。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
+                    </div> 
+                    <!-- /.content-container__commentary -->                                              
+                </div>
+                <!-- /.content-container -->  
+                <a id="content1-3" class="anchor anchor-document"></a>
+                <div class="content-container">
+                    <h4>② 出力する条件を設定する</h4>  
+                    <img class="img-magnification" src="images/1_2_2-5_3.bmp" alt="出力する条件を設定する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-5_3.bmp" data-lightbox="lightbox3" data-title="出力する条件を設定する"></a>
+                    <div class="content-container__commentary">  
+                        <div class="content-container__commentary--para1">                                                        
+                            <p>「出力フォルダ名」は、「賃金」＋連番＋出力日付です。フォルダ内にファイルが、連番＋氏名と振られ作成されます。</p> 
+                            <p>「対象月」は、１２か月が最大です。</p>
+                            <p>「出力項目選択」にて、出力したい項目にチェックを付けます。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
+                    </div> 
+                    <!-- /.content-container__commentary -->                                              
+                </div>
+                <!-- /.content-container --> 
+                <a id="content1-4" class="anchor anchor-document"></a>
+                <div class="content-container">
+                    <h4>③ 出力する</h4>  
+                    <img class="img-magnification" src="images/1_2_2-5_4.bmp" alt="出力する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-5_4.bmp" data-lightbox="lightbox4" data-title="出力する"></a>
+                    <div class="content-container__commentary">  
+                        <div class="content-container__commentary--para1">                                                        
+                            <p>保存先を指定して「保存」ボタンをクリックします。</p> 
+                        </div>
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
+                    </div> 
+                    <!-- /.content-container__commentary -->                                              
+                </div>
+                <!-- /.content-container -->                                                                                                                             
+            </main>            
+            <!-- /.page-main -->
+        </div>
+        <!-- /.wrapper clearfix -->
+        <!-- JavaScript関連ファイル -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://codejquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+        <script src="JS/script.js"></script>  
+            <!-- 画像拡大の為のLightbox2 -->
+        <script src="JS/1_lightbox.js"></script>
+            <!-- /画像拡大の為のLightbox2 -->
+            <!-- 動画表示の為のlity -->
+        <script src="js/lity.js"></script> 
+            <!-- /動画表示の為のlity --> 
+        <!-- /JavaScript関連ファイル -->
+    </body>
+    <footer class="footer">
+        <p class="footer__p">” 出力方法 ” についての説明は以上です。</p>
+        <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
+    </footer> 
+    <!-- /.footer -->  
+</html>

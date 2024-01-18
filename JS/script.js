@@ -1,8 +1,8 @@
 $(function() {
   
  //変数に要素を入れる
- var open = $('.header_modal-open'),
-     close = $('.modal-close'),
+ var open = $('.header__modal-open'),
+     close = $('.modal-container__body--close'),
      container = $('.modal-container'),
      container_a = $('.modal-container a'); 
      
@@ -19,7 +19,7 @@ $(function() {
 
  //モーダルの外側をクリックしたらモーダルを閉じる
  $(document).on('click',function(e){
-  if(!$(e.target).closest('.modal-body').length){
+  if(!$(e.target).closest('.modal-container__body').length){
    container.removeClass('active');
   }
  });

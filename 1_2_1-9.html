@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
   <!-- /フォント -->
   <!--スタイルシート -->
-  <link rel="stylesheet" href="css/0_reset.css">
   <link id="stylesheet" rel="stylesheet" href="css/style.css">
    <!-- 画像拡大の為のLightbox2 -->
   <link href="css/3_lightbox.css" rel="stylesheet">
@@ -22,23 +21,23 @@
  </head>
  <body>
   <header id="header_motion" class="header">
-   <div class="header_inner">
-    <div class="header_logo">    
+   <div class="header__inner">
+    <div class="header__logo">    
      <a href="https://www.shalf.jp/" target="_blank"></a>
     </div>
-    <!-- /.header_logo --> 
-    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
-    <div class="header_place">
-     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+    <!-- /.header__logo --> 
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav> 
      <!-- モーダルを開くボタン -->
-     <div class="header_modal-open">目次</div>
+     <div class="header__modal-open">目次</div>
      <!-- /モーダルを開くボタン -->     
     </div> 
-    <!-- /.header_place --> 
+    <!-- /.header__place --> 
    </div>
-   <!-- /.header_inner -->
+   <!-- /.header__inner -->
    <!-- ぱんくずリスト -->
-   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+   <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a itemprop="item" href="index.html">
       <span itemprop="name">ホーム</span>
@@ -68,7 +67,7 @@
     </li>  
     <!-- /.itemListElement -->        
    </ol> 
-   <!-- /.header_breadcrumb -->
+   <!-- /.header__breadcrumb -->
    <!-- /ぱんくずリスト -->       
   </header>
   <!-- /.header -->   
@@ -76,82 +75,82 @@
   <div class="interval-bit"></div>
   <div class="interval-bit"></div>         
   <div class="wrapper clearfix">
-   <main class="page-main">
-    <div class="main-title title-color-detail table-of-contents">
+   <main class="main">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>目　　　次</h2>
     </div> 
-    <!-- /.main-title title-color-detail table-of-contents -->   
+    <!-- /.main--title title-color-detail table-of-contents -->   
     <div class="article-container">
-     <div class="articles contents-list contents-list-detail">
+     <div class="contents-list article-container--contents-list-detail">
       <span>１.</span><a href="#content1">取り込み方法</a>
       <p>賃金台帳（賃金管理）に賞与データを取り込む手順について解説します。<br>※ 賞与については、給与とは異なり項目は共通です。</p>      
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-１</span><a href="#content1">取込データの給与月度・給与支給日の設定の手順</a>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-２</span><a href="#content2">ファイルより取り込む</a>
        <li><span>①</span><a href="#content2">取り込みを始める</a></li>          
        <li><span>②</span><a href="#content2-2">取り込みするファイルを選択する</a></li>          
        <li><span>③</span><a href="#content2-3">項目の結び付けを行う</a></li>          
        <li><span>④</span><a href="#content2-4">賃金台帳（賃金管理）にデータを登録する</a></li>                        
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-３</span><a href="#content3">直接入力する</a>  
        <li><span>①</span><a href="#content3">入力を始める</a></li>          
        <li><span>②</span><a href="#content3-2">入力を行う</a></li>          
        <li><span>③</span><a href="#content3-3">賃金台帳（賃金管理）に保存する</a></li>          
       </ul>                   
      </div>  
-     <!-- /.articles contents-list contents-list-detail -->  
+     <!-- /.contents-list article-container--contents-list-detail -->  
     </div>
     <!-- /.article-container --> 
     <!-- 目次　モーダルウィンドウ本体 -->
     <div class="modal-container">
-     <div class="modal-body">
+     <div class="modal-container__body">
       <!-- 閉じるボタン -->
-      <div class="modal-close">&#10006</div>
+      <div class="modal-container__body--close">&#10006</div>
        <!-- モーダル内のコンテンツ -->
-       <div class="modal-content">
+       <div class="modal-container__body--content">
         <div>
          <h2>目　次</h2>
         </div>    
         <div class="article-container">
-         <div class="articles contents-list contents-list-detail">
-          <ul class="contents-list_ul">
+         <div class="contents-list article-container--contents-list-detail">
+          <ul class="contents-list__ul">
            <span>&#9650;</span><a href="#">ページトップ</a>
           </ul>            
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-１</span><a href="#content1">取込データの給与月度・給与支給日の設定の手順</a>
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-２</span><a href="#content2">ファイルより取り込む</a>
            <li><span>①</span><a href="#content2">取り込みを始める</a></li>          
            <li><span>②</span><a href="#content2-2">取り込みするファイルを選択する</a></li>          
            <li><span>③</span><a href="#content2-3">項目の結び付けを行う</a></li>          
            <li><span>④</span><a href="#content2-4">賃金台帳（賃金管理）にデータを登録する</a></li>                        
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-３</span><a href="#content3">直接入力する</a>  
            <li><span>①</span><a href="#content3">入力を始める</a></li>          
            <li><span>②</span><a href="#content3-2">入力を行う</a></li>          
            <li><span>③</span><a href="#content3-3">賃金台帳（賃金管理）に保存する</a></li>          
           </ul>            
          </div> 
-         <!-- /.articles contents-list contents-list-detail -->  
+         <!-- /.contents-list article-container--contents-list-detail -->  
         </div>
         <!-- /.article-container -->
        </div>
-       <!-- /.modal-content -->
+       <!-- /.modal-container__body--content -->
       </div>
-      <!-- /.modal-body -->
+      <!-- /.modal-container__body -->
      </div>
      <!-- /.modal-container -->
      <!-- /目次　モーダルウィンドウ本体 -->
      <a id="content1" class="anchor anchor-detail"></a>
-     <div class="main-title title-color-detail table-of-contents">
+     <div class="main--title title-color-detail table-of-contents">
       <h2>１-１ 取込データの給与月度・給与支給日の設定の手順</h2>         
      </div> 
-     <!-- /.main-title title-color-detail table-of-contents -->   
+     <!-- /.main--title title-color-detail table-of-contents -->   
      <div class="content-container">
       <img class="img-magnification" src="images/1_2_1-9_1.bmp" alt="設定画面">
       <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_1.bmp" data-lightbox="lightbox1" data-title="設定画面"></a> 
@@ -159,10 +158,10 @@
      </div>
      <!-- /.content-container -->  
      <a id="content2" class="anchor anchor-detail"></a>
-     <div class="main-title title-color-detail table-of-contents">
+     <div class="main--title title-color-detail table-of-contents">
       <h2>１-２ ファイルより取り込む</h2>         
      </div> 
-     <!-- /.main-title title-color-detail table-of-contents -->  
+     <!-- /.main--title title-color-detail table-of-contents -->  
      <p class="title-description">ファイルより取り込む方法について解説します。</p>    
      <div class="content-container">
       <h4>① 取り込みを始める</h4>      
@@ -177,9 +176,9 @@
       <p class="title-description">ASPとオンプレミスでは画面が異なりますが、今回はASP画面にて説明をします。</p>            
       <img class="img-magnification" src="images/1_2_1-9_3.bmp" alt="取り込みするファイルを選択する">
       <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_3.bmp" data-lightbox="lightbox3" data-title="取り込みするファイルを選択する"></a>
-      <div class="content-container_commentary">
-       <p class="content_commentary_paragraph1-title">読込先の指定</p>     
-       <div class="content_commentary_paragraph1">
+      <div class="content-container__commentary">
+       <p class="content-container__commentary--para1-title">読込先の指定</p>     
+       <div class="content-container__commentary--para1">
         <p>標準フォルダは、ローカル環境のCドライブ内の、「Shalf_AspData」フォルダ内の「Input」フォルダです。</p>
         <img class="img-magnification" src="images/1_2_1-9_4.bmp" alt="標準フォルダの位置">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_4.bmp" data-lightbox="lightbox4" data-title="標準フォルダの位置"></a>
@@ -190,14 +189,14 @@
         <p>Excelファイルを指定した場合は、取込開始位置設定画面が表示されます。</p>
         <img class="img-magnification" src="images/1_2_1-9_6.bmp" alt="取込開始位置設定画面">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_6.bmp" data-lightbox="lightbox6" data-title="取込開始位置設定画面"></a>       
-        <div class="content_commentary_paragraph2">
+        <div class="content-container__commentary--para2">
          <p>各項目名が何行目にあるかを入力します。この項目名を社労法務システムと照らし合わせてデータを取り込むことになります。</p>
         </div>
-        <!-- /.content_commentary_paragraph2 -->
+        <!-- /.content-container__commentary--para2 -->
        </div>
-       <!-- /.content_commentary_paragraph1 -->
+       <!-- /.content-container__commentary--para1 -->
       </div>
-      <!-- /.content-container_commentary -->   
+      <!-- /.content-container__commentary -->   
      </div>
      <!-- /.content-container -->      
      <a id="content2-3" class="anchor anchor-detail"></a>             
@@ -206,82 +205,80 @@
       <P class="title-description">データの先頭行を一致させます。左側の社労法務システムの個人マスターの項目に、右側の取り込みファイルのデータの項目を結び付けます。</P>     
       <img class="img-magnification" src="images/1_2_1-9_7.bmp" alt="項目の結び付けを行う">
       <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_7.bmp" data-lightbox="lightbox7" data-title="項目の結び付けを行う"></a>     
-      <div class="content-container_commentary">
-       <div class="content_commentary_paragraph1">
-        <p class="content_commentary_paragraph2-title">【データ先頭行の扱い】</p>
-        <div class="content_commentary_paragraph2">
-         <p>・項目名称として使用</p>
-         <div class="content_commentary_paragraph3">
-          <p>取り込んだデータ（右の表）の先頭行を、給与項目名称として扱います。</p>
-         </div>
-         <!-- /.content_commentary_paragraph3 -->          
-         <p>・１件目のデータとして取り込む</p>        
-         <div class="content_commentary_paragraph3">
-          <p>取り込んだデータ（右の表）の先頭行を、１件目のデータとして取り込みます。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
-         </div>
-         <!-- /.content_commentary_paragraph3 -->          
-         <p>・無視する</p>        
-         <div class="content_commentary_paragraph3">
-          <p>取り込んだデータ（右の表）の先頭行のみ、無視して取り込みません。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
-         </div>                  
-         <!-- /.content_commentary_paragraph3 -->         
-         <img class="img-magnification" src="images/1_2_1-9_8.bmp" alt="データ先頭行の扱い">
-         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_8.bmp" data-lightbox="lightbox8" data-title="データ先頭行の扱い"></a>
+      <div class="content-container__commentary">
+        <p class="content-container__commentary--para1-title">【データ先頭行の扱い】</p>
+        <div class="content-container__commentary--para1">
+            <p>・項目名称として使用</p>
+            <div class="content-container__commentary--para2">
+                <p>取り込んだデータ（右の表）の先頭行を、給与項目名称として扱います。</p>
+            </div>
+            <!-- /.content-container__commentary--para2 -->          
+            <p>・１件目のデータとして取り込む</p>        
+            <div class="content-container__commentary--para2">
+                <p>取り込んだデータ（右の表）の先頭行を、１件目のデータとして取り込みます。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
+            </div>
+            <!-- /.content-container__commentary--para2 -->          
+            <p>・無視する</p>        
+            <div class="content-container__commentary--para2">
+                <p>取り込んだデータ（右の表）の先頭行のみ、無視して取り込みません。<br>給与項目名称は自動で「項目01」「項目02」・・・と振られていきます。</p>
+            </div>                  
+            <!-- /.content-container__commentary--para2 -->         
+            <img class="img-magnification" src="images/1_2_1-9_8.bmp" alt="データ先頭行の扱い">
+            <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_8.bmp" data-lightbox="lightbox8" data-title="データ先頭行の扱い"></a>
         </div>
-        <!-- /.content_commentary_paragraph2 -->        
-        <p>各機能について</p>
+        <!-- /.content-container__commentary--para1 -->        
+        <p class="content-container__commentary--para1-title">各機能について</p>
         <img class="img-magnification" src="images/1_2_1-9_9.bmp" alt="各機能について">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_9.bmp" data-lightbox="lightbox9" data-title="各機能について"></a>       
-        <div class="content_commentary_paragraph2">
-         <p>① 「１-２ 指定月度の賃金管理データ支給・控除名称の登録」で登録した賃金管理データ項目が表示されています。</p>
-         <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
-         <div class="content_commentary_paragraph3">
-          <p>・読み込んだデータ・ファイルの列との結び付けが済んでいる項目は白色で表示され、結付が済んでいない項目は、勤務・単価・支給・控除などの項目タイプにより緑・黄・青・赤で表示されます。</p>
-          <p>・色の付いている項目は、結び付けを行わないと給与入力項目として取り込みができません。</p>
-         </div>
-         <!-- /.content_commentary_paragraph3 -->
-         <p>② 読み込んだデータ・ファイルの内容を、先頭から５件表示しています。</p>
-         <p class="content_commentary_paragraph3-title">｜ポイント｜</p>
-         <div class="content_commentary_paragraph3">
-          <p>・賃金管理項目との結び付けが済んでいる項目は、項目名欄に左側の表の対応する項目名称が表示され、項目タイプ別に緑・黄・青・赤で表示されます。</p>
-          <p>　結び付けが済んでいない項目は項目名欄に「項目XX」と表示され白色で表示されます。</p>
-          <p>・個人コードのデータが入っている列は必ず結び付けを行ってください。</p>         
-         </div>     
-         <!-- /.content_commentary_paragraph3 -->
-         <p>①②③ 項目の結び付け方法</p>
-         <div class="content_commentary_paragraph3">        
-          <p>個人マスターの結び付けが未完了のデータを、「→」ボタンで結び付けます。</p>
-          <img class="img-magnification" src="images/1_2_1-9_10.bmp" alt="項目の結び付け方法">
-          <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_10.bmp" data-lightbox="lightbox10" data-title="項目の結び付け方法"></a>        
-          <p>結び付けた項目を解除したい場合は、「←」ボタンをクリックします。</p>
-          <img class="img-magnification" src="images/1_2_1-9_11.bmp" alt="項目の結び付け方法">
-          <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_11.bmp" data-lightbox="lightbox11" data-title="項目の結び付け方法"></a> 
-         </div>
-         <!-- /.content_commentary_paragraph3 -->
-         <p>④ 次回以降も同じファイルにて取り込みを行う場合は保存すると便利です。</p>
-         <p>⑤ 結付設定の保存ボタンで保存してある場合に使います。</p>
-         <p>⑥ 結び付けを行った項目を読み込み、メイン画面に表示されることが確認できます。</p>                                    
+        <div class="content-container__commentary--para1">
+            <p>① 「１-２ 指定月度の賃金管理データ支給・控除名称の登録」で登録した賃金管理データ項目が表示されています。</p>
+            <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+            <div class="content-container__commentary--para2">
+                <p>・読み込んだデータ・ファイルの列との結び付けが済んでいる項目は白色で表示され、結付が済んでいない項目は、勤務・単価・支給・控除などの項目タイプにより緑・黄・青・赤で表示されます。</p>
+                <p>・色の付いている項目は、結び付けを行わないと給与入力項目として取り込みができません。</p>
+            </div>
+            <!-- /.content-container__commentary--para2 -->
+            <p>② 読み込んだデータ・ファイルの内容を、先頭から５件表示しています。</p>
+            <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+            <div class="content-container__commentary--para2">
+                <p>・賃金管理項目との結び付けが済んでいる項目は、項目名欄に左側の表の対応する項目名称が表示され、項目タイプ別に緑・黄・青・赤で表示されます。</p>
+                <p>　結び付けが済んでいない項目は項目名欄に「項目XX」と表示され白色で表示されます。</p>
+                <p>・個人コードのデータが入っている列は必ず結び付けを行ってください。</p>         
+            </div>     
+            <!-- /.content-container__commentary--para2 -->
+            <p>①②③ 項目の結び付け方法</p>
+            <div class="content-container__commentary--para2">        
+                <p>個人マスターの結び付けが未完了のデータを、「→」ボタンで結び付けます。</p>
+                <img class="img-magnification" src="images/1_2_1-9_10.bmp" alt="項目の結び付け方法">
+                <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_10.bmp" data-lightbox="lightbox10" data-title="項目の結び付け方法"></a>        
+                <p>結び付けた項目を解除したい場合は、「←」ボタンをクリックします。</p>
+                <img class="img-magnification" src="images/1_2_1-9_11.bmp" alt="項目の結び付け方法">
+                <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_11.bmp" data-lightbox="lightbox11" data-title="項目の結び付け方法"></a> 
+            </div>
+            <!-- /.content-container__commentary--para2 -->
+            <p>④ 次回以降も同じファイルにて取り込みを行う場合は保存すると便利です。</p>
+            <p>⑤ 結付設定の保存ボタンで保存してある場合に使います。</p>
+            <p>⑥ 結び付けを行った項目を読み込み、メイン画面に表示されることが確認できます。</p>                                    
+            <div class="interval-bit"></div>         
+            <p>メイン画面に、取り込んだデータが表示されていることが確認できます。</p>
+            <img class="img-magnification" src="images/1_2_1-9_12.bmp" alt="メイン画面">
+            <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_12.bmp" data-lightbox="lightbox12" data-title="メイン画面"></a>        
         </div>
-        <!-- /.content_commentary_paragraph2 --> 
-        <p>メイン画面に、取り込んだデータが表示されていることが確認できます。</p>
-        <img class="img-magnification" src="images/1_2_1-9_12.bmp" alt="メイン画面">
-        <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_12.bmp" data-lightbox="lightbox12" data-title="メイン画面"></a>        
-       </div>             
-       <!-- /.content_commentary_paragraph1 -->
+        <!-- /.content-container__commentary--para1 --> 
       </div>
-      <!-- /.content-container_commentary -->   
+      <!-- /.content-container__commentary -->   
      </div>         
      <!-- /.content-container --> 
      <a id="content2-4" class="anchor anchor-detail"></a>             
      <div class="content-container"> 
       <h4>④ 賃金台帳（賃金管理）にデータを登録する</h4> 
-      <div class="content-container_commentary">
-       <div class="content_commentary_paragraph1">           
+      <div class="content-container__commentary">
+       <div class="content-container__commentary--para1">           
         <p>メイン画面に取り込んだデータが表示されていることを確認してください。</p>       
         <img class="img-magnification" src="images/1_2_1-9_13.bmp" alt="メイン画面">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_13.bmp" data-lightbox="lightbox13" data-title="メイン画面"></a>       
-        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph2">    
+        <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para2">    
          <p>・表示される項目は結び付けを行った項目のみです。</p>          
          <p>・書込列は、社労法務システムに書き込みたいデータにチェックをつけることで選択することができます。</p>
          <img class="img-magnification" src="images/1_2_1-9_14.bmp" alt="書込列">
@@ -290,59 +287,65 @@
          <img class="img-magnification" src="images/1_2_1-9_15.bmp" alt="賞与月度と賞与支給日">
          <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_15.bmp" data-lightbox="lightbox15" data-title="賞与月度と賞与支給日"></a>                  
         </div>
-        <!-- /.content_commentary_paragraph2 -->         
+        <!-- /.content-container__commentary--para2 -->         
         <p>最後に、処理コードを確認してから実行ボタンをクリックします。</p>
         <img class="img-magnification" src="images/1_2_1-9_16.bmp" alt="賞与データ書込">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_16.bmp" data-lightbox="lightbox16" data-title="賞与データ書込"></a>                    
         <p>該当賞与月度にデータが存在する場合としない場合で確認画面が変わります。</p>       
-        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph2">
-         <p>存在しない場合（初めて該当月度にデータを登録する場合）</p>
-         <p>確認メッセージが出ますので、「OK」ボタンをクリックします。エラーがなければ取り込まれます。</p>
-         <img class="img-magnification" src="images/1_2_1-9_17.bmp" alt="存在しない場合（初めて該当月度にデータを登録する場合）">
-         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_17.bmp" data-lightbox="lightbox17" data-title="存在しない場合（初めて該当月度にデータを登録する場合）"></a>        
-         <p>存在する場合（該当月度のデータを変更する場合）</p>
-         <p>空欄の項目は保存されません。また、０は空欄でないので保存されます。</p>        
-         <img class="img-magnification" src="images/1_2_1-9_18.bmp" alt="存在する場合（該当月度のデータを変更する場合）">
-         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_18.bmp" data-lightbox="lightbox18" data-title="存在する場合（該当月度のデータを変更する場合）"></a>        
-         <div class="content_commentary_paragraph3">
-          <p>① 取込データに存在する項目のみを上書きする</p>
-          <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、既存のデータがそのまま残ります。</p>
-          <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、上書きされます。</p>
-          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は2,000円になります。</p>
-          <p>② 取込データ以外の項目は『０』でクリアする</p>
-          <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、『０』でクリアされます。<br>給与情報はクリアされません。</p>         
-          <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、①と同様に上書きされます。</p> 
-          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が0円もしくは空白の場合、食事代は0円になります。</p>
-          <p>③ 取込データの金額を加算する</p>   
-          <p class="paragraph">既存のデータに取込データの金額を加算します。</p>
-          <p class="paragraph">金額関係以外は加算されません。</p> 
-          <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は3,000円になります。</p>      
+        <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para2">
+         <p class="content-container__commentary--para3-title">存在しない場合（初めて該当月度にデータを登録する場合）</p>
+         <div class="content-container__commentary--para3">
+            <p>確認メッセージが出ますので、「OK」ボタンをクリックします。エラーがなければ取り込まれます。</p>
+            <img class="img-magnification" src="images/1_2_1-9_17.bmp" alt="存在しない場合（初めて該当月度にデータを登録する場合）">
+            <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_17.bmp" data-lightbox="lightbox17" data-title="存在しない場合（初めて該当月度にデータを登録する場合）"></a>        
          </div>
-         <!-- /.content_commentary_paragraph3 -->        
+         <!-- /.content-container__commentary--para3 -->  
+         <p class="content-container__commentary--para3-title">存在する場合（該当月度のデータを変更する場合）</p>
+         <div class="content-container__commentary--para3">
+            <p>空欄の項目は保存されません。また、０は空欄でないので保存されます。</p>        
+            <img class="img-magnification" src="images/1_2_1-9_18.bmp" alt="存在する場合（該当月度のデータを変更する場合）">
+            <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_18.bmp" data-lightbox="lightbox18" data-title="存在する場合（該当月度のデータを変更する場合）"></a>        
+            <div class="content-container__commentary--para4">
+                <p>① 取込データに存在する項目のみを上書きする</p>
+                <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、既存のデータがそのまま残ります。</p>
+                <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、上書きされます。</p>
+                <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は2,000円になります。</p>
+                <p>② 取込データ以外の項目は『０』でクリアする</p>
+                <p class="paragraph">既存のデータに存在し、取込データに存在しない項目の値は、『０』でクリアされます。<br>給与情報はクリアされません。</p>         
+                <p class="paragraph">反対に、既存のデータに存在せず、取込データに存在する項目の値は、①と同様に上書きされます。</p> 
+                <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が0円もしくは空白の場合、食事代は0円になります。</p>
+                <p>③ 取込データの金額を加算する</p>   
+                <p class="paragraph">既存のデータに取込データの金額を加算します。</p>
+                <p class="paragraph">金額関係以外は加算されません。</p> 
+                <p class="paragraph">例：既存のデータの食事代が1,000円、取込データの食事代が2,000円の場合、食事代は3,000円になります。</p>      
+            </div>
+            <!-- /.content-container__commentary--para4 -->             
+         </div>
+         <!-- /.content-container__commentary--para3 -->        
         </div>
-        <!-- /.content_commentary_paragraph2 -->  
+        <!-- /.content-container__commentary--para2 -->  
         <div class="interval-bit"></div>
         <p>これで賃金台帳（賃金管理）が登録されました。</p>                           
        </div>             
-       <!-- /.content_commentary_paragraph1 -->   
+       <!-- /.content-container__commentary--para1 -->   
       </div>
-      <!-- /.content-container_commentary -->        
+      <!-- /.content-container__commentary -->        
      </div>             
      <!-- /.content-container -->   
      <a id="content3" class="anchor anchor-detail"></a>
-     <div class="main-title title-color-detail table-of-contents">
+     <div class="main--title title-color-detail table-of-contents">
       <h2>１-３ 直接入力する</h2>         
      </div> 
-     <!-- /.main-title title-color-detail table-of-contents -->  
+     <!-- /.main--title title-color-detail table-of-contents -->  
      <p class="title-description">画面に直接入力して取り込む方法を解説します。</p>    
      <p class="title-description">入力忘れで特定の項目を修正したい場合、一覧形式で一気に取込みたい場合、Excelを持っていない場合など、他にも多くの場合に有効活用されます。</p>              
      <div class="content-container">    
       <h4>① 入力を始める</h4>     
       <img class="img-magnification" src="images/1_2_1-9_19.bmp" alt="入力を始める">
       <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_19.bmp" data-lightbox="lightbox19" data-title="入力を始める"></a>     
-      <div class="content-container_commentary">          
-       <div class="content_commentary_paragraph1">
+      <div class="content-container__commentary">          
+       <div class="content-container__commentary--para1">
         <p>「下表に直接手入力」を選択してから、「下表に個人入力行を設定」ボタンをクリックします。</p>
         <p>下段の一覧表のデータが消え、全社員の入力欄が表に表示されます。</p>
         <img class="img-magnification" src="images/1_2_1-9_20.bmp" alt="入力を始める">
@@ -351,9 +354,9 @@
         <img class="img-magnification" src="images/1_2_1-9_21.bmp" alt="入力を始める">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_21.bmp" data-lightbox="lightbox21" data-title="入力を始める"></a>       
        </div>
-       <!-- /.content_commentary_paragraph1 -->        
+       <!-- /.content-container__commentary--para1 -->        
       </div>             
-      <!-- /.content-container_commentary -->
+      <!-- /.content-container__commentary -->
      </div>         
      <!-- /.content-container -->           
      <a id="content3-2" class="anchor anchor-detail"></a>             
@@ -367,18 +370,18 @@
      <a id="content3-3" class="anchor anchor-detail"></a>             
      <div class="content-container">          
       <h4>③ 賃金台帳（賃金管理）に保存する</h4>  
-      <div class="content-container_commentary">       
-       <p class="content_commentary_paragraph1-title">賃金台帳（賃金管理）に書き込む方法について</p>
-       <div class="content_commentary_paragraph1">
+      <div class="content-container__commentary">       
+       <p class="content-container__commentary--para1-title">賃金台帳（賃金管理）に書き込む方法について</p>
+       <div class="content-container__commentary--para1">
         <p>最後に、処理コードを確認してから実行ボタンをクリックします。</p>
         <img class="img-magnification" src="images/1_2_1-9_23.bmp" alt="賃金台帳（賃金管理）に保存する">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-9_23.bmp" data-lightbox="lightbox23" data-title="賃金台帳（賃金管理）に保存する"></a>
         <p>これで賃金台帳（賃金管理）が登録されました。</p>      
         <p>該当給与月度にデータが存在する場合としない場合で確認画面が変わります。<br>詳細は「１-２ ファイルより取り込む」の「④ 賃金台帳（賃金管理）にデータを登録する」を参照してください。</p>
        </div>
-       <!-- /.content_commentary_paragraph1 --> 
+       <!-- /.content-container__commentary--para1 --> 
       </div>
-      <!-- /.content-container_commentary -->                      
+      <!-- /.content-container__commentary -->                      
      </div>         
      <!-- /.content-container -->                                 
     </main>
@@ -398,8 +401,8 @@
    <!-- /JavaScript関連ファイル -->
   </body>
   <footer class="footer">
-   <p class="footer_p">” 取り込み方法 ” についての説明は以上です。</p>
-   <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+   <p class="footer__p">” 取り込み方法 ” についての説明は以上です。</p>
+   <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
   </footer> 
   <!-- /.footer -->  
 </html>

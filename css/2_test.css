@@ -91,7 +91,7 @@ a:link, a:visited, a:hover, a:active {
   letter-spacing: 0.1em;
 }
 
-.header_place {
+.header__place {
  display: inline-block;
 }
 
@@ -204,7 +204,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*モーダル枠のタイトル*/
-.modal-content h2 {
+.modal-container__body--content h2 {
   padding: 0 0 0.5em 0;
   border-bottom: 0.1em solid #3f3f3f;
   margin-bottom: 0.8em;
@@ -213,7 +213,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*モーダル枠の指定*/
-.modal-body {
+.modal-container__body {
  position: relative;
  display: inline-block;
  vertical-align: middle;
@@ -222,7 +222,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /*モーダルを閉じるボタンの指定*/
-.modal-close {
+.modal-container__body--close {
   position: absolute;
   display: flex;
   align-items: center;
@@ -237,20 +237,20 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 
-.modal-close:hover {
+.modal-container__body--close:hover {
   color: #cecccc;
   transition: 0.1s;
 }  
 
 /*モーダル内のコンテンツの指定*/
-.modal-content {
+.modal-container__body--content {
   padding: 1.5em 1em;  
   background: #fff;
   text-align: left; 
 }
 
 /*目次のデザイン*/
-.modal-content {
+.modal-container__body--content {
  display: table;  
 }
 
@@ -293,14 +293,14 @@ main {
   width: 100%;
 }
 
-.main-title {
+.main--title {
  padding: 1em;
  width: 100%;
  font-size: 1.5em;
  line-height: 1.2em;
 }
 
-.main-title p {
+.main--title p {
  font-size: 0.8em;
 }
 
@@ -407,7 +407,7 @@ input[type="checkbox"], input[type="radio"] {
   flex-grow: 1;
  }
  
- .copyright {
+ .footer__div--copyright {
   padding: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;

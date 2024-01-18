@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
   <!-- /フォント -->
   <!--スタイルシート -->
-  <link rel="stylesheet" href="css/0_reset.css">
   <link id="stylesheet" rel="stylesheet" href="css/style.css">
 　 <!-- 画像拡大の為のLightbox2 -->
   <link href="css/3_lightbox.css" rel="stylesheet">
@@ -22,20 +21,20 @@
  </head>
  <body>
   <header id="header_motion" class="header">
-   <div class="header_inner">
-    <div class="header_logo">    
+   <div class="header__inner">
+    <div class="header__logo">    
      <a href="https://www.shalf.jp/" target="_blank"></a>
     </div>
-    <!-- /.header_logo --> 
-    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
-    <div class="header_place">
-     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+    <!-- /.header__logo --> 
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav> 
     </div> 
-    <!-- /.header_place --> 
+    <!-- /.header__place --> 
    </div>
-   <!-- /.header_inner -->
+   <!-- /.header__inner -->
    <!-- ぱんくずリスト -->
-   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+   <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a itemprop="item" href="index.html">
       <span itemprop="name">ホーム</span>
@@ -65,7 +64,7 @@
     </li>  
     <!-- /.itemListElement -->        
    </ol> 
-   <!-- /.header_breadcrumb -->
+   <!-- /.header__breadcrumb -->
    <!-- /ぱんくずリスト -->       
   </header>
   <!-- /.header -->   
@@ -73,14 +72,14 @@
   <div class="interval-bit"></div>
   <div class="interval-bit"></div>         
   <div class="wrapper clearfix">
-   <main class="page-main">
-    <div class="main-title title-color-detail table-of-contents">
+   <main class="main">
+    <div class="main--title title-color-detail table-of-contents">
     　<h2>作成方法</h2>
     </div>    
-    <!-- /.main-title title-color-detail table-of-contents --> 
+    <!-- /.main--title title-color-detail table-of-contents --> 
     <p class="title-description">賃金管理データ作成＆金種表印刷で賃金管理データを作成する手順について解説します。</p>  
     <div class="content-container">
-     <div class="content-container_commentary">
+     <div class="content-container__commentary">
       <p>① 賃金管理データ作成＆金種表印刷を実行します。</p>     
       <p>② 賃金管理データの作成をクリック</p>     
       <p class="paragraph">賞与月度と賞与支給日を確認します。</p> 
@@ -92,7 +91,7 @@
       <p>これで賃金管理データが作成されました。</p>
       <p>※ 詳しい操作は賞与計算にて説明します。</p>   
      </div>
-     <!-- /.content-container_commentary -->   
+     <!-- /.content-container__commentary -->   
     </div>
     <!-- /.content-container -->                                       
    </main>
@@ -112,8 +111,8 @@
   <!-- /JavaScript関連ファイル -->
  </body>
  <footer class="footer">
-  <p class="footer_p">” 作成方法 ” についての説明は以上です。</p>
-  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+  <p class="footer__p">” 作成方法 ” についての説明は以上です。</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
  </footer> 
  <!-- /.footer -->  
 </html>
