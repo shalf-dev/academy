@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
   <!-- /フォント -->
   <!--スタイルシート -->
-  <link rel="stylesheet" href="css/0_reset.css">
   <link id="stylesheet" rel="stylesheet" href="css/style.css">
 　 <!-- 画像拡大の為のLightbox2 -->
   <link href="css/3_lightbox.css" rel="stylesheet">
@@ -22,23 +21,23 @@
  </head>
  <body>
   <header id="header_motion" class="header">
-   <div class="header_inner">
-    <div class="header_logo">    
+   <div class="header__inner">
+    <div class="header__logo">    
      <a href="https://www.shalf.jp/" target="_blank"></a>
     </div>
-    <!-- /.header_logo --> 
-    <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
-    <div class="header_place">
-     <nav class="header_global-nav"><a href="index.html"></a></nav> 
+    <!-- /.header__logo --> 
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav> 
      <!-- モーダルを開くボタン -->
-     <div class="header_modal-open">目次</div>
+     <div class="header__modal-open">目次</div>
      <!-- /モーダルを開くボタン -->     
     </div> 
-    <!-- /.header_place --> 
+    <!-- /.header__place --> 
    </div>
-   <!-- /.header_inner -->
+   <!-- /.header__inner -->
    <!-- ぱんくずリスト -->
-   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+   <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a itemprop="item" href="index.html">
       <span itemprop="name">ホーム</span>
@@ -68,7 +67,7 @@
     </li>  
     <!-- /.itemListElement -->        
    </ol> 
-   <!-- /.header_breadcrumb -->
+   <!-- /.header__breadcrumb -->
    <!-- /ぱんくずリスト -->       
   </header>
   <!-- /.header -->   
@@ -76,157 +75,156 @@
   <div class="interval-bit"></div>
   <div class="interval-bit"></div>         
   <div class="wrapper clearfix">
-   <main class="page-main">
-    <div class="main-title title-color-detail table-of-contents">
+   <main class="main">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>目　　　次</h2>
     </div> 
-    <!-- /.main-title title-color-detail table-of-contents -->   
+    <!-- /.main--title title-color-detail table-of-contents -->   
     <div class="article-container">
-     <div class="articles contents-list contents-list-detail">
+     <div class="contents-list article-container--contents-list-detail">
       <span>１.</span><a href="#content1">入力方法</a>
       <p>年調・社保・労保型にて賃金台帳（賃金管理）を作成する手順について解説します。</p>      
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-１</span><a href="#content1">年調・社保・労保型手入力を実行する</a>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-２</span><a href="#content2">入力画面設定画面を設定する</a>                
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-３</span><a href="#content3">賃金台帳（賃金管理）を入力する</a>
       </ul>      
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>１-４</span><a href="#content4">賃金台帳（賃金管理）を削除する</a>   
       </ul>               
      </div>  
-     <!-- /.articles contents-list contents-list-detail -->  
+     <!-- /.contents-list article-container--contents-list-detail -->  
     </div>
     <!-- /.article-container --> 
     <!-- 目次　モーダルウィンドウ本体 -->
     <div class="modal-container">
-     <div class="modal-body">
+     <div class="modal-container__body">
       <!-- 閉じるボタン -->
-      <div class="modal-close">&#10006</div>
+      <div class="modal-container__body--close">&#10006</div>
        <!-- モーダル内のコンテンツ -->
-       <div class="modal-content">
+       <div class="modal-container__body--content">
         <div>
          <h2>目　次</h2>
         </div>    
         <div class="article-container">
-         <div class="articles contents-list contents-list-detail">
-          <ul class="contents-list_ul">
+         <div class="contents-list article-container--contents-list-detail">
+          <ul class="contents-list__ul">
            <span>&#9650;</span><a href="#">ページトップ</a>
           </ul>            
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-１</span><a href="#content1">年調・社保・労保型手入力を実行する</a>
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-２</span><a href="#content2">入力画面設定画面を設定する</a>                
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-３</span><a href="#content3">賃金台帳（賃金管理）を入力する</a>
           </ul>      
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>１-４</span><a href="#content4">賃金台帳（賃金管理）を削除する</a>   
           </ul>       
          </div> 
-         <!-- /.articles contents-list contents-list-detail -->  
+         <!-- /.contents-list article-container--contents-list-detail -->  
         </div>
         <!-- /.article-container -->
        </div>
-       <!-- /.modal-content -->
+       <!-- /.modal-container__body--content -->
       </div>
-      <!-- /.modal-body -->
+      <!-- /.modal-container__body -->
      </div>
      <!-- /.modal-container -->
      <!-- /目次　モーダルウィンドウ本体 -->
      <a id="content1" class="anchor anchor-detail"></a>
-     <div class="main-title title-color-detail table-of-contents">
+     <div class="main--title title-color-detail table-of-contents">
       <h2>１-１ 年調・社保・労保型手入力を実行する</h2>         
      </div> 
-     <!-- /.main-title title-color-detail table-of-contents -->   
+     <!-- /.main--title title-color-detail table-of-contents -->   
      <p class="title-description">賃金管理メニューより年調・社保・労保型手入力を実行します。</p> 
      <a id="content2" class="anchor anchor-detail"></a>        
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-２ 入力画面設定画面で設定を行う</h2>
     </div>    
-    <!-- /.main-title title-color-detail table-of-contents --> 
+    <!-- /.main--title title-color-detail table-of-contents --> 
     <p class="title-description">賃金台帳手入力画面の入力を行う上で必要となる設定を行います。</p>
     <div class="content-container">      
      <img class="img-magnification" src="images/1_2_1-6_1.bmp" alt="入力画面設定画面">
      <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_1.bmp" data-lightbox="lightbox1" data-title="入力画面設定画面"></a>
-     <div class="content-container_commentary">          
-      <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-      <div class="content_commentary_paragraph1">
-       <p class="content_commentary_paragraph2-title">① 表示開始月</p>
-       <div class="content_commentary_paragraph2">
+     <div class="content-container__commentary">          
+      <p class="content-container__commentary--para1-title">｜ポイント｜</p>
+      <div class="content-container__commentary--para1">
+       <p class="content-container__commentary--para2-title">① 表示開始月</p>
+       <div class="content-container__commentary--para2">
         <p>この欄で指定した月度より１２ヶ月分の賃金データが表示されます。</p>
        </div>
-       <!-- /.content_commentary_paragraph2 --> 
-       <p class="content_commentary_paragraph2-title">② 入力順</p>
-       <div class="content_commentary_paragraph2">
+       <!-- /.content-container__commentary--para2 --> 
+       <p class="content-container__commentary--para2-title">② 入力順</p>
+       <div class="content-container__commentary--para2">
         <p>画面に表示する社員の順番を、何を基準にするか指定します。</p>
-        <p class="content_commentary_paragraph2-title">｜ポイント｜</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+        <div class="content-container__commentary--para3">
          <p>部門,部門内連番順を選択したら、特定の人が表示されない場合に、原因として部門内連番が重複していたということがあります。</p>
          <p>事業所情報管理メニューの「部門コード登録」から部門コードを変更してください。</p>
          <img class="img-magnification" src="images/1_2_1-5_3.bmp" alt="事業所部門コード登録画面">
          <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_3.bmp" data-lightbox="lightbox1" data-title="事業所部門コード登録画面"></a>         
         </div>
-        <!-- /.content_commentary_paragraph3 -->
+        <!-- /.content-container__commentary--para3 -->
        </div>
-       <!-- /.content_commentary_paragraph2 -->               
-       <p class="content_commentary_paragraph2-title">③ 小数点以下桁数　設定</p>  
-       <div class="content_commentary_paragraph2">
+       <!-- /.content-container__commentary--para2 -->               
+       <p class="content-container__commentary--para2-title">③ 小数点以下桁数　設定</p>  
+       <div class="content-container__commentary--para2">
         <p>所定労働の日数、労働日数、休日労働の日数、特別休暇の日数、欠勤日数を何桁まで表示するかを０～４桁の範囲内で指定できます。</p>                         
-        <p class="content_commentary_paragraph3-title">｜ポイント｜</p> 
-        <div class="content_commentary_paragraph3">
-         <p>・給与項目設定で、日数の小数点以下の桁数を設定している場合に、賃金管理データの日数の桁数
+        <p class="content-container__commentary--para3-title">｜ポイント｜</p> 
+        <div class="content-container__commentary--para3">
+         <p>給与項目設定で、日数の小数点以下の桁数を設定している場合に、賃金管理データの日数の桁数
           を合わせます。給与項目設定で、小数点以下桁数が設定されているのに、賃金管理データ作成時に小数点以下
           桁数が設定されていない場合は、自動的に丸められてしまいます。</p> 
          <p>※ 小数点以下を（多桁→少桁に）変更するとデータの内容も指定の桁数にまるめられ元の値には戻りませんので、ご注意ください。</p> 
         </div>       
-        <!-- /.content_commentary_paragraph3-->
+        <!-- /.content-container__commentary--para3-->
        </div>
-       <!-- /.content_commentary_paragraph2 -->               
-       <p class="content_commentary_paragraph2-title">④ 半日有給休暇（0.5日）の使用状況</p>         
-       <div class="content_commentary_paragraph2">
+       <!-- /.content-container__commentary--para2 -->               
+       <p class="content-container__commentary--para2-title">④ 半日有給休暇（0.5日）の使用状況</p>         
+       <div class="content-container__commentary--para2">
         <p>有給時間を日で入力した有給日数のデータがあった場合の、変換方法を選択します。</p>
-        <p class="content_commentary_paragraph3-title">a)「半日有給休暇を使用する」を選択した場合</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para3-title">a)「半日有給休暇を使用する」を選択した場合</p>
+        <div class="content-container__commentary--para3">
          <p>例．１．６２５の場合　１．５日と１時間で入力します</p>         
         </div>
-        <!-- /.content_commentary_paragraph3 -->
-        <p class="content_commentary_paragraph3-title">b)「半日有給休暇を使用しない」を選択した場合</p>
-        <div class="content_commentary_paragraph3">
+        <!-- /.content-container__commentary--para3 -->
+        <p class="content-container__commentary--para3-title">b)「半日有給休暇を使用しない」を選択した場合</p>
+        <div class="content-container__commentary--para3">
          <p>例．１．６２５の場合　１．０日と５時間で入力します</p>         
         </div>
-        <!-- /.content_commentary_paragraph3 -->        
+        <!-- /.content-container__commentary--para3 -->        
        </div>
-       <!-- /.content_commentary_paragraph2 -->       
+       <!-- /.content-container__commentary--para2 -->       
       </div>
-      <!-- /.content_commentary_paragraph1 -->
+      <!-- /.content-container__commentary--para1 -->
      </div>  
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container --> 
     <a id="content3" class="anchor anchor-detail"></a>        
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
     　<h2>１-３ 賃金台帳（賃金管理）を入力する</h2>
     </div>    
-    <!-- /.main-title title-color-detail table-of-contents --> 
+    <!-- /.main--title title-color-detail table-of-contents --> 
     <p class="title-description">賃金データ入力の手順についてポイントを説明します。</p>      
     <div class="content-container">      
-     <div class="content-container_commentary"> 
-      <p class="content_commentary_paragraph1-title">年調実施型の場合</p> 
-      <div class="content_commentary_paragraph1">
-       <p class="paragraph">※ 動画では最初に、賃金台帳（賃金管理）を入力する方法について解説しています。</p>           
+     <div class="content-container__commentary"> 
+      <p class="content-container__commentary--para1-title">年調実施型の場合</p> 
+      <div class="content-container__commentary--para1">          
        <img class="img-magnification" src="images/1_2_1-6_2.bmp" alt="年調実施型の場合">
        <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_2.bmp" data-lightbox="lightbox2" data-title="年調実施型の場合"></a>        
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>       
-       <div class="content_commentary_paragraph2"> 
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>       
+       <div class="content-container__commentary--para2"> 
         <p>① 連続入力にチェックを付けると、各社員の賃金データを連続で入力することができます。</p>              
-        <p class="content_commentary_paragraph3-title">｜手順｜</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para3-title">｜手順｜</p>
+        <div class="content-container__commentary--para3">
          <p>１.連続入力にチェックを付ける</p>
          <img class="img-magnification" src="images/1_2_1-6_3.bmp" alt="連続入力">
          <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_3.bmp" data-lightbox="lightbox3" data-title="連続入力"></a>
@@ -240,165 +238,163 @@
          <p>５.次の社員に切り替わっていることが確認できます。</p>
          <p>※ チェックボックスは、いつでもチェックを付けたり外したりすることができます。</p>
         </div> 
-        <!-- /.content_commentary_paragraph3 -->         
+        <!-- /.content-container__commentary--para3 -->         
         <p>② 各項目について</p>        
-        <p class="content_commentary_paragraph3-title">合計欄</p>
+        <p class="content-container__commentary--para3-title">合計欄</p>
         <img class="img-magnification" src="images/1_2_1-6_6.bmp" alt="合計欄">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_6.bmp" data-lightbox="lightbox4" data-title="合計欄"></a>        
-        <div class="content_commentary_paragraph3">
+        <div class="content-container__commentary--para3">
          <p>支給額合計・社会保険料合計・賞与社会保険料合計などは、自動計算される項目です。</p>         
         </div>              
-        <!-- /.content_commentary_paragraph3 -->  
-        <p class="content_commentary_paragraph3-title">雇用形態～短時間労働者</p>
+        <!-- /.content-container__commentary--para3 -->  
+        <p class="content-container__commentary--para3-title">雇用形態～短時間労働者</p>
         <img class="img-magnification" src="images/1_2_1-6_7.bmp" alt="雇用形態～短時間労働者">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_7.bmp" data-lightbox="lightbox5" data-title="雇用形態～短時間労働者"></a>        
-        <div class="content_commentary_paragraph3">    
-         <p>雇用形態～短時間労働者は、個人情報管理メニューの個人基本情報新規登録で登録したデータが表示されます。</p>
+        <div class="content-container__commentary--para3">    
+         <p>雇用形態～短時間労働者は、個人情報管理メニューの個人基本情報新規登録にて登録したデータが表示されます。</p>
          <p>｜ポイント｜</p>
-         <div class="content_commentary_paragraph4">  
+         <div class="content-container__commentary--para4">  
           <p>健保適用区分、厚年適用区分、雇保被保険者区分、労災被保険者区分は、<br>個人基本情報新規登録にて登録したそれぞれの資格取得日や資格喪失日などで加入、非加入の判断がされます。</p>
           <img class="img-magnification" src="images/1_2_1-5_16.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_16.bmp" data-lightbox="lightbox6" data-title="雇用形態～短時間労働者"></a>       
           <img class="img-magnification" src="images/1_2_1-5_17.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_17.bmp" data-lightbox="lightbox6" data-title="雇用形態～短時間労働者"></a>                       
          </div>
-         <!-- /.content_commentary_paragraph4 -->          
+         <!-- /.content-container__commentary--para4 -->          
         </div>
-        <!-- /.content_commentary_paragraph3 -->        
+        <!-- /.content-container__commentary--para3 -->        
        </div> 
-       <!-- /.content_commentary_paragraph2 -->        
+       <!-- /.content-container__commentary--para2 -->        
       </div> 
-      <!-- /.content_commentary_paragraph1 --> 
-      <p class="content_commentary_paragraph1-title">社保雇用型の場合</p> 
-      <div class="content_commentary_paragraph1">
-       <p class="paragraph">※ 動画では最初に、賃金台帳（賃金管理）を入力する方法について解説しています。</p>           
+      <!-- /.content-container__commentary--para1 --> 
+      <p class="content-container__commentary--para1-title">社保雇用型の場合</p> 
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_2_1-6_8.bmp" alt="社保雇用型の場合">
        <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_8.bmp" data-lightbox="lightbox7" data-title="社保雇用型の場合"></a>      
-       <div class="content_commentary_paragraph2">
+       <div class="content-container__commentary--para2">
         <p>① 年調実施型の場合と同様に、連続入力にチェックを付けると、各社員の賃金データを連続で入力することができます。</p> 
         <img class="img-magnification" src="images/1_2_1-6_9.bmp" alt="連続入力">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_9.bmp" data-lightbox="lightbox8" data-title="連続入力"></a>
         <p>② 各項目について</p>       
-        <p class="content_commentary_paragraph3-title">合計欄</p>
+        <p class="content-container__commentary--para3-title">合計欄</p>
         <img class="img-magnification" src="images/1_2_1-6_10.bmp" alt="合計欄">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_10.bmp" data-lightbox="lightbox9" data-title="合計欄"></a>        
-        <div class="content_commentary_paragraph3">
+        <div class="content-container__commentary--para3">
          <p>支給額合計などは、自動計算される項目です。</p>         
         </div>              
-        <!-- /.content_commentary_paragraph3 -->   
-        <p class="content_commentary_paragraph3-title">賞与支給日</p>
+        <!-- /.content-container__commentary--para3 -->   
+        <p class="content-container__commentary--para3-title">賞与支給日</p>
         <img class="img-magnification" src="images/1_2_1-6_11.bmp" alt="賞与支給日">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_11.bmp" data-lightbox="lightbox10" data-title="賞与支給日"></a>        
-        <div class="content_commentary_paragraph3">
+        <div class="content-container__commentary--para3">
          <p>一人の人に１ヶ月複数回賞与の支給があった場合、賃金管理データの賞与支給最終日と賞与支給初回日を自動的に設定します。</p>         
         </div> 
-        <!-- /.content_commentary_paragraph3 -->         
-        <p class="content_commentary_paragraph3-title">雇用形態～短時間労働者</p>                         
+        <!-- /.content-container__commentary--para3 -->         
+        <p class="content-container__commentary--para3-title">雇用形態～短時間労働者</p>                         
         <img class="img-magnification" src="images/1_2_1-6_12.bmp" alt="雇用形態～短時間労働者">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_12.bmp" data-lightbox="lightbox11" data-title="雇用形態～短時間労働者"></a>        
-        <div class="content_commentary_paragraph3">
-         <p>雇用形態～短時間労働者は、個人情報管理メニューの個人基本情報新規登録で登録したデータが表示されます。</p>
+        <div class="content-container__commentary--para3">
+         <p>雇用形態～短時間労働者は、個人情報管理メニューの個人基本情報新規登録にて登録したデータが表示されます。</p>
          <p>｜ポイント｜</p>
-         <div class="content_commentary_paragraph4">
+         <div class="content-container__commentary--para4">
           <p>健保適用区分、厚年適用区分、雇保被保険者区分、労災被保険者区分は、<br>個人基本情報新規登録にて登録したそれぞれの資格取得日や資格喪失日などで加入、非加入の判断がされます。</p>         
           <img class="img-magnification" src="images/1_2_1-5_16.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_16.bmp" data-lightbox="lightbox12" data-title="雇用形態～短時間労働者"></a>       
           <img class="img-magnification" src="images/1_2_1-5_17.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_17.bmp" data-lightbox="lightbox12" data-title="雇用形態～短時間労働者"></a> 
          </div> 
-         <!-- /.content_commentary_paragraph4 -->
+         <!-- /.content-container__commentary--para4 -->
         </div> 
-        <!-- /.content_commentary_paragraph3 -->        
+        <!-- /.content-container__commentary--para3 -->        
        </div> 
-       <!-- /.content_commentary_paragraph2 -->
+       <!-- /.content-container__commentary--para2 -->
       </div> 
-      <!-- /.content_commentary_paragraph1 -->
-      <p class="content_commentary_paragraph1-title">労保専用型の場合</p>
-      <div class="content_commentary_paragraph1">
-       <p>※ 動画では最初に、賃金台帳（賃金管理）を入力する方法について解説しています。</p>           
+      <!-- /.content-container__commentary--para1 -->
+      <p class="content-container__commentary--para1-title">労保専用型の場合</p>
+      <div class="content-container__commentary--para1">          
        <img class="img-magnification" src="images/1_2_1-6_13.bmp" alt="労保専用型の場合">
        <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_13.bmp" data-lightbox="lightbox13" data-title="労保専用型の場合"></a>             
-       <div class="content_commentary_paragraph2">
+       <div class="content-container__commentary--para2">
         <p>① 年調実施型の場合と同様に、連続入力にチェックを付けると、各社員の賃金データを連続で入力することができます。</p> 
         <img class="img-magnification" src="images/1_2_1-6_14.bmp" alt="連続入力">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_14.bmp" data-lightbox="lightbox14" data-title="連続入力"></a>        
         <p>② 各項目について</p>               
-        <p class="content_commentary_paragraph3-title">合計欄</p>
+        <p class="content-container__commentary--para3-title">合計欄</p>
         <img class="img-magnification" src="images/1_2_1-6_15.bmp" alt="合計欄">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_15.bmp" data-lightbox="lightbox15" data-title="合計欄"></a>        
-        <div class="content_commentary_paragraph3">
+        <div class="content-container__commentary--para3">
          <p>支給額合計などは、自動計算される項目です。</p>
         </div> 
-        <!-- /.content_commentary_paragraph3 --> 
-        <p class="content_commentary_paragraph3-title">雇用形態～短時間労働者</p>
+        <!-- /.content-container__commentary--para3 --> 
+        <p class="content-container__commentary--para3-title">雇用形態～短時間労働者</p>
         <img class="img-magnification" src="images/1_2_1-6_16.bmp" alt="雇用形態～短時間労働者">
         <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_16.bmp" data-lightbox="lightbox16" data-title="雇用形態～短時間労働者"></a>        
-        <div class="content_commentary_paragraph3">
-         <p>雇用形態～短時間労働者区分は、4 個人情報管理の個人基本情報新規登録で登録したデータが表示されます。</p>     
+        <div class="content-container__commentary--para3">
+         <p>雇用形態～短時間労働者区分は、4 個人情報管理の個人基本情報新規登録にて登録したデータが表示されます。</p>     
          <p>｜ポイント｜</p>
-         <div class="content_commentary_paragraph4">    
+         <div class="content-container__commentary--para4">    
           <p>健保適用区分、厚年適用区分、雇保被保険者区分、労災被保険者区分は、<br>個人基本情報新規登録にて登録したそれぞれの資格取得日や資格喪失日などで加入、非加入の判断がされます。</p>          
           <img class="img-magnification" src="images/1_2_1-5_16.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_16.bmp" data-lightbox="lightbox17" data-title="雇用形態～短時間労働者"></a>       
           <img class="img-magnification" src="images/1_2_1-5_17.bmp" alt="雇用形態～短時間労働者">
           <a class="img-scaling img-scaling-detail" href="images/1_2_1-5_17.bmp" data-lightbox="lightbox17" data-title="雇用形態～短時間労働者"></a>
          </div>
-         <!-- /.content_commentary_paragraph4 -->                                                       
+         <!-- /.content-container__commentary--para4 -->                                                       
         </div> 
-        <!-- /.content_commentary_paragraph3 -->      
+        <!-- /.content-container__commentary--para3 -->      
        </div> 
-       <!-- /.content_commentary_paragraph2 -->  
+       <!-- /.content-container__commentary--para2 -->  
       </div> 
-      <!-- /.content_commentary_paragraph1 -->                 
-      <p class="content_commentary_paragraph1-title">その他</p>
-      <div class="content_commentary_paragraph1">
+      <!-- /.content-container__commentary--para1 -->                 
+      <p class="content-container__commentary--para1-title">その他</p>
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_2_1-6_17.bmp" alt="その他">
        <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_17.bmp" data-lightbox="lightbox18" data-title="その他"></a>
-       <p class="content_commentary_paragraph2-title">｜ポイント｜</p>      
-       <div class="content_commentary_paragraph2">         
+       <p class="content-container__commentary--para2-title">｜ポイント｜</p>      
+       <div class="content-container__commentary--para2">         
         <p>① 年月は給与支給表示月とします。</p>
-        <p class="content_commentary_paragraph3-title"> 例：末締め５日支払いの場合</p>
-        <div class="content_commentary_paragraph3">
+        <p class="content-container__commentary--para3-title"> 例：末締め５日支払いの場合</p>
+        <div class="content-container__commentary--para3">
          <p>７月５日に支払う給与を６月度給与とする場合 → ６月の列に表示・入力</p>       
          <p>７月５日に支払う給与を７月度給与とする場合 → ７月の列に表示・入力</p>
         </div>
-        <!-- /.content_commentary_paragraph3 -->        
+        <!-- /.content-container__commentary--para3 -->        
         <p>② 表示：賃金管理データの表示状態</p>
         <p class="paragraph">入力：賃金管理データの入力状態</p>
         <p class="paragraph">確認：入力内容の確認状態</p>
        </div>
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
       </div>
-      <!-- /.content_commentary_paragraph1 -->              
+      <!-- /.content-container__commentary--para1 -->              
      </div>  
-     <!-- /.content-container_commentary -->                                               
+     <!-- /.content-container__commentary -->                                               
     </div>
     <!-- /.content-container --> 
     <a id="content5" class="anchor anchor-detail"></a>        
-    <div class="main-title title-color-detail table-of-contents">
+    <div class="main--title title-color-detail table-of-contents">
      <h2>１-４ 賃金台帳（賃金管理）を削除する</h2>
     </div>    
-    <!-- /.main-title title-color-detail table-of-contents --> 
+    <!-- /.main--title title-color-detail table-of-contents --> 
     <p class="title-description">賃金台帳（賃金管理）を削除する手順について解説します。</p>
     <div class="content-container">       
      <img class="img-magnification" src="images/1_2_1-6_18.bmp" alt="賃金台帳手入力（年調・社保・労保専用型）画面">
      <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_18.bmp" data-lightbox="lightbox19" data-title="賃金台帳手入力（賃金台帳作成型専用）画面"></a>         
-     <div class="content-container_commentary">  
-      <p class="content_commentary_paragraph1-title">個人毎指定月度の賃金データの削除</p>   
-      <div class="content_commentary_paragraph1">
+     <div class="content-container__commentary">  
+      <p class="content-container__commentary--para1-title">個人毎指定月度の賃金データの削除</p>   
+      <div class="content-container__commentary--para1">
        <img class="img-magnification" src="images/1_2_1-6_19.bmp" alt="賃金台帳手入力（年調・社保・労保専用型）画面">
        <a class="img-scaling img-scaling-detail" href="images/1_2_1-6_19.bmp" data-lightbox="lightbox20" data-title="賃金台帳手入力（年調・社保・労保専用型）画面"></a>      
-       <div class="content_commentary_paragraph2">
-        <p>① 画面を入力状態にする</p>
-        <p>② 所定労働日数欄に「９９」と入力し、完了をクリックする</p>
+       <div class="content-container__commentary--para2">
+        <p>① 画面を入力状態にします。</p>
+        <p>② 所定労働日数欄に「９９」と入力し、完了をクリックします。</p>
         <p>③ データがすべてクリアされ、空白になります。</p>
         <p class="paragraph">※ 賞与のデータも削除されます。</p>         
        </div>  
-       <!-- /.content_commentary_paragraph2 --> 
+       <!-- /.content-container__commentary--para2 --> 
       </div>  
-      <!-- /.content_commentary_paragraph1 -->     
+      <!-- /.content-container__commentary--para1 -->     
      </div>  
-     <!-- /.content-container_commentary -->          
+     <!-- /.content-container__commentary -->          
     </div>
     <!-- /.content-container -->                
    </main>
@@ -418,8 +414,8 @@
   <!-- /JavaScript関連ファイル -->
  </body>
  <footer class="footer">
-  <p class="footer_p">” 入力方法 ” についての説明は以上です。</p>
-  <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+  <p class="footer__p">” 入力方法 ” についての説明は以上です。</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
  </footer> 
  <!-- /.footer -->  
 </html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /スタイルシート -->
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header__inner">
+    <div class="header__logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>
+    <!-- /.header__logo -->   
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>        
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header__modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->
+    </div> 
+    <!-- /.header__place -->
+   </div>
+   <!-- /.header__inner --> 
+  <!-- ぱんくずリスト -->
+  <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>
+    <!-- /.itemListElement -->   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_11_esia.html">
+      <span itemprop="name">イージアZero導入</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="#">
+      <span itemprop="name">顧問先従業員にユーザー登録依頼を行う</span>
+     </a>
+     <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /ぱんくずリスト -->          
+  </header>     
+  <div class="interval"></div>
+  <div class="interval-bit"></div>             
+  <div class="wrapper clearfix">			
+   <main class="main">
+    <div class="main--title title-color-document table-of-contents">
+     <h2>目　　　次</h2>
+    </div>
+    <!-- /.main--title title-color-document table-of-contents -->     
+    <div class="article-container">
+        <div class="contents-list contents-list-document">
+            <span>５.</span><a href="#content1">顧問先従業員にユーザー登録依頼を行う</a>
+            <p>顧問先従業員の、ユーザー登録依頼について解説します。</p>
+            <ul class="contents-list__ul">
+                <span>５-１</span><a href="#content1">社労士事務所より顧問先従業員へのユーザー登録依頼</a>
+                <li><span>①</span><a href="#content1">事前に行うこと</a></li>                 
+                <li><span>②</span><a href="#content1-2">ユーザー登録依頼の開始</a></li>                                 
+                <li><span>③</span><a href="#content1-3">ユーザー登録依頼を行う従業員の選択</a></li>                
+                <li><span>④</span><a href="#content1-4">従業員へのユーザー登録依頼</a></li> 
+                <li><span>⑤</span><a href="#content1-5">従業員への一括登録依頼</a></li>        
+            </ul>
+            <ul class="contents-list__ul">
+                <span>５-２</span><a href="#content2">顧問先より従業員へのユーザー登録依頼</a> 
+                <li><span>①</span><a href="#content2">事前に行うこと</a></li>                        
+                <li><span>②</span><a href="#content2-2">ユーザー登録依頼の開始</a></li>                        
+                <li><span>③</span><a href="#content2-3">ユーザー登録依頼を行う従業員の選択</a></li> 
+                <li><span>④</span><a href="#content2-4">従業員へのユーザー登録依頼</a></li>                        
+                <li><span>⑤</span><a href="#content2-5">従業員への一括登録依頼</a></li>                  
+            </ul> 
+            <ul class="contents-list__ul">
+                <span>５-３</span><a href="#content3">ユーザー登録依頼のこんな場合の対応方法</a> 
+                <li><span>①</span><a href="#content3">全員のメールアドレスを集めるのが面倒な場合</a></li>                        
+                <li><span>②</span><a href="#content3-2">従業員がメールアドレスを持っていない場合</a></li>                                                          
+                <li><span>③</span><a href="#content3-3">従業員がメールアドレスもなく、Web上で登録することもできない場合</a></li>
+                <li><span>④</span><a href="#content3-4">QRコードが印刷されたユーザー登録のご案内のPDF出力について</a></li>
+            </ul>
+            <ul class="contents-list__ul">
+                <span>５-４</span><a href="#content4">従業員のユーザー登録</a> 
+                <li><span>①</span><a href="#content4">メールの確認</a></li>                        
+                <li><span>②</span><a href="#content4-2">ユーザー登録</a></li>                                                          
+                <li><span>③</span><a href="#content4-3">登録が完了した場合</a></li> 
+            </ul>  
+            <ul class="contents-list__ul">
+                <span>５-５</span><a href="#content5">ユーザー登録のご案内より従業員のユーザー登録</a> 
+                <li><span>①</span><a href="#content5">ご案内の確認</a></li>                        
+                <li><span>②</span><a href="#content5-2">ユーザー登録</a></li> 
+                <li><span>③</span><a href="#content5-3">登録が完了した場合</a></li> 
+            </ul>                                              
+        </div> 
+        <!-- /.contents-list contents-list-document -->  
+    </div> 
+    <!-- /.article-container --> 
+    <!--モーダル本体-->
+    <div class="modal-container">
+        <div class="modal-container__body">
+            <!-- 閉じるボタン -->
+            <div class="modal-container__body--close">&#10006</div>
+            <!-- /閉じるボタン -->
+            <!-- モーダル内のコンテンツ -->
+            <div class="modal-container__body--content">
+                <div>
+                    <h2>目　次</h2>
+                </div>    
+                <div class="article-container">
+                    <div class="contents-list contents-list-document">
+                        <ul class="contents-list__ul">
+                            <span>&#9650;</span><a href="#">ページトップ</a> 
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>５-１</span><a href="#content1">社労士事務所より顧問先従業員へのユーザー登録依頼</a>
+                            <li><span>①</span><a href="#content1">事前に行うこと</a></li>                 
+                            <li><span>②</span><a href="#content1-2">ユーザー登録依頼の開始</a></li>                                 
+                            <li><span>③</span><a href="#content1-3">ユーザー登録依頼を行う従業員の選択</a></li>                
+                            <li><span>④</span><a href="#content1-4">従業員へのユーザー登録依頼</a></li> 
+                            <li><span>⑤</span><a href="#content1-5">従業員への一括登録依頼</a></li>        
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>５-２</span><a href="#content2">顧問先より従業員へのユーザー登録依頼</a> 
+                            <li><span>①</span><a href="#content2">事前に行うこと</a></li>                        
+                            <li><span>②</span><a href="#content2-2">ユーザー登録依頼の開始</a></li>                        
+                            <li><span>③</span><a href="#content2-3">ユーザー登録依頼を行う従業員の選択</a></li> 
+                            <li><span>④</span><a href="#content2-4">従業員へのユーザー登録依頼</a></li>                        
+                            <li><span>⑤</span><a href="#content2-5">従業員への一括登録依頼</a></li>                  
+                        </ul> 
+                        <ul class="contents-list__ul">
+                            <span>５-３</span><a href="#content3">ユーザー登録依頼のこんな場合の対応方法</a> 
+                            <li><span>①</span><a href="#content3">全員のメールアドレスを集めるのが面倒な場合</a></li>                        
+                            <li><span>②</span><a href="#content3-2">従業員がメールアドレスを持っていない場合</a></li>                                                          
+                            <li><span>③</span><a href="#content3-3">従業員がメールアドレスもなく、Web上で登録することもできない場合</a></li>
+                            <li><span>④</span><a href="#content3-4">QRコードが印刷されたユーザー登録のご案内のPDF出力について</a></li>
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>５-４</span><a href="#content4">従業員のユーザー登録</a> 
+                            <li><span>①</span><a href="#content4">メールの確認</a></li>                        
+                            <li><span>②</span><a href="#content4-2">ユーザー登録</a></li>                                                          
+                            <li><span>③</span><a href="#content4-3">登録が完了した場合</a></li>
+                        </ul>  
+                        <ul class="contents-list__ul">
+                            <span>５-５</span><a href="#content5">ユーザー登録のご案内より従業員のユーザー登録</a> 
+                            <li><span>①</span><a href="#content5">ご案内の確認</a></li>                        
+                            <li><span>②</span><a href="#content5-2">ユーザー登録</a></li> 
+                            <li><span>③</span><a href="#content5-3">登録が完了した場合</a></li> 
+                        </ul>                        
+                    </div> 
+                    <!-- /.contents-list contents-list-document -->          
+                </div>
+                <!-- /.article-container -->
+            </div>
+            <!-- /.modal-container__body--content -->
+            <!-- /モーダル内のコンテンツ -->
+        </div>
+        <!-- /.modal-container__body -->  
+    </div>  
+    <!-- /.modal-container -->  
+    <!-- /モーダル本体 -->
+    <a id="content1" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>５-１ 社労士事務所より顧問先従業員へのユーザー登録依頼</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">Esia-Zeroより、顧問先の従業員にユーザー登録依頼を行う方法について説明します。</p>
+    <p class="title-description">従業員がWeb明細にて、給与明細書や源泉徴収票をWeb上で閲覧などを行うためには、ユーザー登録依頼を行い、従業員がユーザー登録を行う必要があります。</p>
+    <div class="content-container">
+        <h4>① 事前に行うこと</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>事前に、従業員にWeb上で行うことや、メールアドレスを集めることなどを説明してください。</p>                
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）従業員には、給与明細書などをWeb明細にて渡すことや、年末調整はWeb上で入力することを説明してください。</p>
+                    <p>ｂ）事前に、従業員のメールアドレスを集めてください。</p>
+                    <p>ｃ）集めたメールアドレスは、社員管理に登録してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>社労法務システムの個人情報に登録してから、受信することもできます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｄ）全員のメールアドレスを集めるのが面倒な場合は、QRコードが印刷された用紙を配布することができます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>詳しくは、『こんな場合の対応方法』を参照してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｅ）メールアドレスを持っていない従業員なども、QRコードが印刷された用紙を配布することなどができます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>詳しくは、『こんな場合の対応方法』を参照してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 -->                
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-2" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>② ユーザー登録依頼の開始</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>Esia-Zeroより顧問先を選択することで、ユーザー登録依頼を始めます。</p>  
+                <img class="img-magnification" src="images/1_11-5_1.bmp" alt="ユーザー登録依頼の開始">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_1.bmp" data-lightbox="lightbox1" data-title="ユーザー登録依頼の開始"></a>
+                <p class="paragraph">顧問先管理の、「顧問先を検索する」ボタンをクリックしてください。</p>
+                <p>ユーザー登録依頼を行う顧問先より、ユーザー登録依頼を行います。</p>
+                <img class="img-magnification" src="images/1_11-5_2.bmp" alt="ユーザー登録依頼の開始">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_2.bmp" data-lightbox="lightbox2" data-title="ユーザー登録依頼の開始"></a>
+                <p class="paragraph">ユーザー登録依頼を行う顧問先の、社員管理のアイコンをクリックします。</p>                             
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-3" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>③ ユーザー登録依頼を行う従業員の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録依頼を行う従業員を選択します。</p>  
+                <p>一括でユーザー登録依頼を行うこともできます。</p>
+                <img class="img-magnification" src="images/1_11-5_3.bmp" alt="ユーザー登録依頼を行う従業員の選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_3.bmp" data-lightbox="lightbox3" data-title="ユーザー登録依頼を行う従業員の選択"></a>
+                <p class="paragraph">ユーザー登録のアイコンをクリックし、登録依頼を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）ユーザー登録に表示される状況について、説明します。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>ここには、ユーザー登録の状況が表示されます。表示される状況は、下記の通りです。</p>
+                        <div class="content-container__commentary--para4">
+                            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">                                
+                                <tbody>
+                                    <tr>    
+                                        <th style="text-align: center;">済</th>
+                                        <td>従業員がユーザー登録を行っています。</td>                                                               
+                                    </tr>
+                                    <tr>    
+                                        <th style="text-align: center;">依頼中</th>
+                                        <td>従業員がまだ、ユーザー登録を行っていません。</td>                        
+                                    </tr>
+                                    <tr>    
+                                        <th rowspan="2" style="text-align: center;">初期化</th>
+                                        <td>従業員がMy-Zeroにログインを行うためのパスワードを忘れたために、パスワードの初期化を行っています。</td>                        
+                                    </tr>
+                                    <tr>                                            
+                                        <td>従業員がパスワードの再設定を行うと、済に変わります。</td>                        
+                                    </tr>
+                                    <tr>    
+                                        <th style="text-align: center;">アイコン</th>
+                                        <td>ユーザー登録を依頼していません。</td>                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.content-container__commentary--para4 --> 
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｂ）依頼中の場合は、従業員に登録を促すために再依頼メールを送信することができます。</p>
+                    <p>ｃ）済の場合は、従業員がMy-Zeroにログインするためのパスワードを忘れた場合に初期化することができます。</p>
+                    <p>ｄ）初期化の場合は、従業員にパスワードの再設定を促すために再依頼メールを送信することができます。</p>
+                    <p>ｅ）メールアドレスは、事前に社員情報に登録されている場合は表示されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>表示されていない場合は、ユーザー登録依頼を行う際に入力します。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 --> 
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->      
+    <a id="content1-4" class="anchor anchor-detail"></a>              
+    <div class="content-container">
+        <h4>④ 従業員へのユーザー登録依頼</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>従業員に、ユーザー登録依頼のメール送信を行います。</p>  
+                <img class="img-magnification" src="images/1_11-5_4.bmp" alt="従業員へのユーザー登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_4.bmp" data-lightbox="lightbox4" data-title="従業員へのユーザー登録依頼"></a>
+                <p class="paragraph">メールアドレスを入力してから、「送信する」ボタンをクリックしメールを送信します。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メール送信先欄は、「社員のメールアドレスに送信します。」を選択してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>メールアドレスを持っていない場合などの対応方法は、『こんな場合の対応方法』を参照してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｂ）メールアドレス欄は、社員管理に登録されているアドレスが表示されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>未登録の場合は、アドレスを間違えないように注意してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｃ）従業員に、下記のようなメールが送信されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <img class="img-magnification" src="images/1_11-5_5.bmp" alt="従業員へのユーザー登録依頼">         
+                        <a class="img-scaling img-scaling-document" href="images/1_11-5_5.bmp" data-lightbox="lightbox5" data-title="従業員へのユーザー登録依頼"></a>                        
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 -->    
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-5" class="anchor anchor-detail"></a>              
+    <div class="content-container">
+        <h4>⑤ 従業員への一括登録依頼</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>従業員に１人ずつ行うのは効率的ではありませんので、一括で登録依頼を行うことができます。</p>  
+                <img class="img-magnification" src="images/1_11-5_6.bmp" alt="従業員への一括登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_6.bmp" data-lightbox="lightbox6" data-title="従業員への一括登録依頼"></a>
+                <p class="paragraph">「一括ユーザー登録」ボタンをクリックし、全員に登録依頼を行います。</p> 
+                <p class="paragraph">依頼済みや登録済みの従業員には、メールは送信されません。</p> 
+                <p>従業員一覧を確認し、一括依頼を行います。</p>
+                <img class="img-magnification" src="images/1_11-5_7.bmp" alt="従業員への一括登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_7.bmp" data-lightbox="lightbox7" data-title="従業員への一括登録依頼"></a>
+                <p class="paragraph">表示されている従業員に、ユーザー登録依頼を行います。</p>
+                <p class="paragraph">表示されている従業員を確認し、「送信する」ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールアドレスが表示されている従業員は、メール送信されます。</p>
+                    <p>ｂ）「メールアドレスが設定されていません。」と表示されている従業員には、メールは送信されません。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>QRコードが印刷された、ユーザー登録のご案内のPDFが出力されますので、従業員に渡してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｃ）従業員にメールが送信されます。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->     
+    <a id="content2" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>５-２ 顧問先より従業員へのユーザー登録依頼</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">HR-Zeroより、顧問先が従業員にユーザー登録依頼を行う方法について説明します。</p>
+    <p class="title-description">従業員がWeb明細にて、給与明細書や源泉徴収票をWeb上で閲覧などを行うためには、ユーザー登録依頼を行い従業員がユーザー登録を行う必要があります。</p>              
+    <div class="content-container">
+        <h4>① 事前に行うこと</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>事前に従業員に、Web上で行うことや、メールアドレスを集めることなどを説明してください。</p>  
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <P>ａ）従業員には、給与明細書などをWeb明細にて渡すことや、年末調整はWeb上で入力することを説明してください。</P>
+                    <P>ｂ）事前に、従業員のメールアドレスを集めてください。</P>
+                    <P>ｃ）集めたメールアドレスは、社員管理に登録してください。</P>
+                    <div class="content-container__commentary--para3">
+                        <P>社労士事務所に連絡し、登録を依頼することもできます。</P>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <P>ｄ）全員のメールアドレスを集めるのが面倒な場合は、QRコードが印刷された用紙を配布することができます。</P>
+                    <div class="content-container__commentary--para3">
+                        <P>詳しくは、『こんな場合の対応方法』を参照してください。</P>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <P>ｅ）メールアドレスを持っていない従業員なども、QRコードが印刷された用紙を配布することなどができます。</P>
+                    <div class="content-container__commentary--para3">
+                        <P>詳しくは、『こんな場合の対応方法』を参照してください。</P>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content2-2" class="anchor anchor-detail"></a>     
+    <div class="content-container">
+        <h4>② ユーザー登録依頼の開始</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>HR-Zeroの社員管理よりユーザー登録依頼を始めます。</p> 
+                <img class="img-magnification" src="images/1_11-5_8.bmp" alt="ユーザー登録依頼の開始">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_8.bmp" data-lightbox="lightbox8" data-title="ユーザー登録依頼の開始"></a>
+                <p class="paragraph">社員管理の「社員を検索する」ボタンをクリックしてください。</p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->     
+    <a id="content2-3" class="anchor anchor-detail"></a>     
+    <div class="content-container">
+        <h4>③ ユーザー登録依頼を行う従業員の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録依頼を行う従業員を選択します。</p> 
+                <p>一括でユーザー登録依頼を行うこともできます。</p>
+                <img class="img-magnification" src="images/1_11-5_9.bmp" alt="ユーザー登録依頼を行う従業員の選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_9.bmp" data-lightbox="lightbox9" data-title="ユーザー登録依頼を行う従業員の選択"></a>
+                <p class="paragraph">ユーザー登録のアイコンをクリックし、登録依頼を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）ユーザー登録に表示される状況について、説明します。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>ここには、ユーザー登録の状況が表示されます。表示される状況は下記の通りです。</p>
+                        <div class="content-container__commentary--para4">                            
+                            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">                                
+                                <tbody>
+                                    <tr>    
+                                        <th style="text-align: center;">済</th>
+                                        <td>従業員がユーザー登録を行っています。</td>                                                               
+                                    </tr>
+                                    <tr>    
+                                        <th style="text-align: center;">依頼中</th>
+                                        <td>従業員がまだ、ユーザー登録を行っていません。</td>                        
+                                    </tr>
+                                    <tr>    
+                                        <th rowspan="2" style="text-align: center;">初期化</th>
+                                        <td>従業員がMy-Zeroにログインを行うためのパスワードを忘れたために、パスワードの初期化を行っています。</td>                        
+                                    </tr>
+                                    <tr>                                            
+                                        <td>従業員がパスワードの再設定を行うと、済に変わります。</td>                        
+                                    </tr>
+                                    <tr>    
+                                        <th style="text-align: center;">アイコン</th>
+                                        <td>ユーザー登録を依頼していません。</td>                        
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）依頼中の場合は、従業員に登録を促すために、再依頼メールを送信することができます。</p>
+                    <p>ｃ）済の場合は、従業員がMy-Zeroにログインするためのパスワードを忘れた場合に、初期化することができます。</p>
+                    <p>ｄ）初期化の場合は、従業員にパスワードの再設定を促すために、再依頼メールを送信することができます。</p>
+                    <p>ｅ）メールアドレスは、事前に社員情報に登録されている場合は、表示されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>表示されていない場合は、ユーザー登録依頼を行う際に入力します。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->     
+    <a id="content2-4" class="anchor anchor-detail"></a>     
+    <div class="content-container">
+        <h4>④ 従業員へのユーザー登録依頼</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>従業員に、ユーザー登録依頼のメール送信を行います。</p> 
+                <img class="img-magnification" src="images/1_11-5_10.bmp" alt="従業員へのユーザー登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_10.bmp" data-lightbox="lightbox10" data-title="従業員へのユーザー登録依頼"></a>
+                <p class="paragraph">メールアドレスを入力し、「送信する」ボタンをクリックして、メールを送信します。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メール送信先欄は、「社員のメールアドレスに送信します。」を選択してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>メールアドレスを持っていない場合などの対応方法は、『こんな場合の対応方法』を参照してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）メールアドレス欄は、社員管理に登録されているアドレスが表示されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>未登録の場合は、アドレスを間違えないように注意してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｃ）従業員に、下記のようなメールが送信されます。</p>
+                    <div class="content-container__commentary--para3">
+                        <img class="img-magnification" src="images/1_11-5_11.bmp" alt="ユーザー登録依頼を行う従業員の選択">         
+                        <a class="img-scaling img-scaling-document" href="images/1_11-5_11.bmp" data-lightbox="lightbox11" data-title="ユーザー登録依頼を行う従業員の選択"></a> 
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content2-5" class="anchor anchor-detail"></a>     
+    <div class="content-container">
+        <h4>⑤ 従業員への一括登録依頼</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>従業員に１人ずつ行うのは効率的ではありませんので、一括で登録依頼を行うことができるます。</p> 
+                <img class="img-magnification" src="images/1_11-5_12.bmp" alt="従業員への一括登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_12.bmp" data-lightbox="lightbox12" data-title="従業員への一括登録依頼"></a>
+                <p class="paragraph">「一括ユーザー登録」ボタンをクリックし、全員に登録依頼を行います。</p>
+                <p class="paragraph">依頼済みや登録済みの従業員には、メール送信されません。</p>
+                <p>従業員一覧を確認し、一括依頼を行います。</p>
+                <img class="img-magnification" src="images/1_11-5_13.bmp" alt="従業員への一括登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_13.bmp" data-lightbox="lightbox13" data-title="従業員への一括登録依頼"></a>
+                <p class="paragraph">表示されている従業員に、ユーザー登録依頼を行います。</p>
+                <p class="paragraph">表示されている従業員を確認し、「送信する」ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールアドレスが表示されている従業員は、メール送信されます。</p> 
+                    <p>ｂ）「メールアドレスが設定されていません。」と表示されている従業員には、メールは送信されません。</p>                   
+                    <div class="content-container__commentary--para3">
+                        <p>QRコードが印刷された、ユーザー登録のご案内のPDFが出力されますので、従業員に渡してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｃ）従業員に、メールが送信されます。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content3" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+        <h2>５-３ ユーザー登録依頼のこんな場合の対応方法</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <div class="content-container">
+        <h4>① 全員のメールアドレスを集めるのが面倒な場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>QRコードが印刷された用紙を配布することができますので、従業員に渡し、QRコードよりユーザー登録を依頼します。</p> 
+                <p>「5-1又は5-2の⑤」の、「従業員に一括でユーザー登録依頼を行う」でPDF出力を行います。</p>
+                <p>QRコードが印刷された、ユーザー登録のご案内のPDFが出力されますので従業員に渡してください。</p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content3-2" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>② 従業員がメールアドレスを持っていない場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>上記①と同様に、PDF出力をすることができます。</p> 
+                <p>「5-1又は5-2の④」の、「従業員にユーザー登録依頼を行う」にて、メール送信先欄に「メールアドレスを登録しません」を選択してください。</p>
+                <p>「送信する」に変わり、「認証情報をPDFで出力する」が表示されますので、クリックしてください。</p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content3-3" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>③ 従業員がメールアドレスもなく、Web上で登録することもできない場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>上記①と同様に、PDF出力をすることができます。</p> 
+                <p>「5-1又は5-2の④の、「従業員にユーザー登録依頼を行う」にて、メール送信先欄に、「社員がメールアドレスを持っていないので自分のメールアドレスに送信します。」を選択してください。</p>
+                <p>顧問先担当者にメールが送信されますので、担当者がユーザー登録を行うことができます。</p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content3-4" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>④ QRコードが印刷されたユーザー登録のご案内のPDF出力について</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>PDF出力を行うと、トップ画面の「お知らせ」欄に案内が表示されますので、ダウンロードできるまで待ってください。</p> 
+                <p>ａ）PDF出力を行うと、下記のようなお知らせが表示されますので、しばらくお待ちください。</p>
+                <img class="img-magnification" src="images/1_11-5_14.bmp" alt="QRコードが印刷されたユーザー登録のご案内のPDF出力について">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_14.bmp" data-lightbox="lightbox14" data-title="QRコードが印刷されたユーザー登録のご案内のPDF出力について"></a>
+                <p>ｂ）ダウンロードの準備ができますと、下記のようなお知らせが表示されますので、ダウンロードして従業員に渡してください。</p>
+                <img class="img-magnification" src="images/1_11-5_15.bmp" alt="QRコードが印刷されたユーザー登録のご案内のPDF出力について">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_15.bmp" data-lightbox="lightbox15" data-title="QRコードが印刷されたユーザー登録のご案内のPDF出力について"></a>
+                <p>ｃ）QRコードが印刷されましたユーザー登録のご案内は、下記のような用紙です。</p>
+                <img class="img-magnification" src="images/1_11-5_16.bmp" alt="QRコードが印刷されたユーザー登録のご案内のPDF出力について">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_16.bmp" data-lightbox="lightbox16" data-title="QRコードが印刷されたユーザー登録のご案内のPDF出力について"></a>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+        <h2>５-４ 従業員のユーザー登録</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents --> 
+    <p class="title-description">Esia-Zero又はHR-Zeroより、ユーザー登録依頼のメールが届きましたら、従業員がユーザー登録を行う方法について説明します。</p>
+    <div class="content-container">
+        <h4>① メールの確認</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>届いたメールを確認し、ユーザー登録を行います。</p>             
+                <img class="img-magnification" src="images/1_11-5_17.bmp" alt="メールの確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_17.bmp" data-lightbox="lightbox17" data-title="メールの確認"></a>
+                <p class="paragraph">メールに記載されているURLをクリックすることで、ユーザー登録を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーは、ユーザー登録を行う際に必要です。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4-2" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>② ユーザー登録</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録を行います。</p>             
+                <img class="img-magnification" src="images/1_11-5_18.bmp" alt="ユーザー登録">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_18.bmp" data-lightbox="lightbox18" data-title="ユーザー登録"></a>
+                <p class="paragraph">認証キーなどの必要情報を入力し、「ユーザー登録する」ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーは、メールに記載されていますので、確認して入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>コピーして貼り付けることができます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）パスワードは８文字以上、２０文字以内で入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>また、安全性の高いパスワードにするために、可能な限り多くの文字を利用してください。</p>
+                        <p>大文字英字と小文字英字、数字、記号を組み合わせた、10文字以上を推奨しています。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4-3" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>③ 登録が完了した場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録が完了すると、My-Zeroのトップ画面が表示され、利用可能になります。</p>             
+                <img class="img-magnification" src="images/1_11-5_19.bmp" alt="登録が完了した場合">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_19.bmp" data-lightbox="lightbox19" data-title="登録が完了した場合"></a>
+                <p class="paragraph">ユーザー登録完了のメールが届きますので、メールを確認してください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールには、Esia-ZeroにログインするためのURLが記載されています。</p>
+                    <p>ｂ）My-Zeroのトップ画面を、ブックマークなどで登録しておくと便利です。</p>
+                    <img class="img-magnification" src="images/1_11-5_20.bmp" alt="登録が完了した場合">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-5_20.bmp" data-lightbox="lightbox20" data-title="登録が完了した場合"></a>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content5" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+        <h2>５-５ ユーザー登録のご案内より従業員のユーザー登録</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents --> 
+    <p class="title-description">会社より受け取った、「ユーザー登録のご案内」より、従業員がユーザー登録を行う方法について説明します。</p>
+    <div class="content-container">
+        <h4>① ご案内の確認</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>届いたユーザー登録のご案内を確認し、ユーザー登録を行います。</p>             
+                <img class="img-magnification" src="images/1_11-5_21.bmp" alt="ご案内の確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_21.bmp" data-lightbox="lightbox21" data-title="ご案内の確認"></a>
+                <p class="paragraph">印刷されているURL又は、QRコードよりユーザー登録を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーは、ユーザー登録を行う際に必要です。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-2" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>② ユーザー登録</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録を行います。</p>             
+                <img class="img-magnification" src="images/1_11-5_22.bmp" alt="ユーザー登録">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_22.bmp" data-lightbox="lightbox22" data-title="ユーザー登録"></a>
+                <p class="paragraph">認証キーなどの必要情報を入力し、「ユーザー登録する」ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーは、メールに記載されていますので、確認して入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>英字大文字と英字小文字、数字の組み合わせなので、間違えないように入力してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）パスワードは、８文字以上２０文字以内で入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>また、安全性の高いパスワードにするために、可能な限り多くの文字を利用してください。</p>
+                        <p>大文字英字と小文字英字、数字、記号を組み合わせた、10文字以上を推奨しています。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content5-3" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>③ 登録が完了した場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録が完了すると、My-Zeroのトップ画面が表示され、利用可能になります。</p>             
+                <img class="img-magnification" src="images/1_11-5_23.bmp" alt="登録が完了した場合">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-5_23.bmp" data-lightbox="lightbox23" data-title="登録が完了した場合"></a>
+                <p class="paragraph">ユーザー登録が完了しましたら、My-Zeroのトップ画面を確認してください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールは届きませんので、本書は大切に保管してください。</p>     
+                    <div class="content-container__commentary--para3">
+                        <p>本書に、My-Zeroを利用する際の、URLとユーザーIDが印刷されています。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）My-Zeroのトップ画面を、ブックマークなどで登録しておくと便利です。</p>
+                    <img class="img-magnification" src="images/1_11-5_24.bmp" alt="登録が完了した場合">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-5_24.bmp" data-lightbox="lightbox24" data-title="登録が完了した場合"></a>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+   </main>
+   <!-- /.page-main -->     
+  </div>
+  <!-- /.wrapper clearfix --> 
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　 <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer__p">以上で、 ” 顧問先従業員にユーザー登録依頼を行う ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+ <!-- /.footer -->
+</html>

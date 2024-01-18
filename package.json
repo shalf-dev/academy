@@ -1,0 +1,14 @@
+{
+  "name": "academy",
+  "version": "1.0.0",
+  "description": "Landing page for academy",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Hakamata",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

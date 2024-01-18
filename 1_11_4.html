@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /スタイルシート -->
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header__inner">
+    <div class="header__logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>
+    <!-- /.header__logo -->   
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>        
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header__modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->
+    </div> 
+    <!-- /.header__place -->
+   </div>
+   <!-- /.header__inner --> 
+  <!-- ぱんくずリスト -->
+  <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>
+    <!-- /.itemListElement -->   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_11_esia.html">
+      <span itemprop="name">イージアZero導入</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="#">
+      <span itemprop="name">顧問先の利用プランとユーザー登録依頼を行う</span>
+     </a>
+     <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /ぱんくずリスト -->          
+  </header>     
+  <div class="interval"></div>
+  <div class="interval-bit"></div>             
+  <div class="wrapper clearfix">			
+   <main class="main">
+    <div class="main--title title-color-document table-of-contents">
+     <h2>目　　　次</h2>
+    </div>
+    <!-- /.main--title title-color-document table-of-contents -->     
+    <div class="article-container">
+        <div class="contents-list contents-list-document">
+            <span>４.</span><a href="#content1">顧問先の利用プランとユーザー登録依頼を行う</a>                  
+            <p>顧問先の利用プランと、ユーザー登録依頼について解説します。</p>
+            <ul class="contents-list__ul">
+                <span>４-１</span><a href="#content1">利用プランの登録</a>
+                <li><span>①</span><a href="#content1">プランについて</a></li>                 
+                <li><span>②</span><a href="#content1-2">利用プランの登録</a></li>                                 
+                <li><span>③</span><a href="#content1-3">利用プランを登録する顧問先の選択</a></li>                
+                <li><span>④</span><a href="#content1-4">プランの選択</a></li> 
+                <li><span>⑤</span><a href="#content1-5">顧問先と社員の権限設定</a></li> 
+                <li><span>⑥</span><a href="#content1-6">顧問先にユーザー登録依頼</a></li> 
+                <li><span>⑦</span><a href="#content1-7">顧問先にユーザー登録依頼を行った状況の確認</a></li>          
+            </ul>
+            <ul class="contents-list__ul">
+                <span>４-２</span><a href="#content2">顧問先管理者がユーザー登録</a> 
+                <li><span>①</span><a href="#content2">依頼メールの確認</a></li>                        
+                <li><span>②</span><a href="#content2-2">ユーザー登録</a></li>                        
+                <li><span>③</span><a href="#content2-3">登録が完了した場合</a></li>                  
+            </ul> 
+            <ul class="contents-list__ul">
+                <span>４-３</span><a href="#content3">利用プランの変更</a> 
+                <li><span>①</span><a href="#content3">顧問先の利用プランの確認</a></li>                        
+                <li><span>②</span><a href="#content3-2">利用プランの変更</a></li>                                                          
+            </ul>
+            <ul class="contents-list__ul">
+                <span>４-４</span><a href="#content4">権限の変更</a> 
+                <li><span>①</span><a href="#content4">顧問先の権限設定の確認</a></li>                        
+                <li><span>②</span><a href="#content4-2">権限設定の変更</a></li>                                                          
+            </ul>                                  
+        </div> 
+        <!-- /.contents-list contents-list-document -->  
+    </div> 
+    <!-- /.article-container --> 
+    <!--モーダル本体-->
+    <div class="modal-container">
+        <div class="modal-container__body">
+            <!-- 閉じるボタン -->
+            <div class="modal-container__body--close">&#10006</div>
+            <!-- /閉じるボタン -->
+            <!-- モーダル内のコンテンツ -->
+            <div class="modal-container__body--content">
+                <div>
+                    <h2>目　次</h2>
+                </div>    
+                <div class="article-container">
+                    <div class="contents-list contents-list-document">
+                        <ul class="contents-list__ul">
+                            <span>&#9650;</span><a href="#">ページトップ</a> 
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>４-１</span><a href="#content1">利用プランの登録</a>
+                            <li><span>①</span><a href="#content1">プランについて</a></li>                 
+                            <li><span>②</span><a href="#content1-2">利用プランの登録</a></li>                                 
+                            <li><span>③</span><a href="#content1-3">利用プランを登録する顧問先の選択</a></li>                
+                            <li><span>④</span><a href="#content1-4">プランの選択</a></li> 
+                            <li><span>⑤</span><a href="#content1-5">顧問先と社員の権限設定</a></li> 
+                            <li><span>⑥</span><a href="#content1-6">顧問先にユーザー登録依頼</a></li> 
+                            <li><span>⑦</span><a href="#content1-7">顧問先にユーザー登録依頼を行った状況の確認</a></li>          
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>４-２</span><a href="#content2">顧問先管理者がユーザー登録</a> 
+                            <li><span>①</span><a href="#content2">依頼メールの確認</a></li>                        
+                            <li><span>②</span><a href="#content2-2">ユーザー登録</a></li>                        
+                            <li><span>③</span><a href="#content2-3">登録が完了した場合</a></li>                  
+                        </ul> 
+                        <ul class="contents-list__ul">
+                            <span>４-３</span><a href="#content3">利用プランの変更</a> 
+                            <li><span>①</span><a href="#content3">顧問先の利用プランの確認</a></li>                        
+                            <li><span>②</span><a href="#content3-2">利用プランの変更</a></li>                                                          
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>４-４</span><a href="#content4">権限の変更</a> 
+                            <li><span>①</span><a href="#content4">顧問先の権限設定の確認</a></li>                        
+                            <li><span>②</span><a href="#content4-2">権限設定の変更</a></li>                                                          
+                        </ul>                            
+                    </div> 
+                    <!-- /.contents-list contents-list-document -->          
+                </div>
+                <!-- /.article-container -->
+            </div>
+            <!-- /.modal-container__body--content -->
+            <!-- /モーダル内のコンテンツ -->
+        </div>
+        <!-- /.modal-container__body -->  
+    </div>  
+    <!-- /.modal-container -->  
+    <!-- /モーダル本体 -->
+    <a id="content1" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>４-１ 利用プランの登録</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">社労士事務所にて、顧問先毎の利用プランを登録します。</p>                 
+    <p class="title-description">プランによりできることとできないことがありますので、顧問先毎に必要なプランを登録します。</p>  
+    <p class="title-description">プランは後から変更することができます。</p>                 
+    <div class="content-container">
+        <h4>① プランについて</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>プランにはフリープランとベーシックプラン、プロプランの３種類があります。</p>
+                <p>プラン毎にできることとできないことがありますので、各プランについて説明します。</p>
+                <p class="content-container__commentary--para2-title">フリープランでできること</p>
+                <div class="content-container__commentary--para2">
+                    <p>① 社労士からのお知らせを、顧問先に一斉に知らせることができます。</p>
+                    <p>② 会社や社員情報の登録と、共有を行うことができます。</p>
+                    <p>③ イージアZeroの担当者を登録し、権限を付与することができます。</p>
+                    <p>④ Webコミュニケーション機能を利用し、顧問先と社員にメールの代わりにやり取りを行うことができます。</p>
+                    <p>⑤ Web明細機能を利用することができます。</p>
+                    <p>⑥ My-Zeroのパスワードを初期化することができます。</p>
+                    <p>⑦ 電子申請することができます。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 --> 
+                <p class="content-container__commentary--para2-title">ベーシックプランとプロプランでできること</p>
+                <div class="content-container__commentary--para2">
+                    <p>フリープランの全ての機能に加え、下記機能が利用できます。</p>
+                    <p>① 顧問先から手続き依頼をもらい、社労法務システムに同期することができます。</p>
+                    <p>② 手続き依頼の履歴を管理することができます。</p>
+                    <p>③ 年末調整のデータを、社員本人から取得することができます。</p>
+                    <p>④ マイナンバーのデータを、社員本人から取得することができます。</p>
+                    <p>⑤ Webコミュニケーション機能に、添付書類をつけることができます。</p>
+                    <p>⑥ 顧問先から給与情報シートを受信し、勤怠データ取込から給与明細、銀行振込データ等の各種帳票の出力まで、ワンクリックで完了できる「Robo キュール」をご利用いただけます。</p>
+                    <p>⑦ 勤怠ソフトとのAPI連携ができます。（TouchOnTime、KingOfTime）</p>
+                    <p>⑧ 顧問先（HR-ZERO 側）で複数の担当者を登録できます。</p>
+                    <p>※ ベーシックプランとプロプランの違いについて</p>
+                    <p class="paragraph">月額基本料に含まれる、基本トークン数と追加トークンの金額が異なります。</p>
+                    <p>※ ベーシックプランとプロプランには、無料体験期間があります。</p> 
+                </div>
+                <!-- /.content-container__commentary--para2 --> 
+                <p class="content-container__commentary--para2-title">料金とトークンについて</p>
+                <div class="content-container__commentary--para2">
+                    <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; font-size: 1.5rem;">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>フリー</th> 
+                                <th>ベーシック</th>
+                                <th>プロ</th>                                                       
+                            </tr>
+                        </thead>  
+                        
+                        <tbody>
+                            <tr>    
+                                <td>月額利用料</td>
+                                <td>0円</td>                        
+                                <td>1,000円</td>
+                                <td>3,000円</td>
+                            </tr>
+                            <tr>    
+                                <td>基本トークン</td>
+                                <td>0トークン</td>                        
+                                <td>40トークン</td>
+                                <td>150トークン</td>
+                            </tr>
+                            <tr>    
+                                <td>追加トークン</td>
+                                <td>50円</td>                        
+                                <td>40円</td>
+                                <td>30円</td>
+                            </tr>
+                            <tr>    
+                                <td>ストレージ</td>
+                                <td>50MB</td>                        
+                                <td>300MB</td>
+                                <td>1GB</td>
+                            </tr>
+                        </tbody>                            
+                    </table>
+                </div>
+                <!-- /.content-container__commentary--para2 --> 
+                <p class="content-container__commentary--para2-title">トークンの考え方</p>
+                <div class="content-container__commentary--para2">
+                    <p class="content-container__commentary--para3-title">Web明細</p>
+                    <div class="content-container__commentary--para3">
+                        <p>月末時点でアップロードされている明細数</p>
+                        <p>※ 公開日の属する月の、月末時点でのトークンカウントとなります。</p>
+                        <p>※ アップロードした明細を月中に削除した場合、トークンは発生しません。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3-->
+                    <p class="content-container__commentary--para3-title">その他手続</p>
+                    <div class="content-container__commentary--para3">
+                        <p>「手続きを依頼する」もしくは「PDF出力する」をクリックした時点</p>
+                        <p>※ 修正等で差戻をした場合、追加トークンは発生しません。</p>                                               
+                    </div>
+                    <!-- /.content-container__commentary--para3-->                    
+                </div>
+                <!-- /.content-container__commentary--para2 --> 
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content1-2" class="anchor anchor-detail"></a>     
+    <div class="content-container">
+        <h4>② 利用プランの登録</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>Esia-Zeroにログインをし、利用プランの登録を始めます。</p>
+                <p>利用プランは、Esia-Zeroにて顧問先毎に行います。</p>
+                <img class="img-magnification" src="images/1_11-4_1.bmp" alt="利用プランの登録">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_1.bmp" data-lightbox="lightbox1" data-title="利用プランの登録"></a>                  
+                <p class="paragraph">パスワードを入力し、『ログイン』ボタンをクリックします。</p>
+                <p>顧問先管理より、利用プランの登録を行います。</p>
+                <img class="img-magnification" src="images/1_11-4_2.bmp" alt="利用プランの登録">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_2.bmp" data-lightbox="lightbox2" data-title="利用プランの登録"></a>
+                <p class="paragraph">顧問先管理の『顧問先を検索する』をクリックします。</p>
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content1-3" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>③ 利用プランを登録する顧問先の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>「必要な情報が設定されていません」と表示されている顧問先は、まだ利用プランが登録されていません。</p>
+                <p>登録されていない顧問先の利用プランを、登録します。</p>
+                <img class="img-magnification" src="images/1_11-4_3.bmp" alt="利用プランを登録する顧問先の選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_3.bmp" data-lightbox="lightbox3" data-title="利用プランを登録する顧問先の選択"></a>                  
+                <p class="paragraph">「必要な情報が設定されていません」をクリックし、プラン登録を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）利用プランを変更する場合は、『利用状況』をクリックすることで変更ができます。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->    
+    <a id="content1-4" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>④ プランの選択</h4>     
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>プランを選択します。</p>
+                <p>プランは、「フリープラン」と「ベーシックプラン」、「プロプラン」の３種類がありますので、顧問先毎に選択してください。</p>
+                <img class="img-magnification" src="images/1_11-4_4.bmp" alt="プランの選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_4.bmp" data-lightbox="lightbox4" data-title="プランの選択"></a> 
+                <p class="paragraph">プランは、「フリープラン」と「ベーシックプラン」、「プロプラン」より選択してください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）年末調整を行う場合は、有料プランの「ベーシックプラン」又は「プロプラン」を選択する必要があります。</p>
+                    <p>ｂ）プランは、後から変更することができます。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+                <p class="content-container__commentary--para2-title">｜注意｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>「ベーシックプラン」と「プロプラン」のご契約は、お申込月より６ヶ月のご利用が必要です。</p>
+                    <p>６ヶ月未満でのダウングレードや解約はできませんので、ご注意ください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-5" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>⑤ 顧問先と社員の権限設定</h4>     
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>HR-ZeroとMy-Zeroの、権限を設定します。</p>
+                <p>HR-Zeroにて、顧問先が使用できる権限と使用できない権限を設定します。</p>
+                <p>My-Zeroにて、社員が使用できる権限と使用できない権限を設定します。</p>
+                <img class="img-magnification" src="images/1_11-4_5.bmp" alt="顧問先と社員の権限設定">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_5.bmp" data-lightbox="lightbox5" data-title="顧問先と社員の権限設定"></a> 
+                <p class="paragraph">機能の権限と「顧問先」・「社員」の権限を設定して、『次へ』ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）権限は、選択したプランにより異なります。</p>   
+                    <div class="content-container__commentary--para3">
+                        <p>「フリープラン」の場合は、「会社情報」と「社員管理」、「Webコミュニケーション」、「Web明細」が設定できます。</p>
+                        <p>「ベーシックプラン」と「プロプラン」の場合は、全ての機能が設定できます。</p>
+                    </div>                                     
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）プランに関係なく、下記の機能は始めから選択されています。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>権限を設定して使用できるようにするためには、チェックを付けてください。</p>
+                        <p>逆に、使用できないようにするためにはチェックを外してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｃ）権限設定を行った後は、「顧問先」と「社員」の権限を設定します。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>「顧問先」には、「閲覧」と「登録」、「変更」、「削除」、「PDF」、「ファイル添付」、「作業依頼」の権限が設定できます。</p>
+                        <p>「社員」には、「閲覧」と「登録」、「ファイル添付」の権限が設定できます。</p>
+                        <p>※ 事前に、顧問先に与える権限を決めておいてください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｄ）権限は、後から変更することができます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>全ての権限を付与し、後から運用状況により変更することもできます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｅ）権限の説明</p>
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-color: transparent; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">
+                            <tbody>
+                                <tr>    
+                                    <td>① 選択</td>
+                                    <td>顧問先で使用可能な機能を選択します。</td>                        
+                                </tr>
+                                <tr>    
+                                    <td>② メニュー名</td>                      
+                                    <td>使用できる機能名が表示されます。</td>
+                                </tr>
+                                <tr>    
+                                    <td>③ 顧問先</td>                     
+                                    <td>顧問先担当者が使用可能な機能を選択します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ａ）閲覧</td>
+                                    <td class="paragraph">閲覧を許可する場合に選択してください。</td>                        
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｂ）登録</td>                        
+                                    <td class="paragraph">登録を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｃ）変更</td>                        
+                                    <td class="paragraph">変更を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｄ）削除</td>                        
+                                    <td class="paragraph">削除を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>   
+                                    <td class="paragraph">ｅ）ＰＤＦ</td>                        
+                                    <td class="paragraph">ＰＤＦ出力を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｆ）ファイル添付</td>                        
+                                    <td class="paragraph">ファイル添付を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｇ）作業依頼</td>                        
+                                    <td class="paragraph">社労士に作業を依頼することを許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td>④ 社員</td>                       
+                                    <td>社員が使用可能な機能を選択します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ａ）閲覧</td>                        
+                                    <td class="paragraph">閲覧を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｂ）登録</td>                        
+                                    <td class="paragraph">登録を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｃ）ファイル添付</td>                        
+                                    <td class="paragraph">ファイル添付を許可する場合に選択してください。</td>
+                                </tr>                           
+                            </tbody>                            
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->   
+                    <p>ｆ）メニュー名の説明</p>
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-color: transparent; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">
+                            <tbody>
+                                <tr>    
+                                    <td>① 会社情報</td>
+                                    <td>顧問先側で会社情報を閲覧・編集可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>② 入社手続き</td>
+                                    <td>顧問先・社員側で入社手続きを行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>③ 退社手続き</td>
+                                    <td>顧問先側で退社手続きを行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>④ 各種手続き</td>
+                                    <td>選択すると利用可能な手続きが選択できるようになります。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">① 住所変更</td>                        
+                                    <td class="paragraph">顧問先側で住所変更手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">② 氏名変更</td>                        
+                                    <td class="paragraph">顧問先側で氏名変更手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">③ 振込銀行登録変更</td>                        
+                                    <td class="paragraph">給与と賞与の振込銀行の登録と変更が行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">④ 健保・厚年資格取得届</td>                        
+                                    <td class="paragraph">顧問先側で健保・厚年資格取得手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑤ 健保・厚年資格喪失届</td>                        
+                                    <td class="paragraph">顧問先側で健保・厚年資格喪失手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑥ 被扶養者の追加</td>                        
+                                    <td class="paragraph">被扶養者が増えた場合（婚姻や出生など）の手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑦ 被扶養者の削除</td>                        
+                                    <td class="paragraph">被扶養者が減った場合（離婚や就職など）の手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑧ 雇用保険資格取得届</td>                        
+                                    <td class="paragraph">顧問先側で雇用保険資格取得手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑨ 雇用保険資格喪失届<br>（離職票交付なし）</td>                        
+                                    <td class="paragraph">顧問先側で雇用保険資格喪失手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑤ 社員管理</td>
+                                    <td>顧問先側で社員情報を閲覧・編集可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑥ 担当者管理</td>
+                                    <td>顧問先側で担当者を登録するかどうかを設定します。</td>
+                                </tr>     
+                                <tr>    
+                                    <td>⑦ 手続き管理</td>
+                                    <td>顧問先、社員側で手続きの進捗や履歴を確認可能かを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑧ Ｗｅｂコミュニケーション</td>
+                                    <td>社労士⇔顧問先、顧問先⇔社員のWeb コミュニケーションが可能かどうかを設定します。</td>
+                                </tr>    
+                                <tr>    
+                                    <td>⑨ Ｗｅｂ明細（従業員用）</td>
+                                    <td>顧問先側でWeb明細を閲覧・編集可能かどうかと社員が閲覧可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑩ Ｗｅｂ明細（事業所用）</td>
+                                    <td>顧問先側でWeb明細（請求書）を閲覧可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑪ マイナンバー</td>
+                                    <td>顧問先側でマイナンバーを閲覧・登録・削除・PDF印刷・ファイル添付が可能かどうかと社員が閲覧・登録・ファイル添付可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑫ 年末調整</td>
+                                    <td>顧問先側で年末調整Web明細をPDFで閲覧可能かどうかと、社員が閲覧・登録・ファイル添付可能かどうかを設定します。</td>
+                                </tr>                                                                                    
+                            </tbody>                            
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 -->                
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-6" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>⑥ 顧問先にユーザー登録依頼</h4>     
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>顧問先のプランと権限の登録を行い、ユーザー登録依頼を行うためにメールを送信します。</p>
+                <p>メールは顧問先管理者に送信します。</p>
+                <img class="img-magnification" src="images/1_11-4_6.bmp" alt="顧問先にユーザー登録依頼">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_6.bmp" data-lightbox="lightbox6" data-title="顧問先にユーザー登録依頼"></a> 
+                <p class="paragraph">メールアドレスを入力して、『顧問先を登録する』ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールアドレスには、顧問先管理者のアドレスを入力します。</p>
+                    <p>ｂ）顧問先管理者にメールを送信したので、ユーザー登録をする旨を連絡してください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content1-7" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>⑦ 顧問先にユーザー登録依頼を行った状況の確認</h4>     
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録依頼を行った顧問先が、ユーザー登録を行ったかなどの状況を確認できます。</p>
+                <p>ユーザー登録されていない場合は、再依頼することができます。</p>
+                <img class="img-magnification" src="images/1_11-4_7.bmp" alt="顧問先にユーザー登録依頼を行った状況の確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_7.bmp" data-lightbox="lightbox7" data-title="顧問先にユーザー登録依頼を行った状況の確認"></a>
+                <p class="paragraph">「ユーザー登録」列に、現在の状況が表示されています。</p>
+                <p class="paragraph">「依頼中」の場合は、再依頼することができます。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）状況は「済」と「依頼中」の２種類があります。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>「済」は、ユーザー登録が完了しています。</p>
+                        <p>「依頼中」は、ユーザー登録が完了していません。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）再依頼する場合は、下記手順にて再依頼してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>『依頼中』をクリックします。</p>
+                        <p>メールアドレスを入力し、『送信する』ボタンをクリックします。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content2" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>４-２ 顧問先管理者がユーザー登録</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">社労士事務所よりユーザー登録のメールが届いたら、顧問先にてユーザー登録を行います。</p> 
+    <div class="content-container">
+        <h4>① 依頼メールの確認</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>社労士事務所より、ユーザー登録依頼メールが届くので、確認します。</p>
+                <img class="img-magnification" src="images/1_11-4_8.bmp" alt="依頼メールの確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_8.bmp" data-lightbox="lightbox8" data-title="依頼メールの確認"></a>
+                <p class="paragraph">メールに記載されているURLをクリックすることで、ユーザー登録を行います。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーはユーザー登録を行う時に必要になります。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content2-2" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>② ユーザー登録</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>ユーザー登録を行います。</p>
+                <img class="img-magnification" src="images/1_11-4_9.bmp" alt="ユーザー登録">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_9.bmp" data-lightbox="lightbox9" data-title="ユーザー登録"></a>
+                <p class="paragraph">認証キーなどの必要情報を入力し、『ユーザー登録する』ボタンをクリックしてください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）認証キーは、メールに記載されていますので確認して入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>コピーして貼り付けることができます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｂ）ユーザーIDは、英数字５文字以上８文字以内で、任意に入力してください。</p>
+                    <p>Ｃ）パスワードは、８文字以上２０文字以内で入力してください。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>また、安全性の高いパスワードにするために、可能な限り多くの文字を利用してください。</p>
+                        <p>大文字英字と小文字英字、数字、記号を組み合わせた、10文字以上を推奨しています。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｄ）お名前は、HR-Zeroに表示されてくる名前となりますので、任意に入力してください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->   
+    <a id="content2-3" class="anchor anchor-detail"></a>      
+    <div class="content-container">
+        <h4>③ 登録が完了した場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>本登録が完了しますと、HR-Zeroのトップ画面が表示され、利用可能になります。</p>
+                <img class="img-magnification" src="images/1_11-4_10.bmp" alt="登録が完了した場合">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_10.bmp" data-lightbox="lightbox10" data-title="登録が完了した場合"></a>
+                <p class="paragraph">ユーザー登録完了のメールが届きますので、メールを確認してください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）メールには、HR-ZeroにログインするためのURLが記載されています。</p>
+                    <img class="img-magnification" src="images/1_11-4_11.bmp" alt="登録が完了した場合">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-4_11.bmp" data-lightbox="lightbox11" data-title="登録が完了した場合"></a>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->   
+    <a id="content3" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>４-３ 利用プランの変更</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">社労士事務所にて、顧問先の利用プランを変更することができます。</p> 
+    <p class="title-description">例えば、年末調整を行うために、フリープランからベーシックプランへの変更を行う場合に使用します。</p> 
+    <div class="content-container">
+        <h4>① 顧問先の利用プランの確認</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">  
+                <p>顧問先一覧より、利用プランを確認してプラン変更を行います。</p>
+                <img class="img-magnification" src="images/1_11-4_12.bmp" alt="利用プランの変更">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_12.bmp" data-lightbox="lightbox12" data-title="利用プランの変更"></a>
+                <p class="paragraph">顧問先一覧では、「利用状況」などを確認することができます。</p>
+                <p class="paragraph">「利用状況」をクリックすることで、利用プランを変更することができます。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）「利用状況」に、現在の利用プランが表示されます。</p>
+                    <p>ｂ）「利用状況」について説明します。</p>
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-color: transparent; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">
+                            <tbody>
+                                <tr>    
+                                    <td>フリー</td>
+                                    <td>：</td>                        
+                                    <td>フリープランを利用中です。</td>
+                                </tr>
+                                <tr>    
+                                    <td>ベーシック</td>
+                                    <td>：</td>                        
+                                    <td>ベーシックプランの製品版を利用中です。</td>
+                                </tr>
+                                <tr>    
+                                    <td>プロ</td>
+                                    <td>：</td>                        
+                                    <td>プロプランの製品版を利用中です。</td>
+                                </tr>
+                                <tr>    
+                                    <td>体験中残りxx日</td>
+                                    <td>：</td>                        
+                                    <td>ベーシックプラン又はプロプランの体験期間中です。残り日数も表示されます。</td>
+                                </tr>
+                                <tr>    
+                                    <td>体験終了</td>
+                                    <td>：</td>                        
+                                    <td>ベーシックプラン又はプロプランの体験期間が終了です。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->   
+                    <p>ｃ）体験期間中でも、製品版へのプラン変更が可能です。</p>
+                    <p>ｄ）体験終了の場合は、製品版へのプラン変更を行ってください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content3-2" class="anchor anchor-detail"></a> 
+    <div class="content-container">
+        <h4>② 利用プランの変更</h4>   
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">        
+                <p>変更したいプランを選択します。</p>
+                <img class="img-magnification" src="images/1_11-4_13.bmp" alt="利用プランの変更">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_13.bmp" data-lightbox="lightbox13" data-title="利用プランの変更"></a>
+                <p class="paragraph">ベーシックプラン又はプロプランの、『製品版の利用を開始する』ボタンをクリックします。</p>
+                <p class="paragraph">但し、フリープランの場合は『フリープランを開始する』ボタンをクリックします。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">  
+                    <p>ａ）現在の「利用状況」により、表示される画面は異なります。</p>
+                    <div class="content-container__commentary--para3"> 
+                        <p>フリープランの場合は、ベーシックプラン又はプロプランが表示されます。</p>
+                        <p>ベーシックプランの場合は、プロプランのみが表示されます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+                <p class="content-container__commentary--para2-title">｜注意｜</p>
+                <div class="content-container__commentary--para2"> 
+                    <p>ａ）ベーシックプランとプロプランのご契約は、お申込月より６ヶ月のご利用が必要です。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>６ヶ月未満でのダウングレードや解約はできませんので、ご注意ください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->   
+                    <p>ｂ）ダウングレードは、Esia-Zeroから行うことはできませんので、弊社サポートまで連絡が必要です。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>※ ダウングレードとは下記のようなパターンです。</p>                        
+                        <p class="paragraph">プロプランからベーシックプランへのプラン変更</p>
+                        <p class="paragraph">プロプランからフリープランへのプラン変更</p>
+                        <p class="paragraph">ベーシックプランからフリープランへのプラン変更</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>４-４ 権限の変更</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents --> 
+    <p class="title-description">社労士事務所にて、顧問先の権限を設定することができます。</p>         
+    <p class="title-description">例えば、年末調整を行うために、顧問先と社員に年末調整の権限を付与する場合に使用します。</p>         
+    <div class="content-container">
+        <h4>① 顧問先の権限設定の確認</h4>   
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">        
+                <p>顧問先一覧より、現在の権限設定を確認し、変更を行います。</p>
+                <img class="img-magnification" src="images/1_11-4_14.bmp" alt="顧問先の権限設定の確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_14.bmp" data-lightbox="lightbox14" data-title="顧問先の権限設定の確認"></a>            
+                <p class="paragraph">顧問先一覧の「権限設定」（鍵マーク）をクリックしますと、現在の権限設定を確認することができます。</p>                              
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+    <a id="content4-2" class="anchor anchor-detail"></a>
+    <div class="content-container">
+        <h4>② 権限設定の変更</h4>   
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">        
+                <p>変更したい権限を選択します。</p>
+                <img class="img-magnification" src="images/1_11-4_15.bmp" alt="権限設定の変更">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-4_15.bmp" data-lightbox="lightbox15" data-title="権限設定の変更"></a>            
+                <p class="paragraph">現在の「権限設定」が表示されますので、権限を付与する箇所にチェックを付け、『保存する』ボタンをクリックします。</p>
+                <p class="paragraph">チェックを外しますと、権限は削除されます。</p>
+                <p class="paragraph">フリープランの場合は、下記の機能は利用できませんので、利用したい場合は、ベーシック又はプロプランに変更してください。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">  
+                    <p>ａ）顧問先に機能（メニュー）の権限を設定する場合</p>
+                    <div class="content-container__commentary--para3"> 
+                        <p>メニュー名の左横にチェックを付けますと、権限を付与することができます。</p>
+                        <p>逆にチェックを外しますと、権限は削除されます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｂ）顧問先に機能毎の権限を設定する場合</p>
+                    <div class="content-container__commentary--para3">
+                        <p>「閲覧」～「作業依頼」までにチェックを付けますと、権限を付与することができます。</p>
+                        <p>逆にチェックを外しますと、権限は削除されます。</p>
+                        <p>※ 設定できる権限は、機能により異なります。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｃ）社員に機能毎の権限を設定する場合</p>
+                    <div class="content-container__commentary--para3">
+                        <p>「閲覧」～「ファイル添付」までにチェックを付けますと、権限を付与することができます。</p>
+                        <p>逆にチェックを外しますと、権限は削除されます。</p> 
+                        <p>※ 設定できる権限は、機能により異なります。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->    
+                    <p>ｄ）権限の説明</p>
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-color: transparent; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">
+                            <tbody>
+                                <tr>    
+                                    <td>① 選択</td>
+                                    <td>顧問先で使用可能な機能を選択します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>② メニュー名</td> 
+                                    <td>使用できる機能名が表示されます。</td>
+                                </tr>
+                                <tr>    
+                                    <td>③ 顧問先</td>  
+                                    <td>顧問先担当者が使用可能な機能を選択します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ａ）閲覧</td>                        
+                                    <td class="paragraph">閲覧を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｂ）登録</td>                        
+                                    <td class="paragraph">登録を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｃ）変更</td>                        
+                                    <td class="paragraph">変更を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｄ）削除</td>                        
+                                    <td class="paragraph">削除を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｅ）ＰＤＦ</td>                        
+                                    <td class="paragraph">ＰＤＦ出力を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｆ）ファイル添付</td>                        
+                                    <td class="paragraph">ファイル添付を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｇ）作業依頼</td>                        
+                                    <td class="paragraph">社労士に作業を依頼することを許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td>④ 社員</td>  
+                                    <td>社員が使用可能な機能を選択します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ａ）閲覧</td>                        
+                                    <td class="paragraph">閲覧を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｂ）登録</td>                        
+                                    <td class="paragraph">登録を許可する場合に選択してください。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">ｃ）ファイル添付</td>                        
+                                    <td class="paragraph">ファイル添付を許可する場合に選択してください。</td>
+                                </tr>                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｅ）メニュー名の説明</p> 
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-color: transparent; border-collapse: collapse; text-align: left; vertical-align: top; font-size: 1.5rem;">
+                            <tbody>
+                                <tr>    
+                                    <td>① 会社情報</td>
+                                    <td>顧問先側で会社情報を閲覧・編集可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>② 入社手続き</td>
+                                    <td>顧問先・社員側で入社手続きを行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>③ 退社手続き</td>
+                                    <td>顧問先側で退社手続きを行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>④ 各種手続き</td>
+                                    <td>選択すると利用可能な手続きが選択できるようになります。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">① 住所変更</td>                       
+                                    <td class="paragraph">顧問先側で氏名変更手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">② 氏名変更</td>                      
+                                    <td class="paragraph">顧問先側で住所変更手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">③ 振込銀行登録変更</td>                      
+                                    <td class="paragraph">給与と賞与の振込銀行の登録と変更が行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">④ 健保・厚年資格取得届</td>                      
+                                    <td class="paragraph">顧問先側で健保・厚年資格取得手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑤ 健保・厚年資格喪失届</td>                        
+                                    <td class="paragraph">顧問先側で健保・厚年資格喪失手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑥ 被扶養者の追加</td>                      
+                                    <td class="paragraph">被扶養者が増えた場合（婚姻や出生など）の手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑦ 被扶養者の削除</td>                      
+                                    <td class="paragraph">被扶養者が減った場合（離婚や就職など）の手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑧ 雇用保険資格取得届</td>                       
+                                    <td class="paragraph">顧問先側で雇用保険資格取得手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td class="paragraph">⑨ 雇用保険資格喪失届（離職票交付なし）</td>                      
+                                    <td class="paragraph">顧問先側で雇用保険資格喪失手続きが行えるかどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑤ 社員管理</td>
+                                    <td>顧問先側で社員情報を閲覧・編集可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑥ 担当者管理</td>
+                                    <td>顧問先側で担当者を登録するかどうかを設定します。</td>
+                                </tr>                                   
+                                <tr>    
+                                    <td>⑦ 手続き管理</td>
+                                    <td>顧問先、社員側で手続きの進捗や履歴を確認可能かを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑧ Ｗｅｂコミュニケーション</td>
+                                    <td>社労士⇔顧問先、顧問先⇔社員のWebコミュニケーションが可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑨ Ｗｅｂ明細（従業員用）</td>
+                                    <td>顧問先側でWeb明細を閲覧・編集可能かどうかと社員が閲覧可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑩ Ｗｅｂ明細（事業所用）</td>
+                                    <td>顧問先側でWeb明細（請求書）を閲覧可能かどうかを設定します。</td>
+                                </tr>
+                                <tr>    
+                                    <td>⑪ マイナンバー</td>
+                                    <td>顧問先側でマイナンバーを閲覧・登録・削除・PDF印刷・ファイル添付が可能かどうかと社員が閲覧・登録・ファイル添付可能かどうかを設定します。</td>
+                                </tr> 
+                                <tr>    
+                                    <td>⑫ 年末調整</td>
+                                    <td>顧問先側で年末調整Web明細をPDFで閲覧可能かどうかと、社員が閲覧・登録・ファイル添付可能かどうかを設定します。</td>
+                                </tr>   
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->    
+                    <p>ｆ）プラン毎に利用できる機能の説明</p> 
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; font-size: 1.5rem;">
+                            <thead>
+                                <tr>
+                                    <th>機能（メニュー名）</th>
+                                    <th>フリープラン</th> 
+                                    <th>ベーシックプラン</th>
+                                    <th>プロプラン</th>                                                       
+                                </tr>
+                            </thead>  
+                            
+                            <tbody>
+                                <tr>    
+                                    <td style="text-align: left;">会社情報</td>
+                                    <td>〇</td>                        
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">入社手続き</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">退社手続き</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">各種手続き</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">社員管理</td>
+                                    <td>〇</td>                        
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">担当者管理</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">手続き管理</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">Web明細（従業員用）</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">Web明細（事業所用）</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">マイナンバー</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">年末調整</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>                               
+                            </tbody>                            
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｇ）機能毎に設定できる権限</p> 
+                    <div class="content-container__commentary--para3">
+                        <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; font-size: 1.5rem;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">機能（メニュー名）</th>
+                                    <th colspan="7">顧問先</th> 
+                                    <th colspan="3">社員</th>                                                     
+                                </tr>    
+                                <tr>                                    
+                                    <th>閲覧</th> 
+                                    <th>登録</th> 
+                                    <th>変更</th> 
+                                    <th>削除</th> 
+                                    <th>PDF</th> 
+                                    <th>ファイル添付</th> 
+                                    <th>作業依頼</th> 
+                                    <th>閲覧</th> 
+                                    <th>登録</th> 
+                                    <th>ファイル添付</th>                                                                                          
+                                </tr>                                                                                            
+                            </thead>  
+                                                        
+                            <tbody>
+                                <tr>    
+                                    <td style="text-align: left;">会社情報</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">入社手続き</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">退社手続き</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">各種手続き</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                    <td>ー</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　住所変更</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　氏名変更</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　振込銀行登録変更</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　健保・厚年資格取得届</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　健保・厚年資格喪失届</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　被扶養者の追加</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　被扶養者の削除</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　雇用保険資格取得届</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">　雇用保険資格喪失届（離職票交付なし）</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">社員管理</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">担当者管理</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">手続き管理</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">Web明細（従業員用）</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">Web明細（事業所用）</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">マイナンバー</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>
+                                <tr>    
+                                    <td style="text-align: left;">年末調整</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>×</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                    <td>〇</td>
+                                </tr>                                                                
+                            </tbody>                            
+                        </table>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->                                                 
+                </div>
+                <!-- /.content-container__commentary--para2 -->      
+                <p class="content-container__commentary--para2-title">｜注意｜</p>
+                <div class="content-container__commentary--para2">  
+                    <p>ａ）担当者管理は、利用プランを登録した時点では権限が付与されていません。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>顧問先の管理者以外の担当者も、HR-Zeroを利用させる場合は、権限を付与してください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｂ）利用状況が「体験終了」になっている場合は、新たに機能を追加することはできません。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>製品版へのプラン変更を先に行ってください。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->                     
+                </div>
+                <!-- /.content-container__commentary--para2 -->                            
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->
+   </main>
+   <!-- /.page-main -->     
+  </div>
+  <!-- /.wrapper clearfix --> 
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　 <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer__p">以上で、 ” 顧問先の利用プランとユーザー登録依頼を行う ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+ <!-- /.footer -->
+</html>

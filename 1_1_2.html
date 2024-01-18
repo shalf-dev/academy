@@ -9,26 +9,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
   <!--スタイルシート-->
-  <link rel="stylesheet" href="css/0_reset.css">
   <link id="stylesheet" rel="stylesheet" href="css/style.css">
 　<!--画像拡大の為のLightbox2-->
   <link href="css/3_lightbox.css" rel="stylesheet">
  </head>
  <body>
   <header id="header_motion" class="header">
-   <div class="header_inner">
-    <div class="header_logo">    
+   <div class="header__inner">
+    <div class="header__logo">    
      <a href="https://www.shalf.jp/" target="_blank"></a>    
     </div>   
-    <div class="header_company"><h1>SHALF ACADEMY</h1></div>          
-    <div class="header_place">
-     <nav class="header_global-nav"><a href="index.html"></a></nav>
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>          
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
      <!-- モーダルを開くボタン -->
-     <div class="header_modal-open">目次</div>
+     <div class="header__modal-open">目次</div>
     </div>  
    </div>
    <!--ぱんくずリスト-->
-   <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+   <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
      <a itemprop="item" href="index.html">
       <span itemprop="name">ホーム</span>
@@ -53,69 +52,69 @@
   <div class="interval"></div>  
   <div class="interval-bit"></div>         
   <div class="wrapper clearfix">			
-   <main class="page-main">
-    <div class="main-title title-color-document table-of-contents">
+   <main class="main">
+    <div class="main--title title-color-document table-of-contents">
      <h2>目　　　次</h2>
     </div>    
     <div class="article-container">
-     <div class="articles contents-list contents-list-document">
+     <div class="contents-list contents-list-document">
       <span>２.</span><a href="#content1">社員が退職する時</a>
       <p>社員が退職の意思表示してから実際に退職するまでの必要な書類や手続きについて解説します。</p>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>２-１</span><a href="#content1">退職の意思表示があった時に行うこと</a>
        <li><span>①</span><a href="#content1">退職願と退職届</a></li>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>２-２</span><a href="#content2">退職が決定したら行うこと</a> 
        <li><span>①</span><a href="#content2">事前準備</a></li>                      
        <li><span>②</span><a href="#content2-2">社会保険の脱退手続き</a></li>
        <li><span>③</span><a href="#content2-3">労働保険の脱退手続き</a></li>
        <li><span>④</span><a href="#content2-4">住民税の手続き</a></li>
       </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>２-３</span><a href="#content3">各種手続きが完了した時に行うこと</a>
        <li><span>①</span><a href="#content3">源泉徴収票を渡す</a></li>
        <li><span>②</span><a href="#content3-2">被保険者資格喪失証明書を渡す</a></li>
        <li><span>③</span><a href="#content3-3">離職証明書を渡す</a></li>  
        </ul>
-      <ul class="contents-list_ul">
+      <ul class="contents-list__ul">
        <span>２-４</span><a href="#content4">理解度テスト</a>
       </ul>           
      </div>   
     </div>  
     <!--モーダル本体-->
     <div class="modal-container">
-     <div class="modal-body">
+     <div class="modal-container__body">
       <!-- 閉じるボタン -->
-      <div class="modal-close">&#10006</div>
+      <div class="modal-container__body--close">&#10006</div>
        <!-- モーダル内のコンテンツ -->
-       <div class="modal-content">
+       <div class="modal-container__body--content">
         <div>
            <h2>目　次</h2>
         </div>    
         <div class="article-container">
-         <div class="articles contents-list contents-list-document">
-          <ul class="contents-list_ul">
+         <div class="contents-list contents-list-document">
+          <ul class="contents-list__ul">
            <span>&#9650;</span><a href="#">ページトップ</a> 
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>２-１</span><a href="#content1">退職の意思表示があった時に行うこと</a>
            <li><span>①</span><a href="#content1">退職願と退職届</a></li>
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>２-２</span><a href="#content2">退職が決定したら行うこと</a>                
            <li><span>①</span><a href="#content2">事前準備</a></li>                      
            <li><span>②</span><a href="#content2-2">社会保険の脱退手続き</a></li>
            <li><span>③</span><a href="#content2-3">労働保険の脱退手続き</a></li>
            <li><span>④</span><a href="#content2-4">住民税の手続き</a></li>
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>２-３</span><a href="#content3">各種手続きが完了した時に行うこと</a>
            <li><span>①</span><a href="#content3">源泉徴収票を渡す</a></li>
            <li><span>②</span><a href="#content3-2">被保険者資格喪失証明書を渡す</a></li>
            <li><span>③</span><a href="#content3-3">離職証明書を渡す</a></li>    
           </ul>
-          <ul class="contents-list_ul">
+          <ul class="contents-list__ul">
            <span>２-４</span><a href="#content4">理解度テスト</a>
           </ul>                
          </div>   
@@ -124,10 +123,10 @@
       </div>
      </div>
      <a id="content1" class="anchor anchor-document"></a>
-     <div class="main-title title-color-document table-of-contents">
+     <div class="main--title title-color-document table-of-contents">
       <h2>退職の意思表示があった時に行うこと</h2>
      </div> 
-     <!-- /.main-title title-color-document table-of-contents -->   
+     <!-- /.main--title title-color-document table-of-contents -->   
      <p class="title-description">社員から退職の意思表示があった場合、円満に退職ができるように残務処理や引き継ぎなどを説明します。<br>退職願と退職届については就業規則に則って適切に処理してください。</p>  
    　<div class="content-container">
       <h4>① 退職願と退職届</h4>   
@@ -135,71 +134,71 @@
      </div>
      <!-- /.content-container -->    
      <a id="content2" class="anchor anchor-document"></a>
-     <div class="main-title title-color-document table-of-contents">
+     <div class="main--title title-color-document table-of-contents">
       <h2>退職が決定した時に行うこと</h2>
      </div>
-     <!-- /.main-title title-color-document table-of-contents -->    
+     <!-- /.main--title title-color-document table-of-contents -->    
      <p class="title-description">退職が決定した場合、退職日までに手続きを行い、退職者に必要書類を渡します。<br>社員は健康保険証や貸与品などを返却します。</p>         
    　<div class="content-container">
       <h4>① 事前準備</h4>
-      <div class="content-container_commentary">
-       <div class="subheading">退職者情報を登録します。</div>
+      <div class="content-container__commentary">
+       <div class="content-container__commentary--subheading">退職者情報を登録します。</div>
       </div>
-      <!-- /.content-container_commentary -->
+      <!-- /.content-container__commentary -->
      </div>
      <!-- /.content-container --> 
      <a id="content2-2" class="anchor anchor-document"></a>
    　<div class="content-container">
       <h4>② 社会保険の脱退手続き</h4>
-      <div class="content-container_commentary">
-       <div class="subheading">退職者より本人と扶養家族の健康保険証を回収します。</div>   
+      <div class="content-container__commentary">
+       <div class="content-container__commentary--subheading">退職者より本人と扶養家族の健康保険証を回収します。</div>   
        <p>紛失などにより回収できない場合は、健康保険被保険者証回収不能届を提出します</p>
        <img class="img-magnification" src="images/健康保険被保険者証回収不能届.bmp" alt="健康保険被保険者証回収不能届">                 
        <a class="img-scaling img-scaling-document" href="images/健康保険被保険者証回収不能届.bmp" data-lightbox="lightbox1" data-title="健康保険被保険者証回収不能届"></a>
-       <div class="subheading">脱退手続きをする</div>
+       <div class="content-container__commentary--subheading">脱退手続きをする</div>
        <p>事象発生から５日以内に資格喪失届の手続きを行います。</p> 
        <img class="img-magnification" src="images/健保厚年資格喪失届.bmp" alt="健保厚年資格喪失届">
        <a class="img-scaling img-scaling-document" href="images/健保厚年資格喪失届.bmp" data-lightbox="lightbox2" data-title="健保厚年資格取得届"></a>
        <p>本人より回収した健康保険証を年金事務所に提出します。</p> 
-       <div class="subheading">本人が健康保険の任意継続を希望している場合</div>   
+       <div class="content-container__commentary--subheading">本人が健康保険の任意継続を希望している場合</div>   
        <p>任意継続被保険者資格取得申出書を、お住まいの住所地を管轄する協会けんぽ支部に退職日の翌日から２０日以内に提出する。</p>
        <img class="img-magnification" src="images/任意継続被保険者資格取得申出書.bmp" alt="任意継続被保険者資格取得申出書">
        <a class="img-scaling img-scaling-document" href="images/任意継続被保険者資格取得申出書.bmp" data-lightbox="lightbox3" data-title="任意継続被保険者資格取得申出書"></a>
       </div>   
-      <!-- /.content-container_commentary -->
+      <!-- /.content-container__commentary -->
      </div> 
      <!-- /.content-container --> 
      <a id="content2-3" class="anchor anchor-document"></a>
      <div class="content-container"> 
       <h4>③ 労働保険の脱退手続き</h4>
-      <div class="content-container_commentary">
-       <div class="subheading">脱退手続きをする</div>
+      <div class="content-container__commentary">
+       <div class="content-container__commentary--subheading">脱退手続きをする</div>
        <p>退職から１０日以内に資格喪失届（左図）と離職証明書（右図）の手続きを行います。</p>
        <img class="img-magnification" src="images/雇用保険資格喪失届.bmp" alt="雇用保険資格喪失届" width="40%">
        <a class="img-scaling img-scaling-document" href="images/雇用保険資格喪失届.bmp" data-lightbox="lightbox4" data-title="雇用保険資格喪失届"></a>
        <img class="img-magnification" src="images/離職証明書.png" alt="離職証明書" width="40%">       
        <a class="img-scaling img-scaling-document" href="images/離職証明書.png" data-lightbox="lightbox4" data-title="離職証明書"></a>                           
       </div>    
-      <!-- /.content-container_commentary -->
+      <!-- /.content-container__commentary -->
      </div>
      <!-- /.content-container --> 
      <a id="content2-4" class="anchor anchor-document"></a>
      <div class="content-container"> 
       <h4>④ 住民税の手続き</h4>
-      <div class="content-container_commentary">
-       <div class="subheading">特別徴収の徴収方法の変更手続きをする</div>
+      <div class="content-container__commentary">
+       <div class="content-container__commentary--subheading">特別徴収の徴収方法の変更手続きをする</div>
        <p>退職者が特別徴収の場合は、残りの住民税の支払方法についての手続きを行います。<br>退職時期により徴収方法が異なりますので注意します。</p>
        <img class="img-magnification" src="images/給与所得者異動届出書.bmp" alt="給与所得者異動届出書">
        <a class="img-scaling img-scaling-document" href="images/給与所得者異動届出書.bmp" data-lightbox="lightbox5" data-title="給与所得者異動届出書"></a>        
       </div> 
-      <!-- /.content-container_commentary -->
+      <!-- /.content-container__commentary -->
      </div> 
      <!-- /.content-container --> 
      <a id="content3" class="anchor anchor-document"></a>
-     <div class="main-title title-color-document table-of-contents">
+     <div class="main--title title-color-document table-of-contents">
       <h2>各種手続きが完了した時に行うこと</h2>
      </div>
-     <!-- /.main-title title-color-document table-of-contents --> 
+     <!-- /.main--title title-color-document table-of-contents --> 
      <p class="title-description">退職手続きが完了したら、退職者に必要書類を渡します。</p>
      <div class="content-container"> 
       <h4>① 源泉徴収票を渡す</h4>
@@ -227,16 +226,16 @@
     </div> 
     <!-- /.content-container -->                                                   
     <a id="content4" class="anchor anchor-document"></a>
-    <div class="main-title title-color-test table-of-contents">
+    <div class="main--title title-color-test table-of-contents">
      <h2>理解度テスト</h2>
     </div>
-    <!-- /.main-title title-color-test table-of-contents --> 
+    <!-- /.main--title title-color-test table-of-contents --> 
     <p class="title-description">今までの解説より理解度を確認します。</p>    
     <div class="content-container">
-     <div class="content-container_commentary">
-      <span><a href="test.html" class="content-container_commentary_test" target="_blank">理解度テスト</a></span>
+     <div class="content-container__commentary">
+      <span><a href="test.html" class="content-container__commentary_test" target="_blank">理解度テスト</a></span>
      </div>
-     <!-- /.content-container_commentary -->
+     <!-- /.content-container__commentary -->
     </div>
     <!-- /.content-container --> 
    </main>
@@ -253,8 +252,8 @@
   <!-- /JavaScript関連ファイル -->
  </body>
  <footer class="footer">
-  <p class="footer_p">以上で、 ” 社員が退職する時 ” についての学習は終了です。<br><br>お疲れ様でした！</p>
- <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+  <p class="footer__p">以上で、 ” 社員が退職する時 ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+ <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
  </footer>  
  <!-- /.footer --> 
 </html>    

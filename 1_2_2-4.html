@@ -10,7 +10,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">  
         <!-- /フォント -->
         <!--スタイルシート -->
-        <link rel="stylesheet" href="css/0_reset.css">
         <link id="stylesheet" rel="stylesheet" href="css/style.css">
             <!-- 画像拡大の為のLightbox2 -->
         <link href="css/3_lightbox.css" rel="stylesheet">
@@ -22,22 +21,22 @@
     </head>
     <body>
         <header id="header_motion" class="header">
-        <div class="header_inner">
-            <div class="header_logo">    
+        <div class="header__inner">
+            <div class="header__logo">    
             <a href="https://www.shalf.jp/" target="_blank"></a>
             </div>
-            <!-- /.header_logo --> 
-            <div class="header_company"><h1>SHALF ACADEMY</h1></div>    
-                <div class="header_place">
-                <nav class="header_global-nav"><a href="index.html"></a></nav> 
+            <!-- /.header__logo --> 
+            <div class="header__company"><h1>SHALF ACADEMY</h1></div>    
+                <div class="header__place">
+                <nav class="header__global-nav"><a href="index.html"></a></nav> 
                 <!-- 目次　モーダルウィンドウで開くボタン -->
-                <div class="header_modal-open">目次</div>     
+                <div class="header__modal-open">目次</div>     
             </div> 
-            <!-- /.header_place --> 
+            <!-- /.header__place --> 
         </div>
-        <!-- /.header_inner -->
+        <!-- /.header__inner -->
         <!-- ぱんくずリスト -->
-        <ol class="header_breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a itemprop="item" href="index.html">
                     <span itemprop="name">ホーム</span>
@@ -67,7 +66,7 @@
             </li>  
             <!-- /.itemListElement -->        
         </ol> 
-        <!-- /.header_breadcrumb -->
+        <!-- /.header__breadcrumb -->
         <!-- /ぱんくずリスト -->       
         </header>
         <!-- /.header --> 
@@ -75,294 +74,322 @@
         <div class="interval-bit"></div>
         <div class="interval-bit"></div>             
         <div class="wrapper clearfix">
-            <main class="page-main">
-                <div class="main-title title-color-detail table-of-contents">
+            <main class="main">
+                <div class="main--title title-color-detail table-of-contents">
                 　<h2>目　　　次</h2>
                 </div> 
-                <!-- /.main-title title-color-detail table-of-contents -->   
+                <!-- /.main--title title-color-detail table-of-contents -->   
                 <div class="article-container">
-                    <div class="articles contents-list contents-list-detail">
+                    <div class="contents-list article-container--contents-list-detail">
                         <span>１.</span><a href="#content1">印刷方法の手順</a>
-                        <p>一般的な賃金台帳の印刷について解説します。</p>
-                        <ul class="contents-list_ul">
-                            <span>１-１</span><a href="#content1">年間の賃金台帳を印刷する</a> 
+                        <p>賃金台帳（賃金管理）では支給項目と控除項目については項目数の制限があります。</p>
+                        <ul class="contents-list__ul">
+                            <span>１-１</span><a href="#content1">給与計算の結果より賃金台帳を印刷する</a> 
                             <li><span>①</span><a href="#content1-2">用紙を選択する</a></li>
-                            <li><span>②</span><a href="#content1-3">印刷する社員を選択する</a></li>
-                            <li><span>③</span><a href="#content1-4">特定の部門のみを印刷したい場合</a></li>
-                            <li><span>④</span><a href="#content1-5">退職者を印刷したくない場合</a></li>
-                            <li><span>⑤</span><a href="#content1-6">人数が多くて印刷したい社員を選択するのに苦労する場合</a></li>
-                            <li><span>⑥</span><a href="#content1-7">部門コード順などで印刷したい場合</a></li>
-                            <li><span>⑦</span><a href="#content1-8">給与と賞与の支給日を合わせて印刷したい場合</a></li>
-                            <li><span>⑧</span><a href="#content1-9">年度の途中で給与項目が変更された場合</a></li>
+                            <li><span>②</span><a href="#content1-3">印刷する項目を選択する</a></li>
+                            <li><span>③</span><a href="#content1-4">印刷する条件を設定する</a></li>
+                            <li><span>④</span><a href="#content1-5">印刷する年月を指定する</a></li>
+                            <li><span>⑤</span><a href="#content1-6">擬似的に給与計算を行い給与賃金台帳を印刷してみましょう</a></li>
                         </ul>                       
                     </div>  
-                    <!-- /.articles contents-list contents-list-detail -->  
+                    <!-- /.contents-list article-container--contents-list-detail -->  
                 </div>
                 <!-- /.article-container --> 
                 <!-- 目次　モーダルウィンドウ本体 -->
                 <div class="modal-container">
-                    <div class="modal-body">
+                    <div class="modal-container__body">
                         <!-- 閉じるボタン -->
-                        <div class="modal-close">&#10006</div>
+                        <div class="modal-container__body--close">&#10006</div>
                         <!-- モーダル内のコンテンツ -->
-                        <div class="modal-content">
+                        <div class="modal-container__body--content">
                             <div>
                                 <h2>目　次</h2>
                             </div>    
                             <div class="article-container">
-                                <div class="articles contents-list contents-list-detail">
-                                    <ul class="contents-list_ul">
+                                <div class="contents-list article-container--contents-list-detail">
+                                    <ul class="contents-list__ul">
                                     <span>&#9650;</span><a href="#">ページトップ</a>
                                     </ul>            
-                                    <ul class="contents-list_ul">
-                                        <span>１-１</span><a href="#content1">年間の賃金台帳を印刷する</a> 
+                                    <ul class="contents-list__ul">
+                                        <span>１-１</span><a href="#content1">給与計算の結果より賃金台帳を印刷する</a> 
                                         <li><span>①</span><a href="#content1-2">用紙を選択する</a></li>
-                                        <li><span>②</span><a href="#content1-3">印刷する社員を選択する</a></li>
-                                        <li><span>③</span><a href="#content1-4">特定の部門のみを印刷したい場合</a></li>
-                                        <li><span>④</span><a href="#content1-5">退職者を印刷したくない場合</a></li>
-                                        <li><span>⑤</span><a href="#content1-6">人数が多くて印刷したい社員を選択するのに苦労する場合</a></li>
-                                        <li><span>⑥</span><a href="#content1-7">部門コード順などで印刷したい場合</a></li>
-                                        <li><span>⑦</span><a href="#content1-8">給与と賞与の支給日を合わせて印刷したい場合</a></li>
-                                        <li><span>⑧</span><a href="#content1-9">年度の途中で給与項目が変更された場合</a></li>
+                                        <li><span>②</span><a href="#content1-3">印刷する項目を選択する</a></li>
+                                        <li><span>③</span><a href="#content1-4">印刷する条件を設定する</a></li>
+                                        <li><span>④</span><a href="#content1-5">印刷する年月を指定する</a></li>
+                                        <li><span>⑤</span><a href="#content1-6">擬似的に給与計算を行い給与賃金台帳を印刷してみましょう</a></li>
                                     </ul>     
                                 </div> 
-                                <!-- /.articles contents-list contents-list-detail -->  
+                                <!-- /.contents-list article-container--contents-list-detail -->  
                             </div>
                             <!-- /.article-container -->
                         </div>
-                        <!-- /.modal-content -->
+                        <!-- /.modal-container__body--content -->
                     </div>
-                    <!-- /.modal-body -->
+                    <!-- /.modal-container__body -->
                 </div>
                 <!-- /.modal-container -->
                 <!-- /目次　モーダルウィンドウ本体 -->
                 <a id="content1" class="anchor anchor-detail"></a>
-                <div class="main-title title-color-detail table-of-contents">
-                    <h2>年間の賃金台帳を印刷する</h2>         
+                <div class="main--title title-color-detail table-of-contents">
+                    <h2>給与計算の結果より賃金台帳を印刷する</h2>         
                 </div> 
-                <!-- /.main-title title-color-detail table-of-contents --> 
-                <p class="title-description">一般的な賃金台帳の印刷について解説します。</p>           
-                <div class="content-container">    
-                    <img class="img-magnification" src="images/1_2_2-1_1.bmp" alt="年間の賃金台帳を印刷する">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_1.bmp" data-lightbox="lightbox1" data-title="年間の賃金台帳を印刷する"></a>     
-                    <div class="content-container_commentary"> 
+                <!-- /.main--title title-color-detail table-of-contents -->  
+                <p class="title-description">賃金台帳（賃金管理）では支給項目と控除項目については項目数の制限があります。</p>
+                <p class="title-description">多くの項目を管理したい場合に、給与データより賃金台帳を印刷する機能について解説します。</p>                      
+                <p class="title-description">給与賃金台帳は給与計算を利用して印刷します。</p>                      
+                <div class="content-container">  
+                    <img class="img-magnification" src="images/1_2_2-4_1.bmp" alt="給与計算の結果より賃金台帳を印刷する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_1.bmp" data-lightbox="lightbox1" data-title="給与計算の結果より賃金台帳を印刷する"></a>     
+                    <div class="content-container__commentary"> 
                         <div class="content_movie"><a class="movie" href="https://www.youtube.com/watch?v=Gkpaf5hGJTM" data-lity></a></div>         
                     </div>  
-                    <!-- /.content-container_commentary -->
+                    <!-- /.content-container__commentary -->
                 </div>
                 <!-- /.content-container --> 
                 <a id="content1-2" class="anchor anchor-document"></a>
                 <div class="content-container"> 
                     <h4>① 用紙を選択する</h4>  
-                    <p class="title-description">賃金管理データ作成＆金種表印刷で賃金管理データを作成する手順について解説します。</p>  
-                    <img class="img-magnification" src="images/1_2_2-1_2.bmp" alt="用紙を選択する">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_2.bmp" data-lightbox="lightbox2" data-title="用紙を選択する"></a>                     
-                    <div class="content-container_commentary">       
-                        <p class="content_commentary_paragraph1-title">賃金台帳</p>
-                        <div class="content_commentary_paragraph1">
-                            <p>支給額の３か月の合計や等級変化を確認できますが、支払日は確認できません。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->
-                        <p class="content_commentary_paragraph1-title">賃金台帳　＜支払日入＞</p>
-                        <div class="content_commentary_paragraph1">
-                            <p>給与支払日を確認できますが、支給額の３か月の合計や等級変化は確認できません。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->  
-                        <p class="content_commentary_paragraph1-title">※ ドット用紙について</p>
-                        <div class="content_commentary_paragraph1">
-                            <p>ドット用紙は現在使用できません。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                 
-                    </div> 
-                    <!-- /.content-container_commentary -->      
+                    <img class="img-magnification" src="images/1_2_2-4_2.bmp" alt="用紙を選択する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_2.bmp" data-lightbox="lightbox2" data-title="用紙を選択する"></a>
+                    <p>A３用紙は６８行、A４用紙は４５行印刷できます。</p>                                               
                 </div>
                 <!-- /.content-container -->  
-                <a id="content1-3" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>② 印刷する社員を選択する</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_4.bmp" alt="印刷する社員を選択する">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_4.bmp" data-lightbox="lightbox3" data-title="印刷する社員を選択する"></a>
-                    <div class="content-container_commentary">       
-                        <div class="content_commentary_paragraph1">
-                            <p>「印刷有無」にチェックを付けることで印刷対象となります。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->                                               
-                    </div> 
-                    <!-- /.content-container_commentary -->      
-                </div>
-                <!-- /.content-container -->     
-                <a id="content1-4" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>③ 特定の部門のみを印刷したい場合</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_4.bmp" alt="特定の部門のみを印刷したい場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_4.bmp" data-lightbox="lightbox4" data-title="特定の部門のみを印刷したい場合"></a>
-                    <div class="content-container_commentary">
-                        <p class="content_commentary_paragraph1-title">指定部門のみ印刷を行う方法</p>       
-                        <div class="content_commentary_paragraph1">
-                            <p>① 画面右下の一覧から印刷したい部門を選び「印刷有無」にチェックを付けます。</p>
-                            <p>② 「←指定部門印刷有無設定」をクリックします。</p>
-                            <p>③ 対象者が再表示されます。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->    
-                        <p class="content_commentary_paragraph1-title">｜ポイント｜</p>       
-                        <div class="content_commentary_paragraph1">
-                            <p>部門コードの下４桁が「００００」の場合は大分類、下２桁が「００」の場合は中分類扱いになりますので、対象者に注意する必要があります。</p>
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                      
-                    </div> 
-                    <!-- /.content-container_commentary -->      
-                </div>
-                <!-- /.content-container -->    
-                <a id="content1-5" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>④ 退職者を印刷したくない場合</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_5.bmp" alt="退職者を印刷したくない場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_5.bmp" data-lightbox="lightbox5" data-title="退職者を印刷したくない場合"></a>
-                    <div class="content-container_commentary">     
-                        <div class="content_commentary_paragraph1">
-                            <p>指定して再選択ボタンをクリックしますと、一覧表の「印刷有無」が変わります。</p>
-                            <p class="content_commentary_paragraph2-title">｜ポイント｜</p>       
-                            <div class="content_commentary_paragraph2">
-                                <p class="content_commentary_paragraph3-title">｜例題｜</p> 
-                                <div class="content_commentary_paragraph3">                                                                
-                                    <p>Q： 「含まない」を選択した場合はどうなるでしょうか？<br><br><br><br></p>
-                                    <p>A： 退職者以外の社員の「印刷有無」にチェックがつきます。</p>
-                                </div>
-                                <!-- /.content_commentary_paragraph3 -->                                  
+                <a id="content1-3" class="anchor anchor-document"></a>
+                <div class="content-container"> 
+                    <h4>② 印刷する項目を選択する</h4>  
+                    <img class="img-magnification" src="images/1_2_2-4_3.bmp" alt="印刷する項目を選択する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_3.bmp" data-lightbox="lightbox3" data-title="印刷する項目を選択する"></a>
+                    <p>印刷する際は項目を選択しないと印刷できず、用紙毎に選択が必要です。</p>  
+                    <div class="content-container__commentary">  
+                        <p class="content-container__commentary--para1-title">画面の説明と操作方法</p>
+                        <div class="content-container__commentary--para1">                            
+                            <p>① メイン画面より「印刷項目設定」ボタンをクリックします。</p>
+                            <div class="content-container__commentary--para2">
+                                <p>画面左側の一覧は「印刷選択項目」です。給与体系を選択し、「表示」ボタンをクリックしますと変更できます。</p>
+                                <p>画面右側の一覧は「印刷項目」です。行数分印刷ができます。</p>
+                                <img class="img-magnification" src="images/1_2_2-4_4.bmp" alt="印刷する項目を選択する">                            
+                                <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_4.bmp" data-lightbox="lightbox4" data-title="印刷する項目を選択する"></a>
+                                <img class="img-magnification" src="images/1_2_2-4_5.bmp" alt="印刷する項目を選択する">
+                                <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_5.bmp" data-lightbox="lightbox4" data-title="印刷する項目を選択する"></a>                            
                             </div>
-                            <!-- /.content_commentary_paragraph2 -->                             
+                            <!-- /.content-container__commentary--para2 -->    
+                            <p>② 左側（給与項目）から表示させたい項目を選択し、「→」ボタンをクリックしてセットします。</p>                            
+                            <div class="content-container__commentary--para2">
+                                <p>・複数項目をセットするときには「SHIFT」キーで選択し、「→」ボタンをクリックします。</p>
+                                <p>・選択を解除したい場合は該当の項目をクリックし、「←」ボタンをクリックします。</p>
+                                <p>・並べ替えたい場合は、該当の項目をクリックし、「↑」ボタン又は「↓」ボタンをクリックすること移動ができます。</p>
+                                <p>　又、２つの項目を選択し「⇕」ボタンをクリックすると、位置を逆にすることができます。</p>                                
+                                <p>・右側の一覧内の項目をダブルクリックすることで、内容の確認や加算減算を選択することができます。</p>
+                            </div>
+                            <!-- /.content-container__commentary--para2 --> 
+                            <p>③ 設定方法確認画面にて「いいえ」ボタンをクリックしますと、選択した項目の入力単位が同じ場合は値を加算することができます。</p>
+                            <p>④ 「完了」ボタンをクリックしますと設定が保存されます。</p>  
+                            <div class="interval-bit"></div>
+                            <p>※ 「印刷項目設定」ボタンは、設定されていない場合は赤色に、設定されている場合は黄色になります。</p>                                                    
                         </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                         
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
                     </div> 
-                    <!-- /.content-container_commentary -->      
+                    <!-- /.content-container__commentary -->                                              
                 </div>
                 <!-- /.content-container --> 
-                <a id="content1-6" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>⑤ 人数が多くて印刷したい社員を選択するのに苦労する場合</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_6.bmp" alt="人数が多くて印刷したい社員を選択するのに苦労する場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_6.bmp" data-lightbox="lightbox6" data-title="人数が多くて印刷したい社員を選択するのに苦労する場合"></a>
-                    <div class="content-container_commentary">     
-                        <div class="content_commentary_paragraph1">
-                            <p>ここに個人コードを入力して、選択又は解除ボタンをクリックすることで選択できます。</p>                            
-                            <p class="content_commentary_paragraph2-title">｜ポイント｜</p>                                   
-                            <div class="content_commentary_paragraph2">
-                                <p class="content_commentary_paragraph3-title">｜例題｜</p> 
-                                <div class="content_commentary_paragraph3">                                                                
-                                    <p>Q： 特定の社員のみを印刷したい場合はどうすればいいでしょうか？<br><br><br><br></p>
-                                    <p>A：</p>
-                                    <p class="paragraph">① 「全解除」ボタンをクリックし、全員を印刷しないようにします。</p>
-                                    <p class="paragraph">② 個人コードを入力してから「選択」ボタンをクリックすると、該当者のみ「印刷有無」にチェックが付きます。</p>
+                <a id="content1-4" class="anchor anchor-document"></a>
+                <div class="content-container"> 
+                    <h4>③ 印刷する条件を設定する</h4>  
+                    <img class="img-magnification" src="images/1_2_2-4_6.bmp" alt="印刷する条件を設定する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_6.bmp" data-lightbox="lightbox5" data-title="印刷する条件を設定する"></a> 
+                    <p>各項目の印刷条件を設定することができます。</p>
+                    <div class="content-container__commentary">   
+                        <p class="content-container__commentary--para1-title">各機能について</p>                            
+                        <div class="content-container__commentary--para1">
+                            <p>・「用紙タイトル」は、帳票に表示されるタイトルを変更することができます。</p>
+                            <p>・「個人コード」、「氏名」「フリガナ」、「性別」、「合計」欄にて各項目の印字有無を設定できます。</p>
+                            <p class="content-container__commentary--para2-title">「部門」</p>
+                            <div class="content-container__commentary--para2">
+                                <p class="content-container__commentary--para3-title">印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>部門コードと部門名の両方を印刷します。</p>
                                 </div>
-                                <!-- /.content_commentary_paragraph3 -->                                  
+                                <!-- /.content-container__commentary--para3 -->
+                                <p class="content-container__commentary--para3-title">印刷しない</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>何も印刷されません。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                  
+                                <p class="content-container__commentary--para3-title">部門コードを印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>部門コードのみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->     
+                                <p class="content-container__commentary--para3-title">部門名称を印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>部門名称のみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                                                                            
                             </div>
-                            <!-- /.content_commentary_paragraph2 -->                            
+                            <!-- /.content-container__commentary--para2 -->
+                            <p class="content-container__commentary--para2-title">「事業所」</p>
+                            <div class="content-container__commentary--para2">
+                                <p class="content-container__commentary--para3-title">印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>事業所コードと事業所名称の両方を印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->
+                                <p class="content-container__commentary--para3-title">印刷しない</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>何も印刷されません。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                 
+                                <p class="content-container__commentary--para3-title">事業所コードを印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>事業所コードのみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 --> 
+                                <p class="content-container__commentary--para3-title">事業所名称を印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>事業所名称のみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                 
+                            </div>
+                            <!-- /.content-container__commentary--para2 -->                            
+                            <p class="content-container__commentary--para2-title">「作成日」</p>
+                            <div class="content-container__commentary--para2">
+                                <p class="content-container__commentary--para3-title">印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>右横の欄にて入力した日付を印刷します。</p>
+                                    <img class="img-magnification" src="images/1_2_2-4_7.bmp" alt="印刷する">
+                                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_7.bmp" data-lightbox="lightbox6" data-title="印刷する"></a>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->
+                                <p class="content-container__commentary--para3-title">印刷しない</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>何も印刷されません。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                 
+                                <p class="content-container__commentary--para3-title">年月日文字は印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>"年"、"月"、"日"の文字のみ印刷します。数値は印刷しません。</p>
+                                    <p>提出日が決まっていない場合などに後から手書きで記入できます。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                                                                                
+                            </div>
+                            <!-- /.content-container__commentary--para2 -->                                  
+                            <p class="content-container__commentary--para2-title">「賃金計算期間」</p>
+                            <div class="content-container__commentary--para2">
+                                <p class="content-container__commentary--para3-title">印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>月度と期間の両方を印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->
+                                <p class="content-container__commentary--para3-title">印刷しない</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>何も印刷されません。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                 
+                                <p class="content-container__commentary--para3-title">月度のみ印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>月度のみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->
+                                <p class="content-container__commentary--para3-title">期間のみ印刷する</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>期間のみ印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->                                
+                            </div>                            
+                            <!-- /.content-container__commentary--para2 -->
+                            <p class="content-container__commentary--para2-title">【一時設定情報】</p>
+                            <div class="content-container__commentary--para2">
+                                <p>「締日」と「月度表示」を指定することで、「賃金計算期間」欄に表示される「給与の締めの期間」が変更されます。</p>
+                                <p>初期値は、事業所情報管理メニューの事業所情報の設定からセットしますので、変更したデータは保存されません。</p>
+                                <p>又、締め日などは１つしか登録できませんので、下記の例のような対応方法を推奨します。</p>
+                                <p class="content-container__commentary--para3-title">例：事業所情報管理メニューの事業所情報に、正社員用の２０日締めが登録されており、パートやアルバイトは末締めの場合</p>
+                                <div class="content-container__commentary--para3">
+                                    <p>パートやアルバイトを印刷する際に、「賃金計算期間」欄の下段に印刷される「期間」を末締めで印刷するために、一時的に変更して印刷します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->
+                            </div>
+                            <!-- /.content-container__commentary--para2 -->
+                            <div class="interval-bit"></div>
+                            <p>※ この画面は用紙毎の設定ではありません。用紙を変更しても、設定した内容が自動で切り替わることはありませんのでご注意ください。</p>                                                                              
                         </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                         
+                        <!-- /.content-container__commentary--para1 -->                                                                      
                     </div> 
-                    <!-- /.content-container_commentary -->                         
+                    <!-- /.content-container__commentary -->                                              
                 </div>
-                <!-- /.content-container -->   
-                <a id="content1-7" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>⑥ 部門コード順などで印刷したい場合</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_7.bmp" alt="部門コード順などで印刷したい場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_7.bmp" data-lightbox="lightbox7" data-title="部門コード順などで印刷したい場合"></a>
-                    <div class="content-container_commentary">     
-                        <div class="content_commentary_paragraph1">
-                            <p>部門順にすることで、部門コードと部門内連番順で印刷できます。</p>
+                <!-- /.content-container -->         
+                <a id="content1-5" class="anchor anchor-document"></a>
+                <div class="content-container"> 
+                    <h4>④ 印刷する年月を指定する</h4>  
+                    <img class="img-magnification" src="images/1_2_2-4_8.bmp" alt="印刷する年月を指定する">
+                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_8.bmp" data-lightbox="lightbox7" data-title="印刷する年月を指定する"></a>                     
+                    <div class="content-container__commentary">  
+                        <div class="content-container__commentary--para1">                                                        
+                            <p>累計額を表示させる場合の開始年月を設定します。通常は１２月又は１月となります。</p> 
                         </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                         
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
                     </div> 
-                    <!-- /.content-container_commentary -->      
-                </div>
-                <!-- /.content-container --> 
-                <a id="content1-8" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>⑦ 給与と賞与の支給日を合わせて印刷したい場合</h4>          
-                    <img class="img-magnification" src="images/1_2_2-1_8.bmp" alt="給与と賞与の支給日を合わせて印刷したい場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_8.bmp" data-lightbox="lightbox8" data-title="給与と賞与の支給日を合わせて印刷したい場合"></a>
-                    <div class="content-container_commentary">    
-                        <div class="content_commentary_paragraph1">  
-                            <p>以下の条件の場合の設定方法について説明します。</p> 
-                            <p>＜給与＞</p>                       
-                            <p>・末締め翌月（１０日）払い</p>
-                            <p>・当月表示</p>
-                            <p>・１月から印刷</p>    
-                            <p>＜賞与＞</p>                           
-                            <p>・当月２０日払い</p>
-                            <p class="content_commentary_paragraph2-title">｜ポイント｜</p>                           
-                            <div class="content_commentary_paragraph2">
-                                <p class="content_commentary_paragraph3-title">｜例題｜</p>   
-                                <div class="content_commentary_paragraph3">
-                                    <p>令和４年１月から印刷する場合</p> 
-                                    <div class="content_commentary_paragraph4">
-                                        <p>令和４年１月は令和４年２月１０日支給日となりますので、</p>
-                                        <p>給与年月を令和３年１２月にすることで、令和４年１月１０日の支給日分が印刷されます。</p> 
-                                        <p>賞与は令和４年１月に、令和４年１月２０日支給分が印刷されます。</p>                                        
-                                    </div>                          
-                                    <!-- /.content_commentary_paragraph4 --> 
-                                    <p>これで、１月１０日支給の給与と２０日支給の賞与が、１月に印刷されます。</p>
-                                </div>                          
-                                <!-- /.content_commentary_paragraph3 -->                                                                                                                             
-                            </div>                          
-                            <!-- /.content_commentary_paragraph2 -->                             
-                        </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                         
-                    </div> 
-                    <!-- /.content-container_commentary -->      
+                    <!-- /.content-container__commentary -->                                              
                 </div>
                 <!-- /.content-container -->  
-                <a id="content1-9" class="anchor anchor-document"></a>                 
-                <div class="content-container">
-                    <h4>⑧ 年度の途中で給与項目が変更された場合</h4>         
-                    <img class="img-magnification" src="images/1_2_2-1_9.bmp" alt="年度の途中で給与項目が変更された場合">
-                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-1_9.bmp" data-lightbox="lightbox9" data-title="年度の途中で給与項目が変更された場合"></a>
-                    <p class="title-description">年度の途中で給与項目が変更となった場合に、項目名の印刷について説明します。</p>
-                    <div class="content-container_commentary">   
-                        <p class="content_commentary_paragraph1-title">｜ポイント｜</p>
-                        <div class="content_commentary_paragraph1">  
-                            <p class="content_commentary_paragraph2-title">｜例題｜</p>
-                            <div class="content_commentary_paragraph2">
-                                <p>Q： 令和４年５月に支給項目が追加された場合はどうなりますか？<br><br><br><br></p>
-                                <p>A： 通常の設定で問題ありません。</p>
-                            </div>    
-                            <!-- /.content_commentary_paragraph2 -->
-                            <div class="interval-bit"></div>
-                            <p class="content_commentary_paragraph2-title">｜例題｜</p>
-                            <div class="content_commentary_paragraph2">
-                                <p>Q： 令和４年５月に支給項目が削除された場合はどうなりますか？<br><br><br><br></p>
-                                <p>A： 通常の設定では削除された項目名は印刷されません。先頭月を指定することで正しく印刷されます。</p>
-                            </div>    
-                            <!-- /.content_commentary_paragraph2 --> 
-                            <div class="interval-bit"></div>
-                            <p class="content_commentary_paragraph2-title">｜例題｜</p>
-                            <div class="content_commentary_paragraph2">
-                                <p>Q： 令和４年５月に支給項目が追加されて、令和４年１０月に支給項目が削除された場合はどうなりますか？<br><br><br><br></p>
-                                <p>A：</p>
-                                <p class="paragraph">通常の設定では削除された項目名は印刷されません。又、先頭月では追加された項目名が印刷されません。</p>
-                                <p class="paragraph">指定月を５月に設定することで正しく印刷されます。</p>
-                            </div>    
-                            <!-- /.content_commentary_paragraph2 --> 
-                            <div class="interval-bit"></div>
-                            <p class="content_commentary_paragraph2-title">｜例題｜</p>
-                            <div class="content_commentary_paragraph2">
-                                <p>Q： 令和４年５月に支給項目が追加、令和４年７月に支給項目が削除、令和４年１０月に支給項目が追加された場合はどうなりますか？<br><br><br><br></p>
-                                <p>A：</p>
-                                <p class="paragraph">通常の設定では削除された項目名は印刷されません。又、先頭月では追加された２つの項目が印刷されません。</p>
-                                <p class="paragraph">指定月にしても、５月ですと１０月に追加された項目が印刷されず、１０月ですと７月に削除された項目が印刷されません。</p>                                
-                                <p class="paragraph">よって、どの月を指定しても全ての名称を印刷することはできません。</p>
-                                <p class="paragraph">項目名称が異なる月がある場合、ページを変えるにチェックを付けることで、複数ページとなりますが印刷されます。</p>
-                                <p class="paragraph">それでも１ページに印刷したい場合は、エクセル出力にて対応が可能です。</p>
-                            </div>    
-                            <!-- /.content_commentary_paragraph2 --> 
+                <a id="content1-6" class="anchor anchor-document"></a>
+                <div class="content-container"> 
+                    <h4>⑤ 擬似的に給与計算を行い給与賃金台帳を印刷してみましょう</h4> 
+                    <p>支給項目や控除項目が複数あり、一般的な賃金台帳では印刷ができない場合について、擬似的に給与計算を行うことで給与賃金台帳で印刷ができます。</p> 
+                    <div class="content-container__commentary">  
+                        <p class="content-container__commentary--para1-title">給与項目設定にて項目を登録する</p>
+                        <div class="content-container__commentary--para1">  
+                            <img class="img-magnification" src="images/1_2_2-4_9.bmp" alt="給与項目設定にて項目を登録する">
+                            <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_9.bmp" data-lightbox="lightbox8" data-title="給与項目設定にて項目を登録する"></a> 
+                            <div class="content-container__commentary--para2">   
+                                <p>給与項目設定で必要な項目を登録します。</p> 
+                                <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                                <div class="content-container__commentary--para3"> 
+                                    <p>・全ての項目の「入力区分」を「毎回入力」に設定します。</p>
+                                    <p>　「総支給額」と「差引支給額」、「控除合計」も「毎回入力」に設定します。</p>
+                                </div>
+                                <!-- /.content-container__commentary--para3 -->   
+                                <p>月例入力項目データの取り込みを行う</p>
+                                <img class="img-magnification" src="images/1_2_2-4_10.bmp" alt="月例入力項目データの取り込みを行う">
+                                <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_10.bmp" data-lightbox="lightbox9" data-title="月例入力項目データの取り込みを行う"></a>                                                                  
+                                <div class="content-container__commentary--para3"> 
+                                    <p>あらかじめ、「給与項目設定」画面にて登録した必要項目のファイルを用意します。</p>
+                                    <p>「データ取込先の設定」画面にて、「給与体系コード」と「給与月度」を指定します。</p>
+                                    <img class="img-magnification" src="images/1_2_2-4_11.bmp" alt="月例入力項目データの取り込みを行う">
+                                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_11.bmp" data-lightbox="lightbox10" data-title="月例入力項目データの取り込みを行う"></a>
+                                    <p>「入力ファイル取込」欄の「選択」ボタンをクリックし、用意したファイルを取り込みます。</p>
+                                    <img class="img-magnification" src="images/1_2_2-4_12.bmp" alt="月例入力項目データの取り込みを行う">
+                                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_12.bmp" data-lightbox="lightbox11" data-title="月例入力項目データの取り込みを行う"></a> 
+                                    <p>「給与取り込みデータ設定（結び付け設定）」画面にて項目の結び付けをし、「完了」ボタンをクリックします。</p>
+                                    <img class="img-magnification" src="images/1_2_2-4_13.bmp" alt="月例入力項目データの取り込みを行う">
+                                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_13.bmp" data-lightbox="lightbox12" data-title="月例入力項目データの取り込みを行う"></a> 
+                                    <p>一覧を確認し、給与データを書き込みます。</p>
+                                    <img class="img-magnification" src="images/1_2_2-4_14.bmp" alt="月例入力項目データの取り込みを行う">
+                                    <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_14.bmp" data-lightbox="lightbox13" data-title="月例入力項目データの取り込みを行う"></a> 
+                                </div>                                
+                                <!-- /.content-container__commentary--para3 --> 
+                                <p>給与計算を行う</p>
+                                <img class="img-magnification" src="images/1_2_2-4_15.bmp" alt="給与計算を行う">
+                                <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_15.bmp" data-lightbox="lightbox14" data-title="給与計算を行う"></a>        
+                                <div class="content-container__commentary--para3">                                
+                                    <p>一括再計算することで完了します。</p> 
+                                </div>                                
+                                <!-- /.content-container__commentary--para3 -->                                 
+                                <p>給与賃金台帳を印刷する</p>
+                                <img class="img-magnification" src="images/1_2_2-4_16.bmp" alt="給与賃金台帳を印刷する">
+                                <a class="img-scaling img-scaling-detail" href="images/1_2_2-4_16.bmp" data-lightbox="lightbox15" data-title="給与賃金台帳を印刷する"></a>        
+                                <div class="content-container__commentary--para3">                                
+                                    <p>給与賃金台帳を印刷できます。</p> 
+                                </div>                                
+                                <!-- /.content-container__commentary--para3 -->                                
+                            </div>
+                            <!-- /.content-container__commentary--para2 -->       
                         </div>
-                        <!-- /.content_commentary_paragraph1 -->                                                                         
+                        <!-- /.content-container__commentary--para1 -->                                                                                           
                     </div> 
-                    <!-- /.content-container_commentary -->      
+                    <!-- /.content-container__commentary -->                                              
                 </div>
-                <!-- /.content-container -->                                                                                                                                              
-            </main>
+                <!-- /.content-container -->                                                                            
+            </main>            
             <!-- /.page-main -->
         </div>
         <!-- /.wrapper clearfix -->
@@ -379,8 +406,8 @@
         <!-- /JavaScript関連ファイル -->
     </body>
     <footer class="footer">
-        <p class="footer_p">” 印刷方法の手順 ” についての説明は以上です。</p>
-        <div class="footer_div"><p class="copyright">Copyright© NIHON SHALF inc. All Rights Reserved.</p></div>
+        <p class="footer__p">” 印刷方法の手順 ” についての説明は以上です。</p>
+        <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
     </footer> 
     <!-- /.footer -->  
 </html>

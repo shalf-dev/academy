@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head id="head">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">  
+  <title>シャルフアカデミー</title>
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /フォント -->
+  <!--スタイルシート -->
+  <link id="stylesheet" rel="stylesheet" href="css/style.css">
+   <!-- 画像拡大の為のLightbox2 -->
+  <link href="css/3_lightbox.css" rel="stylesheet">
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /スタイルシート -->
+ </head>
+ <body>
+  <header id="header_motion" class="header">
+   <div class="header__inner">
+    <div class="header__logo">    
+     <a href="https://www.shalf.jp/" target="_blank"></a>    
+    </div>
+    <!-- /.header__logo -->   
+    <div class="header__company"><h1>SHALF ACADEMY</h1></div>        
+    <div class="header__place">
+     <nav class="header__global-nav"><a href="index.html"></a></nav>
+     <!-- モーダルを開くボタン -->
+     <div class="header__modal-open">目次</div>
+     <!-- /モーダルを開くボタン -->
+    </div> 
+    <!-- /.header__place -->
+   </div>
+   <!-- /.header__inner --> 
+  <!-- ぱんくずリスト -->
+  <ol class="header__breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="index.html">
+      <span itemprop="name">ホーム</span>
+     </a>
+     <meta itemprop="position" content="1" />
+    </li>
+    <!-- /.itemListElement -->   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="1_11_esia.html">
+      <span itemprop="name">イージアZero導入</span>
+     </a>
+     <meta itemprop="position" content="2" />
+    </li>
+    <!-- /.itemListElement --> 
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+     <a itemprop="item" href="#">
+      <span itemprop="name">顧問先・社員情報の送信</span>
+     </a>
+     <meta itemprop="position" content="3" />
+    </li>
+    <!-- /.itemListElement -->        
+   </ol> 
+   <!-- /ぱんくずリスト -->          
+  </header>     
+  <div class="interval"></div>
+  <div class="interval-bit"></div>             
+  <div class="wrapper clearfix">			
+   <main class="main">
+    <div class="main--title title-color-document table-of-contents">
+     <h2>目　　　次</h2>
+    </div>
+    <!-- /.main--title title-color-document table-of-contents -->     
+    <div class="article-container">
+        <div class="contents-list contents-list-document">
+            <span>３.</span><a href="#content1">顧問先・社員情報の送信</a>      
+            <p>イージアZeroにて管理する顧問先情報と、社員情報の送信について解説します。</p>
+            <ul class="contents-list__ul">
+                <span>３-１</span><a href="#content1">顧問先情報の送信</a>
+                <li><span>①</span><a href="#content1">データ送信</a></li>                 
+                <li><span>②</span><a href="#content1-2">Esia-Zeroにログイン</a></li>                                 
+                <li><span>③</span><a href="#content1-3">事業所の選択</a></li>                
+                <li><span>④</span><a href="#content1-4">登録が完了した場合</a></li> 
+            </ul>
+            <ul class="contents-list__ul">
+                <span>３-２</span><a href="#content2">社員情報の送信</a> 
+                <li><span>①</span><a href="#content2">事業所の選択</a></li>                        
+                <li><span>②</span><a href="#content2-2">社員の選択</a></li>                        
+                <li><span>③</span><a href="#content2-3">送信する内容の確認</a></li> 
+                <li><span>④</span><a href="#content2-4">送信が完了した場合</a></li>                        
+            </ul>                       
+        </div> 
+        <!-- /.contents-list contents-list-document -->  
+    </div> 
+    <!-- /.article-container --> 
+    <!--モーダル本体-->
+    <div class="modal-container">
+        <div class="modal-container__body">
+            <!-- 閉じるボタン -->
+            <div class="modal-container__body--close">&#10006</div>
+            <!-- /閉じるボタン -->
+            <!-- モーダル内のコンテンツ -->
+            <div class="modal-container__body--content">
+                <div>
+                    <h2>目　次</h2>
+                </div>    
+                <div class="article-container">
+                    <div class="contents-list contents-list-document">
+                        <ul class="contents-list__ul">
+                            <span>&#9650;</span><a href="#">ページトップ</a> 
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>３-１</span><a href="#content1">顧問先情報の送信</a>
+                            <li><span>①</span><a href="#content1">データ送信</a></li>                 
+                            <li><span>②</span><a href="#content1-2">Esia-Zeroにログイン</a></li>                                 
+                            <li><span>③</span><a href="#content1-3">事業所の選択</a></li>                
+                            <li><span>④</span><a href="#content1-4">登録が完了した場合</a></li> 
+                        </ul>
+                        <ul class="contents-list__ul">
+                            <span>３-２</span><a href="#content2">社員情報の送信</a> 
+                            <li><span>①</span><a href="#content2">事業所の選択</a></li>                        
+                            <li><span>②</span><a href="#content2-2">社員の選択</a></li>                        
+                            <li><span>③</span><a href="#content2-3">送信する内容の確認</a></li> 
+                            <li><span>④</span><a href="#content2-4">送信が完了した場合</a></li>                        
+                        </ul>                            
+                    </div> 
+                    <!-- /.contents-list contents-list-document -->          
+                </div>
+                <!-- /.article-container -->
+            </div>
+            <!-- /.modal-container__body--content -->
+            <!-- /モーダル内のコンテンツ -->
+        </div>
+        <!-- /.modal-container__body -->  
+    </div>  
+    <!-- /.modal-container -->  
+    <!-- /モーダル本体 -->
+    <a id="content1" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>３-１ 顧問先情報の送信</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">Esia-Zeroにて処理を行う顧問先情報を、社労法務システムより送信をします。</p>             
+    <p class="title-description">社労法務システムの事業所情報をEsia-Zeroに送信することで、Esia-Zeroと社労法務システムの連携ができます。</p>
+    <div class="content-container">
+        <h4>① データ送信</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>社労法務システムより、Esia-Zeroにデータ送信を始めます。</p>
+                <P>データ送信を行うことで、Esia-Zeroにて顧問先を管理することができます。</P>
+                <img class="img-magnification" src="images/1_11-3_1.bmp" alt="データ送信">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_1.bmp" data-lightbox="lightbox1" data-title="データ送信"></a>                
+                <div class="content-container__commentary--para2">
+                    <p>イージアZeroメニューより、『データ送信（社労法務システムからイージアZeroへ）』ボタンをクリックし、送信を開始します。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->    
+    <a id="content1-2" class="anchor anchor-detail"></a>    
+    <div class="content-container">
+        <h4>② Esia-Zeroにログイン</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>Esia-Zeroにログインしてください。</p>                
+                <img class="img-magnification" src="images/1_11-3_2.bmp" alt="Esia-Zeroにログイン">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_2.bmp" data-lightbox="lightbox2" data-title="Esia-Zeroにログイン"></a>                
+                <div class="content-container__commentary--para2">
+                    <p>パスワードを入力し、『OK』ボタンをクリックします。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->    
+    <a id="content1-3" class="anchor anchor-detail"></a>    
+    <div class="content-container">
+        <h4>③ 事業所の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>この画面より送信する事業所を選択します。</p>                
+                <img class="img-magnification" src="images/1_11-3_3.bmp" alt="事業所の選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_3.bmp" data-lightbox="lightbox3" data-title="事業所の選択"></a>                
+                <div class="content-container__commentary--para2">
+                    <p>送信する事業所を選択し、『Esia-Zeroへの送信』ボタンをクリックします。</p>
+                    <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                    <div class="content-container__commentary--para3">
+                        <p>ａ）イージアZeroにて入社手続きやWeb明細、年末調整などを行う事業所を選択してください。</p>
+                        <p>ｂ）「検索条件」欄にて、顧問先を絞り込むことができます。</p>
+                        <img class="img-magnification" src="images/1_11-3_4.bmp" alt="事業所の選択">         
+                        <a class="img-scaling img-scaling-document" href="images/1_11-3_4.bmp" data-lightbox="lightbox4" data-title="事業所の選択"></a>
+                        <p class="paragraph">検索条件を選択し、『検索』ボタンをクリックすることで絞り込みができます。</p>
+                        <p class="content-container__commentary--para4-title">｜ポイント｜</p>
+                        <div class="content-container__commentary--para4">                                                                 
+                            <p>・「Esia-Zero」欄にて、Esia-Zeroに登録されているかを確認することができます。</p>                        
+                            <p class="paragraph">「登録状況」列に、「〇」が表示されている事業所は登録されています。</p>
+                            <p class="paragraph">「最終送信日」列は、最後に社労法務システムより送信した日付が表示されます。</p>
+                            <p class="paragraph">「更新日」列は、Esia-Zeroにて、顧問先情報を変更した最後の日付が表示されます。</p>     
+                            <p>・Esia-Zeroに未登録の顧問先を選択したい場合</p>
+                            <p class="paragraph">「Esia-Zero」欄にて、「Esia-Zero未登録」を選択して『検索』ボタンをクリックします。</p>                                                                     
+                            <p>・事業所コードが分かっている場合</p>
+                            <p class="paragraph">「事業所コード」欄に入力し、「のみ」を選択しましたら、『検索』ボタンをクリックします。</p>
+                            <p class="paragraph">　※ 「のみ」以外に「以下」と「以上」を選択することができます。</p>
+                            <p class="paragraph">事業所コードに意味を持たせて登録されている場合は、2000以下などに設定して絞り込むこともできます。</p>
+                            <p>・事業所名称が分かっている場合</p>
+                            <p class="paragraph">「事業所名称」欄に入力し、「に完全一致」を選択しましたら、『検索』ボタンをクリックします。</p>
+                            <p class="paragraph">　※ 「を含む」や「から始まる」、「で終わる」などを選択することができます。</p>                            
+                            <p class="paragraph">　　 事業所名称の一部文字で絞り込む場合は、「を含む」を選択すると絞り込めます。</p>
+                        </div> 
+                        <!-- /.content-container__commentary--para4 --> 
+                        <p>ｃ）送信する項目は指定できませんので、選択された事業所情報は全てEsia-Zeroに上書きされます。
+                           <br>値が入っていない項目は上書きされませんので、空欄として上書きしたい場合は「空白データは上書きしない」欄のチェックを外してください。
+                        </p>                                               
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container --> 
+    <a id="content1-4" class="anchor anchor-detail"></a>    
+    <div class="content-container">
+        <h4>④ 登録が完了した場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>これで、Esia-Zeroに事業所情報が送信されました。</p>                
+                <p>送信が完了したら、社員情報を送信することができます。</p>                
+                <img class="img-magnification" src="images/1_11-3_5.bmp" alt="登録が完了した場合">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_5.bmp" data-lightbox="lightbox5" data-title="登録が完了した場合"></a>                
+                <p class="paragraph">送信した事業所は、Esia-Zero欄に表示されます。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）事業所情報の送信が終わったら、次は社員情報を送信します。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+                <p class="content-container__commentary--para2-title">｜注意｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>③で検索条件に「Esia-Zero未登録」を選択している場合は、送信した事業所は登録済みになり、表示されませんのでご注意ください。</p>
+                    <p>その場合は、「Esia-Zero登録済み」か「全て」で再検索してください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->                
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->     
+    <a id="content2" class="anchor anchor-document"></a>
+    <div class="main--title title-color-document table-of-contents">
+     <h2>３-２ 社員情報の送信</h2>
+    </div> 
+    <!-- /.main--title title-color-document table-of-contents -->  
+    <p class="title-description">Esia-Zeroに送信した顧問先は、社員情報を社労法務システムより送信をすることができます。</p>     
+    <p class="title-description">後からも送信することもできますが、従業員にユーザー登録を依頼する場合はここで送信を行ってください。</p>     
+    <div class="content-container">
+        <h4>① 事業所の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>社員情報を送信したい事業所を、選択します。</p>                            
+                <img class="img-magnification" src="images/1_11-3_6.bmp" alt="社員情報の送信">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_6.bmp" data-lightbox="lightbox6" data-title="社員情報の送信"></a>
+                <p class="paragraph">社員情報を送信したい事業所の行を、ダブルクリックします。</p>
+                <p class="paragraph">※ 選択以外であれば、どこをダブルクリックしても送信を行うことができます。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）検索条件は3-1の③と同じで、絞り込むことができます。</p>
+                    <p>ｂ）ここでは、3-1で送信した事業所を例に説明を行います。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->                 
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content2-2" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>② 社員の選択</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">
+                <p>選択した事業所の社員情報が、社労法務システムより表示されます。</p>
+                <p>イージアZeroにてWeb明細、年末調整などを行う社員を選択してください。</p>                            
+                <img class="img-magnification" src="images/1_11-3_7.bmp" alt="社員の選択">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_7.bmp" data-lightbox="lightbox7" data-title="社員の選択"></a>
+                <p class="paragraph">送信したい社員を選択して、『Esia-Zeroへの送信』ボタンをクリックします。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）送信したい社員の選択は、『選択』列にチェックを付けます。</p>
+                    <p>ｂ）「在籍者・退職者」が「在籍者のみ」になっていますので、「全て選択」ボタンをクリックし、全員を選択後に『Esia-Zeroへ送信』ボタンをクリックします。</p>
+                    <p>ｃ）検索条件にて、社員を絞り込むことができます。</p>
+                    <img class="img-magnification" src="images/1_11-3_8.bmp" alt="社員の選択">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-3_8.bmp" data-lightbox="lightbox8" data-title="社員の選択"></a>                    
+                    <p class="paragraph">検索条件を選択して、『検索』ボタンをクリックすることで絞り込みができます。</p>
+                    <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                    <div class="content-container__commentary--para3">
+                        <p>・Esia-Zero欄にて、Esia-Zeroに登録されているかを確認することができます。</p>
+                        <div class="content-container__commentary--para4">
+                            <p>「登録状況」列に「〇」が表示されている社員は、登録されています。</p>
+                            <p>最新送信日列は、最後に社労法務システムより送信した日付が表示されます。</p>
+                            <p>更新日列は、Esia-Zeroにて社員情報を変更した最後の日付が表示されます。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->
+                        <p>・Esia-Zeroに未登録の社員を選択したい場合</p>
+                        <div class="content-container__commentary--para4">
+                            <p>「Esia-Zero」欄にて「Esia-Zero未登録」を選択し、『検索』ボタンをクリックします。</p>                            
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->   
+                        <p>・個人コードが分かっている場合</p>
+                        <div class="content-container__commentary--para4">
+                            <p>「個人コード」欄を入力し、「のみ」を選択しましたら『検索』ボタンをクリックします。</p>
+                            <p>※ 「のみ」以外に「以下」と「以上」を選択することができます。</p>
+                            <p>個人コードに意味を持たせて登録されている場合は、2000以下などに設定して絞り込むこともできます。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->                         
+                        <p>・氏名が分かっている場合</p>
+                        <div class="content-container__commentary--para4">
+                            <p>「氏名」を入力し、「に完全一致」を選択したら『検索』をクリックします。</p>
+                            <p>※ 「を含む」や「から始まる」、「で終わる」などを選択することができます。</p>
+                            <p>氏名の一部文字で絞り込む場合（姓だけで絞り込む）は、「を含む」を選択すると絞り込めます。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->      
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->   
+                    <p>ｄ）「在籍者・退職者」にて絞り込むことができます。</p>    
+                    <img class="img-magnification" src="images/1_11-3_9.bmp" alt="社員の選択">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-3_9.bmp" data-lightbox="lightbox9" data-title="社員の選択"></a> 
+                    <p class="paragraph">在籍者と退職者で絞り込むことができます。</p>
+                    <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                    <div class="content-container__commentary--para3">
+                        <p>・「在職者のみ」を選択することが一般的ですが、「退職者のみ」や「絞り込まない」を選択することもできます。</p>
+                        <div class="content-container__commentary--para4">
+                            <p>無駄なトークンを発生させないために、必要な社員だけを選択するようにしてください。</p>
+                        </div>
+                        <!-- /.content-container__commentary--para4 -->
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｅ）「年末調整区分」にて絞り込むことができます。</p>    
+                    <img class="img-magnification" src="images/1_11-3_10.bmp" alt="社員の選択">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-3_10.bmp" data-lightbox="lightbox10" data-title="社員の選択"></a>                     
+                    <p class="paragraph">年末調整を行う社員だけで絞り込むことができます。</p>                    
+                    <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                    <div class="content-container__commentary--para3">
+                        <p>・イージアZeroにて年末調整だけを行う場合は、「する人のみ」で絞り込むことでトークンを節約することができます。</p>                        
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｆ）「家族情報も送信する」欄にチェックを付けることで、配偶者や扶養家族情報も送信することができます。</p>
+                    <p class="paragraph">チェックを付けますと、「扶養外の家族は送信しない」欄にチェックをつけることができます。</p>
+                    <p>ｇ）送信する項目は指定できませんので、選択された社員情報は全て、Esia-Zeroに上書きされます。</p>
+                    <p class="paragraph">値が入っていない項目は上書きされませんので、空欄として上書きしたい場合は「空白データは上書きしない」欄のチェックを外してください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->  
+                <p class="content-container__commentary--para2-title">｜年末調整を行う場合のポイント｜</p>            
+                <div class="content-container__commentary--para2">
+                    <p>・年末調整を行う場合は、「家族情報も送信する」欄に必ずチェックを付けてください。</p>
+                    <p>・同時に「扶養外の家族は送信しない」欄も、チェックが付いた状態にしてください。</p>
+                    <p>　※ チェックを外すと就職した子供などが送信されることになるので注意してください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->  
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->  
+    <a id="content2-3" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>③ 送信する内容の確認</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1">  
+                <p>選択した社員の情報を確認することができます。</p>
+                <p>ここで、送信する社員の情報漏れなどを確認してください。</p>
+                <img class="img-magnification" src="images/1_11-3_11.bmp" alt="送信する内容の確認">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_11.bmp" data-lightbox="lightbox11" data-title="送信する内容の確認"></a>
+                <p class="paragraph">内容を確認し、問題なければ『送信』ボタンをクリックします。</p>
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）個人情報と家族情報を確認することができます。</p>
+                    <div class="content-container__commentary--para3">
+                        <p>個人情報は、基本情報と社会保険情報、労働保険情報、外国人情報が確認できます。</p>
+                        <p>家族情報は、基本情報と配偶者外国人情報が確認できます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 --> 
+                    <p>ｂ）送信内容を、CSV出力し確認することができます。</p>
+                    <img class="img-magnification" src="images/1_11-3_12.bmp" alt="送信する内容の確認">         
+                    <a class="img-scaling img-scaling-document" href="images/1_11-3_12.bmp" data-lightbox="lightbox12" data-title="送信する内容の確認"></a>                    
+                    <p class="paragraph">「差分データCSV出力」ボタンをクリックしますと、CSVファイルを出力することができます。</p>
+                    <p class="content-container__commentary--para3-title">｜ポイント｜</p>
+                    <div class="content-container__commentary--para3">
+                        <p>・出力されたCSVファイルにて送信する前に、内容を確認することができます。</p>
+                        <p>・「選択された差分データのみ出力する」欄のチェックを外すと、全ての情報が出力されます。</p>
+                    </div>
+                    <!-- /.content-container__commentary--para3 -->
+                    <p>ｃ）
+                        <i style="padding: 0 2rem; border: 0.1rem solid black; margin-right: 0.1rem; vertical-align: middle; background-color: rgb(247, 208, 192);"></i>
+                        が送信される項目です。
+                        <i style="padding: 0 2rem; border: 0.1rem solid black; margin-right: 0.1rem; vertical-align: middle; background-color: white;"></i>
+                        は送信されない項目です。
+                    </p>
+                    <p class="paragraph">初めて送信する社員につきましては、全項目が
+                        <i style="padding: 0 2rem; border: 0.1rem solid black; margin-right: 0.1rem; vertical-align: middle; background-color: rgb(247, 208, 192);"></i>
+                        となっています。
+                    </p>
+                    <p>ｄ）Esia-Zeroに登録済みの社員につきましては、変更が必要な項目のみ表示されています。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->                        
+            </div>
+            <!-- /.content-container__commentary--para1 -->
+        </div>
+        <!-- /.content-container__commentary -->
+    </div>
+    <!-- /.content-container -->    
+    <a id="content2-4" class="anchor anchor-detail"></a>  
+    <div class="content-container">
+        <h4>④ 送信が完了した場合</h4>        
+        <div class="content-container__commentary">                  
+            <div class="content-container__commentary--para1"> 
+                <p>送信が完了しましたら社員情報に戻りますので、送信されたことを確認してください。</p>
+                <img class="img-magnification" src="images/1_11-3_13.bmp" alt="送信が完了した場合">         
+                <a class="img-scaling img-scaling-document" href="images/1_11-3_13.bmp" data-lightbox="lightbox13" data-title="送信が完了した場合"></a>             
+                <p class="paragraph">送信が完了しますと、「Esia-Zero」欄に情報が表示されますので確認してください。</p> 
+                <p class="content-container__commentary--para2-title">｜ポイント｜</p>
+                <div class="content-container__commentary--para2">
+                    <p>ａ）社員情報の送信が終わりましたら、次は顧問先の利用プランと、ユーザー登録依頼を行います。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->   
+                <p class="content-container__commentary--para2-title">｜年末調整を行う場合のポイント｜</p>            
+                <div class="content-container__commentary--para2">   
+                    <p>本年度退職者の、年末調整を行う場合のポイントについて、ご説明します。</p>
+                    <p>・在籍者のみを送信した場合は、本年度退職した社員情報も、送信する必要があります。</p>
+                    <p>・②の「社員の選択」にて「退職者のみ」を選択し、本年度退職した社員を選択して送信を行ってください。</p>
+                </div>
+                <!-- /.content-container__commentary--para2 -->
+            </div>
+            <!-- /.content-container__commentary--para1 -->                        
+        </div>
+        <!-- /.content-container__commentary -->  
+    </div>
+    <!-- /.content-container --> 
+   </main>
+   <!-- /.page-main -->     
+  </div>
+  <!-- /.wrapper clearfix --> 
+  <!-- JavaScript関連ファイル -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script src="JS/script.js"></script>
+　 <!-- 画像拡大の為のLightbox2 -->
+  <script src="JS/1_lightbox.js"></script>
+   <!-- /画像拡大の為のLightbox2 -->
+  <!-- /JavaScript関連ファイル -->
+ </body>
+ <footer class="footer">
+  <p class="footer__p">以上で、 ” 顧問先・社員情報の送信 ” についての学習は終了です。<br><br>お疲れ様でした！</p>
+  <div class="footer__div"><p class="footer__div--copyright">Copyright © NIHON SHALF inc. All Rights Reserved.</p></div>
+ </footer>  
+ <!-- /.footer -->
+</html>
